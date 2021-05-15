@@ -143,3 +143,10 @@ footer a {
   height: 16px;
   fill: black;
 }
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 16rem;
+    transition: transform .2s ease;
+  }
+}
