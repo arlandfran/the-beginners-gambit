@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Beginner's Gambit</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <h1>Hello World</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Beginner's Gambit</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/bootstrap.js"></script>
-  </body>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">The Beg<svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z" />
+        <path d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z" />
+      </svg>nner's Gambit</a>
+    <a class="sidebar-toggle" href="#" onclick="toggleSideBar()"><svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z" />
+      </svg></a>
+    <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
+        fill="#000" />
+      <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
+    </svg>
+  </header>
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Setup</a></li>
+        <li><a href="#">Rules</a></li>
+        <li><a href="#">Concepts</a></li>
+        <li><a href="#">Opening Principles</a></li>
+        <li><a href="#">Tactics</a></li>
+        <li><a href="#">Mating Patterns</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <script>
+    function toggleSideBar() {
+      var el = document.querySelector(".sidebar");
+      el.classList.toggle("sidebar-open")
+    }
+  </script>
+</body>
+
 </html>
