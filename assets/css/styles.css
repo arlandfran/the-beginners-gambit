@@ -48,8 +48,14 @@ a {
   display: none;
 }
 
-.hamburger {
+.nav-toggle {
   display: contents;
+}
+
+#hamburger {
+  width: 32px;
+  height: 32px;
+  fill: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -57,7 +63,7 @@ a {
     display: block;
   }
 
-  .hamburger {
+  #hamburger {
     display: none;
   }
 }
@@ -68,8 +74,39 @@ a {
   fill: var(--primary-color);
 }
 
+#close-nav {
+  width: 32px;
+  height: 32px;
+  fill: black;
+}
+
+/* .sidenav {
+  height: 100%;
+  width: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.5s;
+  
+} */
+
 .sidenav {
+  height: 100%;
   width: 16rem;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+  transition: transform .2s ease;
+  border-right: 1px var(--divider-color) solid;
+}
+
+.sidenav ul {
+  list-style: none;
+}
+
+.sidenav a:nth-child(1) {
+  padding-left: 1rem;
 }
 
 .sidenav a {
