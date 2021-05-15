@@ -10,7 +10,8 @@
   --text-m-body: 1rem; /*16.00px*/
   --text-m-caption: 0.8rem; /*12.80px*/
 
-  --heading-font: Poppins, sans-serif;
+  --sans-serif-font: Poppins, sans-serif;
+  --serif-font: "PT Serif", serif;
 }
 
 * {
@@ -24,6 +25,7 @@ header {
 }
 
 a {
+  font-family: var(--sans-serif-font);
   text-decoration: none;
   color: black;
 }
@@ -40,10 +42,10 @@ a:hover {
 }
 
 .logo {
-  font-family: var(--heading-font);
+  font-family: var(--sans-serif-font);
   font-style: normal;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: var(--text-m-level-5);
 
   display: flex;
   align-items: baseline;
@@ -86,6 +88,7 @@ a:hover {
   overflow-x: hidden;
   transition: transform .2s ease;
   border-right: 1px solid var(--divider-color);
+  background-color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -104,7 +107,6 @@ a:hover {
 .sidebar a {
   display: block;
   font-size: var(--text-m-level-5);
-  font-family: var(--heading-font);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 100%;
@@ -112,4 +114,32 @@ a:hover {
 
 .sidebar-open {
   transform: translateX(0%);
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  font-family: var(--sans-serif-font);
+  font-weight: 600;
+  font-size: var(--text-m-body);
+  justify-content: flex-end;
+  border-top: 1px solid var(--divider-color);
+}
+
+footer a {
+  display: flex;
+}
+
+#external-link {
+  margin-left: 0.2rem;
+}
+
+#box-arrow {
+  width: 16px;
+  height: 16px;
+  fill: black;
 }
