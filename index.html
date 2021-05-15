@@ -15,12 +15,12 @@
 
 <body>
   <header class="navbar">
-    <a class="logo" href="#">The Beg<svg class="logo-glyph" xmlns="http://www.w3.org/2000/svg">
+    <a class="logo" href="#">The Beg<svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z" />
         <path d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z" />
       </svg>nner's Gambit</a>
-    <a class="nav-toggle" href="#" onclick="toggleSideBar()"><svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
+    <a class="sidebar-toggle" href="#" onclick="toggleSideBar()"><svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z" />
       </svg></a>
@@ -31,31 +31,25 @@
       <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
     </svg>
   </header>
-  <aside id="sideNav" class="sidenav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Setup</a></li>
-      <li><a href="#">Rules</a></li>
-      <li><a href="#">Concepts</a></li>
-      <li><a href="#">Opening Principles</a></li>
-      <li><a href="#">Tactics</a></li>
-      <li><a href="#">Mating Patterns</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Setup</a></li>
+        <li><a href="#">Rules</a></li>
+        <li><a href="#">Concepts</a></li>
+        <li><a href="#">Opening Principles</a></li>
+        <li><a href="#">Tactics</a></li>
+        <li><a href="#">Mating Patterns</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
   </aside>
 
   <script>
-    var el = document.querySelector(".navbar");
-
     function toggleSideBar() {
-      if (!el.classList.contains("sidebar-open")) {
-        document.getElementById("sideNav").style.transform = "translateX(5%)";
-        el.classList.add("sidebar-open");
-      }
-      else {
-        document.getElementById("sideNav").style.transform = "translateX(-100%)";
-        el.classList.remove("sidebar-open");
-      }
+      var el = document.querySelector(".sidebar");
+      el.classList.toggle("sidebar-open")
     }
   </script>
 </body>
