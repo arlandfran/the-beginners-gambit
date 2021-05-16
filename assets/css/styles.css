@@ -22,6 +22,10 @@
 
 header {
   display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: white;
 }
 
 a {
@@ -77,12 +81,13 @@ a {
 }
 
 .sidebar {
-  height: 100%;
+  height: 100vh;
   width: 16rem;
   position: fixed;
+  top: 4rem;
   z-index: 1;
   overflow-x: hidden;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
   border-right: 1px solid var(--divider-color);
   background-color: white;
 }
@@ -118,7 +123,7 @@ a {
 
 footer {
   display: flex;
-  position: fixed;
+  z-index: 2;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -128,6 +133,7 @@ footer {
   font-size: var(--text-m-body);
   justify-content: flex-end;
   border-top: 1px solid var(--divider-color);
+  background-color: white;
 }
 
 footer a {
@@ -142,4 +148,63 @@ footer a {
   width: 16px;
   height: 16px;
   fill: black;
+}
+
+main {
+  display: flex;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 16rem;
+    transition: transform 0.2s ease;
+  }
+}
+
+h1 {
+  font-family: var(--sans-serif-font);
+  font-size: var(--text-m-level-2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  line-height: 110%;
+}
+
+.highlight {
+  color: var(--primary-color);
+}
+
+p {
+  margin-top: 1rem;
+  font-family: var(--sans-serif-font);
+  font-size: var(--text-m-body);
+}
+
+div {
+  width: 100%;
+  height: 16rem;
+  border: 1px solid black;
+}
+
+div:nth-child(1) {
+  background-color: #6610f2;
+}
+
+.row {
+  width: 100%;
+}
+
+.column {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .column {
+    width: 50%;
+  }
 }
