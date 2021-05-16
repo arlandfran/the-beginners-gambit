@@ -26,15 +26,13 @@
             /></svg></span
         >nner's Gambit</a
       >
-      <a
-        class="sidebar-toggle"
-        href="JavaScript:Void(0);"
-        onclick="toggleSideBar()"
-        ><svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
+      <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
+        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z"
-          /></svg
-      ></a>
+          />
+        </svg>
+      </button>
       <svg
         width="32"
         height="32"
@@ -50,44 +48,42 @@
     </header>
     <aside class="sidebar">
       <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Setup</a></li>
-          <li><a href="#">Rules</a></li>
-          <li><a href="#">Concepts</a></li>
-          <li><a href="#">Opening Principles</a></li>
-          <li><a href="#">Tactics</a></li>
-          <li><a href="#">Mating Patterns</a></li>
-          <li><a href="#">About</a></li>
+        <ul id="sidebar-links">
+          <li class="sidebar-link active"><a href="#">Home</a></li>
+          <li class="sidebar-link"><a href="#">Setup</a></li>
+          <li class="sidebar-link"><a href="#">Rules</a></li>
+          <li class="sidebar-link"><a href="#">Concepts</a></li>
+          <li class="sidebar-link"><a href="#">Opening Principles</a></li>
+          <li class="sidebar-link"><a href="#">Tactics</a></li>
+          <li class="sidebar-link"><a href="#">Mating Patterns</a></li>
+          <li class="sidebar-link"><a href="#">About</a></li>
         </ul>
       </nav>
     </aside>
 
     <main>
-      <div class="row">heading full width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="row">heading full width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="row">heading full width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="row">heading full width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="row">heading full width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="row">heading full width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="row">heading full width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="row">heading full width</div>
-      <div class="column">figure 1/2 width</div>
-      <div class="column">figure 1/2 width</div>
+      <article>
+        <h1>The <span class="highlight">Beginner's</span> Gambit</h1>
+        <p>Welcome to the Beginner’s Gambit.</p>
+        <p>
+          This site is designed as a <strong>reference guide</strong> to players
+          that are brand new to Chess, and has a focus on visual learning aids
+          as oppposed to the heavy verbose articles you might usually find
+          elsewhere on the web.
+        </p>
+        <p>
+          However due to the complexity of the game, illustrations alone are not
+          sufficient enough to explain some of the key concepts so there will be
+          long-form text here and there.
+        </p>
+        <p>
+          We hope you enjoy learning this beautiful game and most importantly
+          have fun.
+        </p>
+        <div class="go-next-link">
+          <a href="setup.html">Setup<strong>➔</strong></a>
+        </div>
+      </article>
     </main>
 
     <footer>
