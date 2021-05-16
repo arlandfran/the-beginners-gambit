@@ -14,10 +14,18 @@
   --serif-font: "PT Serif", serif;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -61,9 +69,6 @@ button:hover {
   display: none;
 }
 
-.logo:hover {
-}
-
 #logo-glyph {
   width: 11px;
   height: 11px;
@@ -97,6 +102,7 @@ button:hover {
   position: fixed;
   top: 4rem;
   z-index: 1;
+  padding-top: 1rem;
   overflow-x: hidden;
   transition: transform 0.2s ease;
   border-right: 1px solid var(--divider-color);
@@ -113,15 +119,21 @@ button:hover {
   list-style: none;
 }
 
-.sidebar a {
+.sidebar .sidebar-link {
   display: block;
   padding-left: 2rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   font-size: var(--text-m-level-5);
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 100%;
+}
+
+.sidebar-subheader-link {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: var(--text-m-body);
 }
 
 .active {
@@ -130,25 +142,6 @@ button:hover {
 
 .sidebar-open {
   transform: translateX(0%);
-}
-
-footer {
-  display: flex;
-  z-index: 2;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 1rem;
-  font-family: var(--sans-serif-font);
-  font-weight: 600;
-  font-size: var(--text-m-body);
-  justify-content: flex-end;
-  border-top: 1px solid var(--divider-color);
-  background-color: white;
-}
-
-footer a {
-  display: flex;
 }
 
 #external-link {
@@ -163,11 +156,30 @@ footer a {
 
 main {
   display: flex;
+  flex-grow: 1;
   row-gap: 1rem;
   flex-wrap: wrap;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 4rem;
+}
+
+footer {
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  font-family: var(--sans-serif-font);
+  font-weight: 600;
+  font-size: var(--text-m-body);
+  justify-content: flex-end;
+  border-top: 1px solid var(--divider-color);
+  background-color: white;
+}
+
+footer a {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
