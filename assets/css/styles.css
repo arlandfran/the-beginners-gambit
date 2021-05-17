@@ -26,15 +26,6 @@
 
 /* General styles */
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 /* Typography */
 .h1 {
   margin-top: 1rem;
@@ -43,6 +34,8 @@ h5 {
   font-size: var(--h1);
   line-height: 110%;
   letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .h2 {
@@ -52,6 +45,8 @@ h5 {
   font-size: var(--h2);
   line-height: 110%;
   letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .h3 {
@@ -59,9 +54,11 @@ h5 {
   margin-bottom: 1rem;
   font-family: var(--sans-serif);
   font-size: var(--h3);
-  line-height: 110%;
+  /* line-height: 110%; */
   letter-spacing: 0.03rem;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .h4 {
@@ -69,9 +66,11 @@ h5 {
   margin-bottom: 1rem;
   font-family: var(--sans-serif);
   font-size: var(--h4);
-  line-height: 130%;
+  /* line-height: 130%; */
   letter-spacing: 0.02rem;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .h5 {
@@ -79,9 +78,11 @@ h5 {
   margin-bottom: 1rem;
   font-family: var(--sans-serif);
   font-size: var(--h5);
-  line-height: 130%;
-  letter-spacing: 0.02rem;
+  /* line-height: 130%; */
+  /* letter-spacing: 0.02rem; */
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 p {
@@ -89,7 +90,9 @@ p {
   margin-bottom: 1rem;
   font-family: var(--sans-serif);
   font-size: var(--base-font-size);
+  font-weight: 400;
   text-align: left;
+  text-transform: initial;
 }
 
 .text-caption {
@@ -97,19 +100,20 @@ p {
   margin-bottom: 0.5rem;
   font-family: var(--serif);
   font-size: var(--base-font-size);
+  font-weight: 400;
   font-style: italic;
   max-width: 16rem;
   text-align: center;
   text-transform: initial;
   font-weight: initial;
-  line-height: 175%;
+  /* line-height: 175%; */
   letter-spacing: 0;
 }
 
 /* Site-wide styles */
 header {
   display: flex;
-  /* position: fixed; */
+  position: fixed;
   width: 100%;
   z-index: 2;
   background: white;
@@ -120,6 +124,7 @@ main {
   flex-grow: 1;
   /* row-gap: 1rem; */
   flex-wrap: wrap;
+  background-color: white;
   /* padding-left: 2rem;
   padding-right: 2rem; */
   /* margin-top: 4rem; */
@@ -154,12 +159,18 @@ footer {
 }
 
 figure {
+  margin-left: -2rem;
+  margin-right: -2rem;
   display: flex;
   flex-wrap: wrap;
   width: min-content;
   justify-content: center;
   /* text-align: center; */
   letter-spacing: 0;
+}
+
+pre {
+  width: 320px;
 }
 
 #app {
@@ -205,12 +216,12 @@ figure {
 }
 
 .sidebar {
-  height: 100vh;
+  height: 100%;
   width: 16rem;
   position: fixed;
-  top: 4rem;
+  top: 0;
   z-index: 1;
-  padding-top: 1rem;
+  padding-top: 4rem;
   overflow-x: hidden;
   transition: transform 0.2s ease;
   border-right: 1px solid var(--divider-color);
@@ -240,10 +251,6 @@ figure {
 
 .active {
   border-left: 4px solid var(--primary-color);
-}
-
-.sidebar-open {
-  transform: translateX(0%);
 }
 
 #external-link {
@@ -310,8 +317,7 @@ footer a {
 }
 
 .fig-subheading {
-  /* margin-top: 1rem; */
-  max-width: 320px;
+  margin-top: -1rem;
 }
 
 .page-nav-links {
@@ -319,11 +325,29 @@ footer a {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 375px) {
-  .page {
-    margin-left: 2rem;
-    margin-right: 2rem;
+.fixed-width {
+  max-width: 40rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: justify;
+}
+
+@media screen and (min-width: 425px) {
+  figure {
+    margin-left: 0;
+    margin-right: 0;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-16rem);
+  }
+}
+
+/* Must be afterward to override sidebar hiding under 768px */
+.sidebar-open {
+  transform: translateX(0%);
 }
 
 @media screen and (min-width: 768px) {
@@ -338,10 +362,6 @@ footer a {
 
   #hamburger {
     display: none;
-  }
-
-  .sidebar {
-    transform: translateX(-16rem);
   }
 
   .text-caption {
