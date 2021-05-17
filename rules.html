@@ -63,7 +63,7 @@
       <main>
         <article class="page">
           <h1 class="h4">Rules</h1>
-          <ol>
+          <ol class="px-1">
             <li>White moves first</li>
             <li>No skipping moves</li>
             <li>Game continues until any of these conditions are fulfilled:</li>
@@ -75,6 +75,80 @@
             </ul>
           </ol>
           <h2 class="h4">Movement</h2>
+          <ul class="px-1">
+            <li>
+              Pieces cannot move onto squares occupied by their own pieces.
+            </li>
+            <li>
+              Pieces cannot jump over other pieces. The only exceptions are
+              <strong>Knights</strong> & <strong>Castling</strong>.
+            </li>
+            <li>
+              Pieces can move into vacant squares or squares occupied by
+              opponent pieces by capturing them.
+            </li>
+            <li>
+              If a piece is captured it is permanently removed from the game.
+            </li>
+            <li>
+              The <strong>King</strong> is the only piece that cannot be
+              captured. It can only be put in check.
+            </li>
+          </ul>
+          <section class="section-expandable">
+            <figure>
+              <p class="section-column h5 fig-subheading">King</p>
+              <img
+                src="assets/img/rules/king.svg"
+                alt="chess king movements highlighted on a chess board"
+              />
+              <figcaption class="centered-text">
+                <strong>Movement:</strong>
+                <br />
+                One square horizontally, vertically or diagonally.
+                <br />
+                <br />
+                <strong>Special Moves:</strong>
+                <br />
+                Castling
+              </figcaption>
+            </figure>
+            <figure>
+              <p class="section-column h5 fig-subheading">Queen</p>
+              <img
+                src="assets/img/rules/queen.svg"
+                alt="chess queen movements highlighted on a chess board"
+              />
+              <figcaption>
+                <figcaption class="centered-text">
+                  <strong>Movement:</strong>
+                  <br />
+                  Any number of vacant squares horizontally, vertically or
+                  diagonally.
+                </figcaption>
+              </figcaption>
+            </figure>
+            <section class="section-expandable">
+              <figure>
+                <p class="sction-column h5 fig-subheading">Rook</p>
+                <img
+                  src="assets/img/rules/rook.svg"
+                  alt="chess rook movements highlighted on a chess board"
+                />
+                <figcaption class="centered-text">
+                    <strong>Movement:</strong>
+                <br />
+                One square horizontally, vertically or diagonally.
+                <br />
+                <br />
+                <strong>Special Moves:</strong>
+                <br />
+                Castling
+              </figcaption>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
         </article>
       </main>
       <footer>

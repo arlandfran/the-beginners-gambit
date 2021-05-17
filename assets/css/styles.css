@@ -29,6 +29,10 @@ body {
   font-family: var(--sans-serif);
 }
 
+ul {
+  list-style-type: disc;
+}
+
 a {
   font-family: var(--sans-serif);
   text-decoration: none;
@@ -106,6 +110,11 @@ p {
   text-transform: initial;
 }
 
+figcaption {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .text-caption {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -118,6 +127,16 @@ p {
   text-transform: initial;
   font-weight: 400;
   letter-spacing: 0;
+}
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Sitewide */
@@ -321,7 +340,6 @@ figure {
 .indent {
   text-indent: 2rem;
   list-style-position: inside;
-  list-style-type: disc;
 }
 
 /* Media queries */
