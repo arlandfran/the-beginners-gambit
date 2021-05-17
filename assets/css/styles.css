@@ -320,9 +320,8 @@ figure {
   display: flex;
   flex-wrap: wrap;
   width: min-content;
+  height: fit-content;
   justify-content: center;
-  /* text-align: center; */
-  letter-spacing: 0;
 }
 
 .fig-subheading {
