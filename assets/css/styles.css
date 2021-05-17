@@ -279,7 +279,7 @@ footer a {
   color: var(--primary-color);
 }
 
-/* Setup page styles */
+/* Article page styles */
 #setup-list {
   list-style-position: inside;
 }
@@ -304,7 +304,7 @@ figure {
 }
 
 .fig-subheading {
-  margin-top: -1rem;
+  margin-top: 0;
 }
 
 .centered-text {
