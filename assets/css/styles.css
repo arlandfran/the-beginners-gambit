@@ -114,14 +114,13 @@ figcaption {
 .text-caption {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  width: 18rem;
   font-family: var(--serif);
   font-size: var(--base-font-size);
   font-weight: 400;
   font-style: italic;
   text-align: center;
   text-transform: initial;
-  font-weight: 400;
-  letter-spacing: 0;
 }
 
 /* Utilities */
