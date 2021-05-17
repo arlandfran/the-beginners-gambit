@@ -284,6 +284,10 @@ footer a {
   list-style-position: inside;
 }
 
+.subheader-link {
+  scroll-margin-top: 5rem;
+}
+
 .section-expandable {
   margin-top: 1rem;
   margin-bottom: 1rem;
