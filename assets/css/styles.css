@@ -72,7 +72,6 @@ button:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: var(--h3);
-  /* line-height: 110%; */
   letter-spacing: 0.03rem;
   text-align: center;
   text-transform: uppercase;
@@ -83,7 +82,6 @@ button:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: var(--h4);
-  /* line-height: 130%; */
   letter-spacing: 0.02rem;
   text-align: center;
   text-transform: uppercase;
@@ -94,8 +92,6 @@ button:hover {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: var(--h5);
-  /* line-height: 130%; */
-  /* letter-spacing: 0.02rem; */
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -212,7 +208,6 @@ nav ul li {
   font-size: var(--h5);
   font-weight: 600;
   letter-spacing: -0.02em;
-  /* line-height: 100%; */
 }
 
 .sidebar-subheader-link {
@@ -306,12 +301,15 @@ footer a {
   scroll-margin-top: 5rem;
 }
 
-.section-expandable {
+.section {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+}
+
+.expandable {
+  flex-wrap: wrap;
 }
 
 figure {
@@ -335,7 +333,7 @@ figure {
 
 .fixed-width {
   max-width: 40rem;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .indent {
