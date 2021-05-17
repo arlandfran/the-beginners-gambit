@@ -118,7 +118,6 @@ figcaption {
   font-size: var(--base-font-size);
   font-weight: 400;
   font-style: italic;
-  max-width: 16rem;
   text-align: center;
   text-transform: initial;
   font-weight: 400;
@@ -134,6 +133,20 @@ figcaption {
 .px-1 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.centered-text {
+  max-width: 16rem;
+  align-self: center;
+}
+
+.fixed-width {
+  max-width: 30rem;
+}
+
+.indent {
+  text-indent: 2rem;
+  list-style-position: inside;
 }
 
 /* Sitewide */
@@ -327,20 +340,6 @@ figure {
   margin-top: 0;
 }
 
-.centered-text {
-  max-width: 16rem;
-  align-self: center;
-}
-
-.fixed-width {
-  max-width: 30rem;
-}
-
-.indent {
-  text-indent: 2rem;
-  list-style-position: inside;
-}
-
 /* Media queries */
 @media screen and (min-width: 425px) {
   figure {
@@ -372,10 +371,6 @@ figure {
 
   #hamburger {
     display: none;
-  }
-
-  .text-caption {
-    text-align: center;
   }
 }
 
