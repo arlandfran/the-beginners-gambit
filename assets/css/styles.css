@@ -230,6 +230,7 @@ main {
   flex-grow: 1;
   flex-wrap: wrap;
   margin-top: 4rem;
+  justify-content: center;
   background-color: white;
 }
 
@@ -237,6 +238,7 @@ main {
   margin-left: 2rem;
   margin-right: 2rem;
   width: 100%;
+  max-width: 40rem;
 }
 
 .section-column {
