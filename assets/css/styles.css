@@ -84,17 +84,17 @@ h5 {
   text-align: center;
 }
 
-.text-body {
-  margin: 1rem;
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-family: var(--sans-serif);
   font-size: var(--base-font-size);
   text-align: left;
-  letter-spacing: 0;
 }
 
 .text-caption {
-  /* margin-top: 0.5rem; */
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-family: var(--serif);
   font-size: var(--base-font-size);
   font-style: italic;
@@ -109,7 +109,7 @@ h5 {
 /* Site-wide styles */
 header {
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   z-index: 2;
   background: white;
@@ -122,23 +122,13 @@ main {
   flex-wrap: wrap;
   /* padding-left: 2rem;
   padding-right: 2rem; */
-  padding-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 a {
   font-family: var(--sans-serif);
   text-decoration: none;
   color: black;
-}
-
-p {
-  margin: 1rem;
-  font-family: var(--sans-serif);
-  font-size: var(--base-font-size);
-  text-align: left;
-  text-transform: initial;
-  font-weight: initial;
-  letter-spacing: 0;
 }
 
 a:hover {
@@ -214,16 +204,6 @@ figure {
   fill: black;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    display: block;
-  }
-
-  #hamburger {
-    display: none;
-  }
-}
-
 .sidebar {
   height: 100vh;
   width: 16rem;
@@ -235,12 +215,6 @@ figure {
   transition: transform 0.2s ease;
   border-right: 1px solid var(--divider-color);
   background-color: white;
-}
-
-@media screen and (max-width: 768px) {
-  .sidebar {
-    transform: translateX(-16rem);
-  }
 }
 
 .sidebar ul li {
@@ -286,28 +260,14 @@ footer a {
   display: flex;
 }
 
-@media screen and (min-width: 768px) {
-  main {
-    margin-left: 16rem;
-    transition: transform 0.2s ease;
-  }
-}
-
 .highlight {
   color: var(--primary-color);
 }
 
 .page {
-  /* margin-left: 1rem;
-  margin-right: 1rem; */
+  margin-left: 2rem;
+  margin-right: 2rem;
   width: 100%;
-}
-
-@media screen and (min-width: 375px) {
-  .page {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
 }
 
 .row {
@@ -316,12 +276,6 @@ footer a {
 
 .section-column {
   width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-  .column {
-    width: 50%;
-  }
 }
 
 .go-next-link {
@@ -360,13 +314,43 @@ footer a {
   max-width: 320px;
 }
 
+.page-nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 375px) {
+  .page {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  main {
+    margin-left: 16rem;
+    transition: transform 0.2s ease;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .sidebar {
+    transform: translateX(-16rem);
+  }
+
   .text-caption {
     text-align: center;
   }
 }
 
-.page-nav-links {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 1024px) {
+  .column {
+    width: 50%;
+  }
 }
