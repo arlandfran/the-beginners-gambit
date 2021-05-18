@@ -9,6 +9,7 @@
   --h3: 1.953rem; /*h4 x1.25*/
   --h4: 1.563rem; /*h5 x1.25*/
   --h5: 1.25rem; /*Base x1.25*/
+  --h6: 1.125rem; /*Doesn't follow type scale - 18px*/
   --base-font-size: 1rem; /*16.00px*/
   /* Font Families */
   --sans-serif: Poppins, sans-serif;
@@ -223,8 +224,13 @@ nav ul li {
   letter-spacing: -0.02em;
 }
 
+.sidebar-subheader-group {
+  padding-left: 1rem;
+  font-size: var(--h6);
+}
+
 .sidebar-subheader-link {
-  padding-top: 0.5rem;
+  padding-top: 0.4rem;
   padding-left: 1rem;
   font-size: var(--base-font-size);
 }

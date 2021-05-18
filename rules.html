@@ -51,7 +51,76 @@
           <ul id="sidebar-links">
             <li class="sidebar-link"><a href="index.html">Home</a></li>
             <li class="sidebar-link"><a href="setup.html">Setup</a></li>
-            <li class="sidebar-link"><a href="rules.html">Rules</a></li>
+            <ul class="sidebar-link active">
+              <li>
+                <a href="rules.html">Rules</a>
+              </li>
+              <ul class="sidebar-subheader-group">
+                <a href="rules.html#movement">Movement</a>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#king">King</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#queen">Queen</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#rook">Rook</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#bishop">Bishop</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#knight">Knight</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#pawn">Pawn</a>
+                </li>
+              </ul>
+              <ul class="sidebar-subheader-group">
+                <a href="rules.html#special-moves">Special Moves</a>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#castling">Castling</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#en-passant">En Passant</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#promotion">Promotion</a>
+                </li>
+              </ul>
+              <ul class="sidebar-subheader-group">
+                <a href="rules.html#conditions">Conditions</a>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#checkmate">Checkmate</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#resignation">Resignation</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#timeout">Timeout</a>
+                </li>
+              </ul>
+              <ul class="sidebar-subheader-group">
+                <a href="rules.html#draws">Draws</a>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#stalemate">Stalemate</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#insufficient-material"
+                    >Insufficient Material</a
+                  >
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#repitition">Repitition</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#fifty-move-rule">Fifty-move Rule</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="rules.html#mutual-agreement">Mutual Agreement</a>
+                </li>
+              </ul>
+            </ul>
             <li class="sidebar-link"><a href="#">Concepts</a></li>
             <li class="sidebar-link"><a href="#">Opening Principles</a></li>
             <li class="sidebar-link"><a href="#">Tactics</a></li>
@@ -74,7 +143,7 @@
               <li>Draw</li>
             </ul>
           </ol>
-          <h2 class="h4">Movement</h2>
+          <h2 class="h4 subheader-link" id="movement">Movement</h2>
           <ul class="px-1">
             <li>
               Pieces cannot move onto squares occupied by their own pieces.
@@ -97,7 +166,12 @@
           </ul>
           <section class="section expandable">
             <figure>
-              <p class="section-column h5 fig-subheading">King</p>
+              <p
+                class="section-column h5 fig-subheading subheader-link"
+                id="king"
+              >
+                King
+              </p>
               <img
                 src="assets/img/rules/king.svg"
                 alt="chess king movements highlighted on a chess board"
@@ -114,7 +188,12 @@
               </figcaption>
             </figure>
             <figure>
-              <p class="section-column h5 fig-subheading">Queen</p>
+              <p
+                class="section-column h5 fig-subheading subheader-link"
+                id="queen"
+              >
+                Queen
+              </p>
               <img
                 src="assets/img/rules/queen.svg"
                 alt="chess queen movements highlighted on a chess board"
@@ -127,7 +206,12 @@
               </figcaption>
             </figure>
             <figure>
-              <p class="sction-column h5 fig-subheading">Rook</p>
+              <p
+                class="sction-column h5 fig-subheading subheader-link"
+                id="rook"
+              >
+                Rook
+              </p>
               <img
                 src="assets/img/rules/rook.svg"
                 alt="chess rook movements highlighted on a chess board"
@@ -144,7 +228,12 @@
               </figcaption>
             </figure>
             <figure>
-              <p class="section-column h5 fig-subheading">Bishop</p>
+              <p
+                class="section-column h5 fig-subheading subheader-link"
+                id="bishop"
+              >
+                Bishop
+              </p>
               <img
                 src="assets/img/rules/bishop.svg"
                 alt="chess bishop movements highlighted on a chess board"
@@ -156,7 +245,12 @@
               </figcaption>
             </figure>
             <figure>
-              <p class="section-column h5 fig-subheading">Knight</p>
+              <p
+                class="section-column h5 fig-subheading subheader-link"
+                id="knight"
+              >
+                Knight
+              </p>
               <img
                 src="assets/img/rules/knight.svg"
                 alt="chess knight movements highlighted on a chess board"
@@ -174,7 +268,12 @@
               </figcaption>
             </figure>
             <figure>
-              <p class="section-column h5 fig-subheading">Pawn</p>
+              <p
+                class="section-column h5 fig-subheading subheader-link"
+                id="pawn"
+              >
+                Pawn
+              </p>
               <img
                 src="assets/img/rules/pawn.svg"
                 alt="chess pawn movements highlighted on a chess board"
@@ -200,8 +299,8 @@
               </figcaption>
             </figure>
           </section>
-          <h2 class="h4">Special Moves</h2>
-          <h3 class="h5">Castling</h3>
+          <h2 class="h4 subheader-link" id="special-moves">Special Moves</h2>
+          <h3 class="h5 subheader-link" id="castling">Castling</h3>
           <section class="section">
             <figure>
               <img
@@ -250,7 +349,7 @@
               </figcaption>
             </figure>
           </section>
-          <h3 class="h5">En Passant</h3>
+          <h3 class="h5 subheader-link" id="en-passant">En Passant</h3>
           <p>
             En Passant (in passing) is a special pawn capture that occurs when a
             pawn has advanced two squares and ends up next to an enemy pawn.
@@ -269,7 +368,7 @@
               </figcaption>
             </figure>
           </section>
-          <h3 class="h5">Promotion</h3>
+          <h3 class="h5 subheader-link" id="promotion">Promotion</h3>
           <p>
             When a pawn reaches the eighth rank (or the 1st rank for black), it
             is promoted to a queen, rook, knight or bishop at the players
@@ -285,12 +384,12 @@
               />
             </figure>
           </section>
-          <h2 class="h4">Conditions</h2>
+          <h2 class="h4 subheader-link" id="conditions">Conditions</h2>
           <p>
             In chess there are multiple ways that a game can end. Those ways
             are:
           </p>
-          <h3 class="h5">Checkmate</h3>
+          <h3 class="h5 subheader-link" id="checkmate">Checkmate</h3>
           <p>
             Checkmate is a position on the board where an attacking player has a
             defending player’s king in check and there are:
@@ -316,7 +415,7 @@
               </figcaption>
             </figure>
           </section>
-          <h3 class="h5">Resignation</h3>
+          <h3 class="h5 subheader-link" id="resignation ">Resignation</h3>
           <p>
             A player in a losing position may wish to resign and concede the
             game if they decide they objectively cannot save the position.
@@ -334,7 +433,7 @@
               </figcaption>
             </figure>
           </section>
-          <h3 class="h5">Timeout</h3>
+          <h3 class="h5 subheader-link" id="timeout">Timeout</h3>
           <p>
             It’s also possible to lose by timeout if playing with time control.
           </p>
@@ -351,12 +450,12 @@
             Timeout losses are more common in online chess where faster time
             controls are more popular.
           </p>
-          <h2 class="h4">Draws</h2>
+          <h2 class="h4 subheader-link" id="draws">Draws</h2>
           <p>
             In chess there are also multiple ways to draw a game. The different
             types of draws are as follows:
           </p>
-          <h3 class="h5">Stalemate</h3>
+          <h3 class="h5 subheader-link" id="stalemate">Stalemate</h3>
           <p>
             Stalemate is a position on the board in where it is a players turn
             to move but has no legal moves available. This position is deemed as
@@ -376,7 +475,9 @@
               </figcaption>
             </figure>
           </section>
-          <h3 class="h5">Insufficient Material</h3>
+          <h3 class="h5 subheader-link" id="insufficient-material">
+            Insufficient Material
+          </h3>
           <p>
             A game can also be drawn if both sides have do not have the
             sufficient material possible to checkmate.
@@ -418,7 +519,7 @@
               </figcaption>
             </figure>
           </section>
-          <h3 class="h5">Repitition</h3>
+          <h3 class="h5 subheader-link" id="repitition">Repitition</h3>
           <p>
             The three-fold repitition rule states that if a position occurs
             three times in the same game, either player may claim a draw. In
@@ -427,7 +528,9 @@
             progress is being made and the game could hypothetically continue
             indefinitely.
           </p>
-          <h3 class="h5">Fifty-move Rule</h3>
+          <h3 class="h5 subheader-link" id="fifty-move-rule">
+            Fifty-move Rule
+          </h3>
           <p>
             A player can claim a draw if no capture has been made and no pawn
             has been moved in the last fifty moves. The purpose of this rule is
@@ -441,7 +544,9 @@
             game is automatically drawn as opposed to a draw being claimed by
             either player.
           </p>
-          <h3 class="h5">Mutual Agreement</h3>
+          <h3 class="h5 subheader-link" id="mutual-agreement">
+            Mutual Agreement
+          </h3>
           <p>
             In chess, a player may offer a draw at any stage of a game. If the
             opponent accepts, the outcome of the game is a draw by mutual
