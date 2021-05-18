@@ -9,6 +9,7 @@
   --h3: 1.953rem; /*h4 x1.25*/
   --h4: 1.563rem; /*h5 x1.25*/
   --h5: 1.25rem; /*Base x1.25*/
+  --h6: 1.125rem; /*Doesn't follow type scale - 18px*/
   --base-font-size: 1rem; /*16.00px*/
   /* Font Families */
   --sans-serif: Poppins, sans-serif;
@@ -25,6 +26,14 @@
 }
 
 /* General styles */
+body {
+  font-family: var(--sans-serif);
+}
+
+ul {
+  list-style-type: disc;
+}
+
 a {
   font-family: var(--sans-serif);
   text-decoration: none;
@@ -43,7 +52,6 @@ button:hover {
 .h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-family: var(--sans-serif);
   font-size: var(--h1);
   line-height: 110%;
   letter-spacing: 0.03rem;
@@ -54,7 +62,6 @@ button:hover {
 .h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-family: var(--sans-serif);
   font-size: var(--h2);
   line-height: 110%;
   letter-spacing: 0.03rem;
@@ -65,9 +72,7 @@ button:hover {
 .h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-family: var(--sans-serif);
   font-size: var(--h3);
-  /* line-height: 110%; */
   letter-spacing: 0.03rem;
   text-align: center;
   text-transform: uppercase;
@@ -77,9 +82,7 @@ button:hover {
 .h4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-family: var(--sans-serif);
   font-size: var(--h4);
-  /* line-height: 130%; */
   letter-spacing: 0.02rem;
   text-align: center;
   text-transform: uppercase;
@@ -89,10 +92,7 @@ button:hover {
 .h5 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-family: var(--sans-serif);
   font-size: var(--h5);
-  /* line-height: 130%; */
-  /* letter-spacing: 0.02rem; */
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -101,26 +101,52 @@ button:hover {
 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-family: var(--sans-serif);
   font-size: var(--base-font-size);
   font-weight: 400;
   text-align: left;
   text-transform: initial;
 }
 
+figcaption {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .text-caption {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  width: 18rem;
   font-family: var(--serif);
   font-size: var(--base-font-size);
   font-weight: 400;
   font-style: italic;
-  max-width: 16rem;
   text-align: center;
   text-transform: initial;
-  font-weight: initial;
-  /* line-height: 175%; */
-  letter-spacing: 0;
+}
+
+/* Utilities */
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.centered-text {
+  max-width: 16rem;
+  align-self: center;
+}
+
+.fixed-width {
+  max-width: 30rem;
+}
+
+.indent {
+  text-indent: 2rem;
+  list-style-position: inside;
 }
 
 /* Sitewide */
@@ -196,11 +222,15 @@ nav ul li {
   font-size: var(--h5);
   font-weight: 600;
   letter-spacing: -0.02em;
-  /* line-height: 100%; */
+}
+
+.sidebar-subheader-group {
+  padding-left: 1rem;
+  font-size: var(--h6);
 }
 
 .sidebar-subheader-link {
-  padding-top: 0.5rem;
+  padding-top: 0.4rem;
   padding-left: 1rem;
   font-size: var(--base-font-size);
 }
@@ -214,6 +244,7 @@ main {
   flex-grow: 1;
   flex-wrap: wrap;
   margin-top: 4rem;
+  justify-content: center;
   background-color: white;
 }
 
@@ -221,6 +252,7 @@ main {
   margin-left: 2rem;
   margin-right: 2rem;
   width: 100%;
+  max-width: 40rem;
 }
 
 .section-column {
@@ -288,12 +320,15 @@ footer a {
   scroll-margin-top: 5rem;
 }
 
-.section-expandable {
+.section {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+}
+
+.expandable {
+  flex-wrap: wrap;
 }
 
 figure {
@@ -302,23 +337,12 @@ figure {
   display: flex;
   flex-wrap: wrap;
   width: min-content;
+  height: fit-content;
   justify-content: center;
-  /* text-align: center; */
-  letter-spacing: 0;
 }
 
 .fig-subheading {
   margin-top: 0;
-}
-
-.centered-text {
-  max-width: 16rem;
-  align-self: center;
-}
-
-.fixed-width {
-  max-width: 40rem;
-  text-align: justify;
 }
 
 /* Media queries */
@@ -329,7 +353,7 @@ figure {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .sidebar {
     transform: translateX(-16rem);
   }
@@ -352,10 +376,6 @@ figure {
 
   #hamburger {
     display: none;
-  }
-
-  .text-caption {
-    text-align: center;
   }
 }
 
