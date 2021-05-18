@@ -286,6 +286,171 @@
             </figure>
           </section>
           <h2 class="h4">Conditions</h2>
+          <p>
+            In chess there are multiple ways that a game can end. Those ways
+            are:
+          </p>
+          <h3 class="h5">Checkmate</h3>
+          <p>
+            Checkmate is a position on the board where an attacking player has a
+            defending player’s king in check and there are:
+          </p>
+          <li>no legal squares to move the defending king to</li>
+          <li>no pieces to block the attacking piece</li>
+          <li>no way to capture the attacking piece</li>
+          <p>
+            If all of these conditions are met, then the defending king cannot
+            avoid capture and it is checkmate.
+          </p>
+          <section class="section">
+            <figure>
+              <img
+                src="assets/img/rules/checkmate.svg"
+                alt="example of checkmate"
+              />
+              <figcaption class="text-caption">
+                This is checkmate for white. It's retreat squares are covered by
+                the black queen, and there isn’t a piece that is able to capture
+                or block the black queen and the king cannot capture as the
+                black queen is defended by the bishop on e5.
+              </figcaption>
+            </figure>
+          </section>
+          <h3 class="h5">Resignation</h3>
+          <p>
+            A player in a losing position may wish to resign and concede the
+            game if they decide they objectively cannot save the position.
+          </p>
+          <section class="section">
+            <figure>
+              <img
+                src="assets/img/rules/resignation.svg"
+                alt="example of resignation"
+              />
+              <figcaption class="text-caption">
+                Black resigns in this position as after the white queen delivers
+                check on h8, the black king is forced to f7, and after another
+                check on h7, delivers check while also winning blacks queen.
+              </figcaption>
+            </figure>
+          </section>
+          <h3 class="h5">Timeout</h3>
+          <p>
+            It’s also possible to lose by timeout if playing with time control.
+          </p>
+          <p>
+            It doesn’t matter how much of an advantage a player may have, if a
+            player has run out of time, and the opponent has the minumum amount
+            of material to force a checkmate - then they lose the game.
+          </p>
+          <p>
+            If however, the opponent has insufficient material to force a
+            checkmate, then the game is drawn.
+          </p>
+          <p>
+            Timeout losses are more common in online chess where faster time
+            controls are more popular.
+          </p>
+          <h2 class="h4">Draws</h2>
+          <p>
+            In chess there are also multiple ways to draw a game. The different
+            types of draws are as follows:
+          </p>
+          <h3 class="h5">Stalemate</h3>
+          <p>
+            Stalemate is a position on the board in where it is a players turn
+            to move but has no legal moves available. This position is deemed as
+            a draw for both players.
+          </p>
+          <section class="section">
+            <figure>
+              <img
+                src="assets/img/rules/stalemate.svg"
+                alt="example of stalemate"
+              />
+              <figcaption class="text-caption">
+                White playing queen to c7 is stalemate for black as he cannot
+                move to any squares for they are covered by the white queen and
+                his pawn on h5 is blocked, therefore black has no legal moves to
+                play and the game is drawn.
+              </figcaption>
+            </figure>
+          </section>
+          <h3 class="h5">Insufficient Material</h3>
+          <p>
+            A game can also be drawn if both sides have do not have the
+            sufficient material possible to checkmate.
+          </p>
+          <section class="section">
+            <figure>
+              <img
+                src="assets/img/rules/no-material.svg"
+                alt="example of a draw by insufficient material with 2 kings and no material"
+              />
+              <figcaption class="text-caption">
+                This position is a draw as it is impossible for both for
+                checkmate to occur as neither side has any material.
+              </figcaption>
+            </figure>
+          </section>
+          <p>Such a position is known as a <strong>dead position</strong>.</p>
+          <p>Other dead positions incude:</p>
+          <section class="section">
+            <figure>
+              <img
+                src="assets/img/rules/king-and-knight.svg"
+                alt="example of a draw by insufficient material with 2 kings and 2 knights"
+              />
+              <figcaption class="text-caption">
+                King & minor piece (either knight or bishop) vs king
+              </figcaption>
+            </figure>
+          </section>
+          <section class="section">
+            <figure>
+              <img
+                src="assets/img/rules/king-and-bishop.svg"
+                alt="example of a draw by insufficient material with 2 kings and 2 bishops"
+              />
+              <figcaption class="text-caption">
+                King & bishop vs king & bishop
+                <strong>(of the same color)</strong>
+              </figcaption>
+            </figure>
+          </section>
+          <h3 class="h5">Repitition</h3>
+          <p>
+            The three-fold repitition rule states that if a position occurs
+            three times in the same game, either player may claim a draw. In
+            online chess the game is drawn automatically. The purpose of this
+            rule is that if the same position occurs three times, no real
+            progress is being made and the game could hypothetically continue
+            indefinitely.
+          </p>
+          <h3 class="h5">Fifty-move Rule</h3>
+          <p>
+            A player can claim a draw if no capture has been made and no pawn
+            has been moved in the last fifty moves. The purpose of this rule is
+            to prevent a player with no chance of winning from continuing the
+            game indefinitely or trying to win by tiring the opponent.
+          </p>
+          <!-- note: change this to custom block -->
+          <p>
+            On July 1st 2014 FIDE introduced the five-fold repitition rule and
+            the seventy-five move rule, in where if these conditions are met the
+            game is automatically drawn as opposed to a draw being claimed by
+            either player.
+          </p>
+          <h3 class="h5">Mutual Agreement</h3>
+          <p>
+            In chess, a player may offer a draw at any stage of a game. If the
+            opponent accepts, the outcome of the game is a draw by mutual
+            agreement.
+          </p>
+          <div class="page-nav-links">
+            <a class="page-link" href="setup.html"><strong>⬅</strong> Setup</a>
+            <a class="page-link" href="concepts.html">Concepts ➡</a>
+          </div>
         </article>
       </main>
       <footer>
