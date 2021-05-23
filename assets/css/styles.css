@@ -355,24 +355,37 @@ figure {
 
 /* Components */
 /* Accordion*/
+.accordian {
+  overflow: hidden;
+}
+
+.accordian-item {
+  overflow: hidden;
+  width: 100%;
+}
+
 .accordian-checkbox {
   display: none;
 }
 
 .accordian-title {
   cursor: pointer;
+  overflow: hidden;
 }
 
 .accordian-title:hover {
   color: var(--primary-color);
 }
 
-input + label + .accordian-content {
-  display: none;
+.accordian-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s;
 }
 
-input:checked + label + .accordian-content {
-  display: block;
+input:checked ~ .accordian-content {
+  max-height: 100vh;
+  /* font-size: var(--base-font-size); */
 }
 
 /* Media queries */
