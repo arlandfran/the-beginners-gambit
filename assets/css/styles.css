@@ -52,6 +52,10 @@ button:hover {
   cursor: pointer;
 }
 
+table {
+  width: 100%;
+}
+
 /* Typography */
 .h1 {
   margin-top: 1rem;
