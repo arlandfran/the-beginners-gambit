@@ -364,28 +364,42 @@ figure {
   width: 100%;
 }
 
-.accordian-checkbox {
+.accordian-toggle {
   display: none;
 }
 
 .accordian-title {
   cursor: pointer;
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--h5);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .accordian-title:hover {
   color: var(--primary-color);
 }
 
+.accordian-title::after {
+  content: "˅";
+  align-self: center;
+  transition: linear 0.2s;
+}
+
 .accordian-content {
   overflow: hidden;
   max-height: 0;
-  transition: all 0.5s;
+  transition: linear 0.2s;
+}
+
+input:checked ~ .accordian-title::after {
+  transform: rotate(-180deg);
 }
 
 input:checked ~ .accordian-content {
   max-height: 100vh;
-  /* font-size: var(--base-font-size); */
 }
 
 /* Media queries */
