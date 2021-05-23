@@ -353,6 +353,28 @@ figure {
   margin-top: 0;
 }
 
+/* Components */
+/* Accordion*/
+.accordian-checkbox {
+  display: none;
+}
+
+.accordian-title {
+  cursor: pointer;
+}
+
+.accordian-title:hover {
+  color: var(--primary-color);
+}
+
+input + label + .accordian-content {
+  display: none;
+}
+
+input:checked + label + .accordian-content {
+  display: block;
+}
+
 /* Media queries */
 @media screen and (min-width: 425px) {
   figure {
