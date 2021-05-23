@@ -354,51 +354,57 @@ figure {
 }
 
 /* Components */
+
 /* Accordion*/
-.accordian {
+.accordion {
   overflow: hidden;
+  border: 2px solid black;
+  border-bottom: none;
 }
 
-.accordian-item {
+.accordion-item {
   overflow: hidden;
   width: 100%;
 }
 
-.accordian-toggle {
+.accordion-toggle {
   display: none;
 }
 
-.accordian-title {
+.accordion-title {
   cursor: pointer;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
   font-size: var(--h5);
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.accordian-title:hover {
+.accordion-title::after {
+  content: "\02C5";
+  align-self: center;
+  transition: linear 0.3s;
+}
+
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: ease-in-out 0.4s;
+  background: white;
+  border-bottom: 2px solid black;
+}
+
+input:checked ~ .accordion-title {
   color: var(--primary-color);
 }
 
-.accordian-title::after {
-  content: "˅";
-  align-self: center;
-  transition: linear 0.2s;
-}
-
-.accordian-content {
-  overflow: hidden;
-  max-height: 0;
-  transition: linear 0.2s;
-}
-
-input:checked ~ .accordian-title::after {
+input:checked ~ .accordion-title::after {
   transform: rotate(-180deg);
 }
 
-input:checked ~ .accordian-content {
+input:checked ~ .accordion-content {
   max-height: 100vh;
 }
 
