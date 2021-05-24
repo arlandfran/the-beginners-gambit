@@ -166,6 +166,10 @@ figcaption {
   max-width: 30rem;
 }
 
+.full-width {
+  width: 100%;
+}
+
 .indent {
   text-indent: 2rem;
   list-style-position: inside;
@@ -277,10 +281,6 @@ main {
   max-width: 40rem;
 }
 
-.section-column {
-  /* width: 100%; */
-}
-
 footer {
   display: flex;
   left: 0;
@@ -342,7 +342,7 @@ footer a {
   scroll-margin-top: 5rem;
 }
 
-.section {
+.fig-container {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
