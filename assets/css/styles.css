@@ -399,7 +399,7 @@ figure {
 .accordion-title::after {
   content: "\02C5";
   align-self: center;
-  transition: linear 0.3s;
+  transition: ease 0.35s;
 }
 
 .accordion-content {
