@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Beginner's Gambit | Mating Patterns</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="navbar">
+        <a class="logo" href="index.html"
+          >The Beg<span
+            ><svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z"
+              />
+              <path
+                d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z"
+              /></svg></span
+          >nner's Gambit</a
+        >
+        <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
+          <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <svg
+          width="32"
+          height="32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
+            fill="#000"
+          />
+          <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
+        </svg>
+      </header>
+
+      <aside class="sidebar">
+        <nav>
+          <ul id="sidebar-links">
+            <li class="sidebar-link"><a href="index.html">Home</a></li>
+            <li class="sidebar-link"><a href="setup.html">Setup</a></li>
+            <li class="sidebar-link"><a href="rules.html">Rules</a></li>
+            <li class="sidebar-link"><a href="concepts.html">Concepts</a></li>
+            <li class="sidebar-link">
+              <a href="opening-principles.html">Opening Principles</a>
+            </li>
+            <li class="sidebar-link"><a href="tactics.html">Tactics</a></li>
+            <ul class="sidebar-link active">
+              <a href="mating-patterns.html">Mating Patterns</a>
+              <ul class="sidebar-subheader-group">
+                <li>
+                  <a href="mating-patterns.html#queen-combinations"
+                    >Queen Combinations
+                  </a>
+                </li>
+                <ul>
+                  <li class="sidebar-subheader-link">
+                    <a href="mating-patterns.html#queen-and-knight">
+                      Queen and Knight
+                    </a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="mating-patterns.html#queen-and-bishop">
+                      Queen and Bishop
+                    </a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="mating-patterns.html#queen-and-pawn">
+                      Queen and Pawn
+                    </a>
+                  </li>
+                </ul>
+                <li>
+                  <a href="mating-patterns.html#rook-combinations">
+                    Rook Combinations
+                  </a>
+                </li>
+                <ul>
+                  <li class="sidebar-subheader-link">
+                    <a href="mating-patterns.html#2-rook-mate"> 2 Rook Mate </a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="mating-patterns.html#back-rank-mate">
+                      Back Rank Mate
+                    </a>
+                  </li>
+                </ul>
+                <li>
+                  <a href="mating-patterns.html#smothered-mate">
+                    Smothered Mate
+                  </a>
+                </li>
+                <li>
+                  <a href="mating-patterns.html#suffocation-mate">
+                    Suffocation Mate
+                  </a>
+                </li>
+              </ul>
+            </ul>
+            <li class="sidebar-link"><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main>
+        <article class="page">
+          <h1 class="h3">Mating Patterns</h1>
+          <p>
+            In chess there are several patterns that occur in checkmates, and
+            they occur frequently enough that they all have their own names.
+          </p>
+          <p>
+            Learning these patterns are important as they will help you
+            recognise the possibilites of checkmate when they arise in your
+            games.
+          </p>
+          <p>
+            There are many checkmate patterns out there but here are some of the
+            ones that a beginner should know.
+          </p>
+          <section>
+            <h2 class="h4 subheader-link" id="queen-combinations">
+              Queen Combinations
+            </h2>
+            <p>
+              The queen is the most deadly of pieces for performing a checkmate
+              - at close range, the queen can trap the enemy king at the side of
+              the board and cover all the king’s escape squares by itself.
+              Despite this power, the queen can still be captured like any other
+              piece, so usually the queen relies on the support of a second
+              piece when delivering checkmate.
+            </p>
+            <p>
+              For beginners the most common queen mates will occur on the h7 and
+              g7 squares, however you can apply these queen combinations from
+              anywhere on the board if you have the pieces available.
+            </p>
+            <div class="fig-container expandable full-width">
+              <figure>
+                <img
+                  src="assets/img/mating-patterns/h7-pawn-structure.svg"
+                  alt="Illustration of a common black pawn structure "
+                />
+                <p class="align-center">
+                  This is a normal, healthy kingside pawn structure for Black,
+                  and though it’s usually quite safe, experienced players
+                  understand that h7 is vulnerable since it is only defended by
+                  its King. This means that if white’s Queen can attack h7 with
+                  the protection of one of its other pieces, white can look for
+                  checkmate.
+                </p>
+              </figure>
+
+              <figure>
+                <img
+                  src="assets/img/mating-patterns/g7-pawn-structure.svg"
+                  alt="Illustration of a common black pawn structure with a fianchettoed bishop"
+                />
+                <p class="align-center">
+                  This structure is usually seen when Black finachettos his dark
+                  squared Bishop, as illustrated in the next above. If you are
+                  able to remove the dark squared bishop from play or the bishop
+                  is not on that diagonal, then that means the f6, g7, h6
+                  squares are all potentially vulnerable.
+                </p>
+              </figure>
+            </div>
+            <section>
+              <h3 class="h5 subheader-link" id="queen-and-knight">
+                Queen and Knight
+              </h3>
+              <div class="fig-container expandable full-width">
+                <figure>
+                  <img
+                    src="assets/img/mating-patterns/h7-queen-knight-mate.svg"
+                    alt="Illustration of a commmon queen and knight mate on the h7 square"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="assets/img/mating-patterns/g7-queen-knight-mate.svg"
+                    alt="Illustration of a commmon queen and knight mate on the g7 square"
+                  />
+                </figure>
+              </div>
+            </section>
+            <section>
+              <h3 class="h5 subheader-link" id="queen-and-bishop">
+                Queen and Bishop
+              </h3>
+              <div class="fig-container expandable full-width">
+                <figure>
+                  <img
+                    src="assets/img/mating-patterns/h7-queen-bishop-mate.svg"
+                    alt="Illustration of a commmon queen and bishop mate on the h7 square"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="assets/img/mating-patterns/g7-queen-bishop-mate.svg"
+                    alt="Illustration of a commmon queen and bishop mate on the g7 square"
+                  />
+                </figure>
+              </div>
+            </section>
+            <section>
+              <h3 class="h5 subheader-link" id="queen-and-pawn">
+                Queen and Pawn
+              </h3>
+              <div class="fig-container expandable full-width">
+                <figure>
+                  <img
+                    src="assets/img/mating-patterns/h7-queen-pawn-mate.svg"
+                    alt="Illustration of a commmon queen and pawn mate on the h7 square"
+                  />
+                </figure>
+                <figure>
+                  <img
+                    src="assets/img/mating-patterns/g7-queen-pawn-mate.svg"
+                    alt="Illustration of a commmon queen and pawn mate on the g7 square"
+                  />
+                </figure>
+              </div>
+            </section>
+          </section>
+          <section>
+            <h2 class="h4 subheader-link" id="rook-combinations">
+              Rook Combinations
+            </h2>
+            <p>
+              Rooks are less powerful than the queen, and therefore usually need
+              at least one other piece to cover the enemy king's escape squares.
+            </p>
+            <section>
+              <h3 class="h5 subheader-link" id="2-rook-mate">2 Rook Mate</h3>
+              <div class="fig-container">
+                <figure>
+                  <img
+                    src="assets/img/mating-patterns/ladder-mate.svg"
+                    alt="Illustration of the ladder mate with 2 rooks"
+                  />
+                </figure>
+              </div>
+              <p>
+                This is a pattern that commonly appears in the end game. The
+                example above is most commonly referred to as the the ladder
+                mate as you force the king to move file-by-file until it is
+                checkmate. But there are multiple ways you can mate your
+                opponent utilising the cutting off of files with your rooks.
+              </p>
+              <div class="fig-container expandable">
+                <figure class="full-width">
+                  <img
+                    src="assets/img/mating-patterns/2-rook-mate.svg"
+                    alt="Illustration of the checkmat with 2 rooks"
+                  />
+                  <figcaption class="text-caption align-center text-left">
+                    White’s rook to h3 is checkmate as the entire g file is cut
+                    off by the rook on g1 and black has no pieces to block the
+                    check. You can also execute this mate with a queen rather
+                    than a rook.
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+            <section>
+              <h3 class="h5 subheader-link" id="back-rank-mate">
+                Back Rank Mate
+              </h3>
+              <p>
+                The back rank checkmate is another common pattern that occurs
+                when a king is trapped behind its own pawns and gets mated by
+                either a rook or queen.
+              </p>
+              <div class="fig-container">
+                <figure>
+                  <img
+                    src="assets/img/mating-patterns/queen-back-rank-mate.svg"
+                    alt="Illustration of a back rank mate with a queen"
+                  />
+                </figure>
+              </div>
+              <p>
+                In most situations the pawn shield does a great job to protect
+                the king, but you should be aware of the potential back rank
+                weakness.
+              </p>
+              <p>
+                One way to deal with this weakness is to play a move known as
+                creating “luft” (German word for “air”), a chess term which
+                means you open an escape square for your king, usually by
+                advancing the g or h pawn one square.
+              </p>
+              <div class="fig-container expandable">
+                <figure class="full-width">
+                  <img
+                    src="assets/img/mating-patterns/rook-back-rank-mate.svg"
+                    alt="Illustration of a back rank mate with a rook"
+                  />
+                  <figcaption class="text-caption align-center text-left">
+                    In this example black’s king cannot escape to g7 as the that
+                    square is cut off by white’s bishop on a1.
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+          </section>
+          <section>
+            <h2 class="h4 subheader-link" id="smothered-mate">
+              Smothered Mate
+            </h2>
+            <p>
+              The smothered mate is a checkmate pattern that is only possible if
+              the enemy king is completely surrounded by his own pieces. It also
+              features the unique jumping ability of the knight. Though a unique
+              checkmate, it is a suprisingly common checkmate.
+            </p>
+            <div class="fig-container expandable full-width">
+              <figure>
+                <img
+                  src="assets/img/mating-patterns/smothered-mate.svg"
+                  alt="Illustration of a smothered mate"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  You can see that black is completely blocked in by its own
+                  pieces and has no way to capture the knight therefore leading
+                  to checkmate.
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="assets/img/mating-patterns/smothered-mate-combination.svg"
+                  alt="Illustration of a smothered mate combination with a knight and queen"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  This examplee showcasing the queen and knight working together
+                  illustrates a typical maneuver used to exceute the smothered
+                  checkmate
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 subheader-link" id="suffocation-mate">
+              Suffocation Mate
+            </h2>
+            <p>
+              The suffocation mate is a variation of the smothered mate but
+              involves the use of a bishop (or queen) and knight to execute.
+            </p>
+            <div class="fig-container expandable full-width">
+              <figure>
+                <img
+                  src="assets/img/mating-patterns/suffocation-mate.svg"
+                  alt="Illustration of a suffocation mate"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  Here the king is mostly obstructed by its own pieces and the
+                  white bishop covers the only open squares from a distance.
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="assets/img/mating-patterns/suffocation-mate-combination.svg"
+                  alt="Illustration of a suffocation mate combination with a rook, bishop and knight"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  This was a game the first official world chess champion,
+                  Wilhelm Steinitz, played blindfolded. Here you can see that a
+                  smothered check is possible through knight to e7 but it is
+                  defended by black’s queen. However Steinitz brilliantly played
+                  rook to g3, delivering check and forcing black to capture the
+                  rook with queen to g3, removing the defender of the e7 square.
+                  With this white can finally play knight to e7 and deliver a
+                  suffocation mate.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <div class="page-nav-links">
+            <a class="page-link" href="tactics.html">⬅ Tactics</a>
+            <a class="page-link" href="about.html">About ➡</a>
+          </div>
+        </article>
+      </main>
+
+      <footer>
+        <a
+          href="https://github.com/arlandfran/the-beginners-gambit"
+          target="_blank"
+          >Github
+          <span id="external-link"
+            ><svg id="box-arrow" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13 10V9h-2v1h2zM6.5 5h1V3h-1v2zM13 3.5h1v-.9l-.89-.1-.11 1zM11 14H2v2h9v-2zm-9 0V5H0v9h2zm9-4v4h2v-4h-2zM2 5h4.5V3H2v2zm0 9H0c0 1.1.9 2 2 2v-2zm9 2a2 2 0 002-2h-2v2zM2 5V3a2 2 0 00-2 2h2zm3.95 6.04l7.71-6.79-1.32-1.5-7.7 6.8 1.31 1.5zM12 3.5V8h2V3.5h-2zm1.11-1L8.61 2l-.22 2 4.5.5.22-2z"
+              /></svg></span
+        ></a>
+      </footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
