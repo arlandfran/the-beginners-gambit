@@ -1,190 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Beginner's Gambit | Setup</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <div id="app">
-      <header class="navbar">
-        <a class="logo" href="index.html"
-          >The Beg<span
-            ><svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z"
-              />
-              <path
-                d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z"
-              /></svg></span
-          >nner's Gambit</a
-        >
-        <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
-          <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z"
-            />
-          </svg>
-        </button>
-        <svg
-          width="32"
-          height="32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
-            fill="#000"
-          />
-          <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
-        </svg>
-      </header>
-      <aside class="sidebar">
-        <nav>
-          <ul id="sidebar-links">
-            <li class="sidebar-link"><a href="index.html">Home</a></li>
-            <ul class="sidebar-link active">
-              <li>
-                <a href="setup.html">Setup</a>
-              </li>
-              <ul class="sidebar-subheader-group">
-                <li class="sidebar-subheader-link">
-                  <a href="setup.html#orient-the-board">Orient the board</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="setup.html#place-the-pawns">Place the pawns</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="setup.html#place-the-rooks">Place the rooks</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="setup.html#place-the-knights-&-bishops">Place the knights & bishops</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="setup.html#place-the-king-&-queen">Place the king & queen</a>
-                </li>
-              </ul>
-            </ul>
-            <li class="sidebar-link"><a href="rules.html">Rules</a></li>
-            <li class="sidebar-link"><a href="#">Concepts</a></li>
-            <li class="sidebar-link"><a href="#">Opening Principles</a></li>
-            <li class="sidebar-link"><a href="#">Tactics</a></li>
-            <li class="sidebar-link"><a href="#">Mating Patterns</a></li>
-            <li class="sidebar-link"><a href="#">About</a></li>
-          </ul>
-        </nav>
-      </aside>
 
-      <main>
-        <article class="page">
-          <h1 class="h3">Setting up the chess board</h1>
-          <ol id="setup-list">
-              <li class="h4 subheader-link" id="orient-the-board">
-                Orient the board
-                <section class="section expandable">
-                <figure>
-                    <img src="assets/img/setup/orientation.svg" alt="a chess board with arrows highlighting the top left and bottom right corners">
-                  </figure>
-                    <p class="section-column centered-text">
-                      <strong>Important!</strong><br />Both players should have a
-                      light square on the bottom right corner facing toward them.<br /><br /><strong
-                        >Why?</strong
-                      ><br />This makes it so the queen is placed on her own colored
-                      square.
-                    </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Beginner's Gambit | Setup</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <div id="app">
+    <header class="navbar">
+      <a class="logo" href="index.html">The Beg<span><svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z" />
+            <path d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z" />
+          </svg></span>nner's Gambit</a>
+      <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
+        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z" />
+        </svg>
+      </button>
+      <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
+          fill="#000" />
+        <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
+      </svg>
+    </header>
+    <aside class="sidebar">
+      <nav>
+        <ul id="sidebar-links">
+          <li class="sidebar-link"><a href="index.html">Home</a></li>
+          <ul class="sidebar-link active">
+            <li>
+              <a href="setup.html">Setup</a>
+            </li>
+            <ul class="sidebar-subheader-group">
+              <li class="sidebar-subheader-link">
+                <a href="setup.html#orient-the-board">Orient the board</a>
+              </li>
+              <li class="sidebar-subheader-link">
+                <a href="setup.html#place-the-pawns">Place the pawns</a>
+              </li>
+              <li class="sidebar-subheader-link">
+                <a href="setup.html#place-the-rooks">Place the rooks</a>
+              </li>
+              <li class="sidebar-subheader-link">
+                <a href="setup.html#place-the-knights-&-bishops">Place the knights & bishops</a>
+              </li>
+              <li class="sidebar-subheader-link">
+                <a href="setup.html#place-the-king-&-queen">Place the king & queen</a>
+              </li>
+            </ul>
+          </ul>
+          <li class="sidebar-link"><a href="rules.html">Rules</a></li>
+          <li class="sidebar-link"><a href="concepts.html">Concepts</a></li>
+          <li class="sidebar-link"><a href="#">Opening Principles</a></li>
+          <li class="sidebar-link"><a href="#">Tactics</a></li>
+          <li class="sidebar-link"><a href="#">Mating Patterns</a></li>
+          <li class="sidebar-link"><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <article class="page">
+        <h1 class="h3">Setting up the chess board</h1>
+        <ol id="setup-list">
+          <li class="h4 subheader-link" id="orient-the-board">
+            Orient the board
+            <div class="fig-container expandable">
+              <figure>
+                <img src="assets/img/setup/orientation.svg"
+                  alt="a chess board with arrows highlighting the top left and bottom right corners">
+              </figure>
+              <p class=" align-center">
+                <strong>Important!</strong><br />Both players should have a
+                light square on the bottom right corner facing toward them.<br /><br /><strong>Why?</strong><br />This
+                makes it so the queen is placed on her own colored
+                square.
+              </p>
               </section>
               <div class="flex-center">
                 <p class="fixed-width">
-                  The chess board is also divided into <strong>ranks</strong> and <strong>files</strong>. <strong>Ranks</strong> represent the vertical rows of the board <strong>1➔8</strong> whereas <strong>files</strong> represent the columns <strong>a➔h</strong>.
+                  The chess board is also divided into <strong>ranks</strong> and <strong>files</strong>.
+                  <strong>Ranks</strong> represent the vertical rows of the board <strong>1➔8</strong> whereas
+                  <strong>files</strong> represent the columns <strong>a➔h</strong>.
               </div>
               </figcaption>
-              <section class="section expandable">
+              <div class="fig-container expandable">
                 <figure>
-                  <p class="section-column h5 fig-subheading">Ranks</p>
-                  <img
-                    src="assets/img/setup/ranks.svg"
-                    alt="illustration of ranks on a chess board"
-                  />
-                  <figcaption class="text-caption">The lines highlight the <strong>1st</strong> & <strong>4th</strong> ranks respectively.</figcaption>
+                  <p class=" h5 fig-subheading">Ranks</p>
+                  <img src="assets/img/setup/ranks.svg" alt="illustration of ranks on a chess board" />
+                  <figcaption class="text-caption">The lines highlight the <strong>1st</strong> & <strong>4th</strong>
+                    ranks respectively.</figcaption>
                 </figure>
-                  <figure class="">
-                    <p class="section-column h5 fig-subheading">Files</p>
-                    <img src="assets/img/setup/files.svg" alt="illustration of files on a chess board">
-                    <figcaption class="text-caption">
-                        The lines highlight the <strong>c</strong> & <strong>e</strong> files respectively.
-                    </figcaption>
+                <figure class="">
+                  <p class=" h5 fig-subheading">Files</p>
+                  <img src="assets/img/setup/files.svg" alt="illustration of files on a chess board">
+                  <figcaption class="text-caption">
+                    The lines highlight the <strong>c</strong> & <strong>e</strong> files respectively.
+                  </figcaption>
                 </figure>
-              </section></li>
-              <li class="h4 subheader-link" id="place-the-pawns">
-                Place the pawns
-                <section class="section expandable">
-                <figure>
-                  <img src="assets/img/setup/pawns.svg" alt="chess pawns placed on a chess board">
-                </figure>
-                <p class="section-column centered-text">The <strong>white pawns</strong> are placed across the <strong>2nd rank</strong> and <strong>black pawns</strong> across the <strong>7th rank</strong>.</p>
-              </section></li>
-              <li class="h4 subheader-link" id="place-the-rooks">
-                Place the rooks
-                <section class="section expandable">
-                  <figure>
-                    <img src="assets/img/setup/rooks.svg" alt="chess rooks placed on a chess board">
-                  </figure>
-                  <p class="section-column centered-text">
-                    <strong>Rooks</strong> go on the corners of the board on their respective sides.
-                  </p>
                 </section>
-              </li>
-              <li class="h4 subheader-link" id="place-the-knights-&-bishops">
-                Place the knights and bishops
-                <section class="section expandable">
-                  <figure>
-                    <img src="assets/img/setup/minor-pieces.svg" alt="chess knights and bishops placed on a chess board">
-                  </figure>
-                  <p class="section-column centered-text">
-                    The <strong>knight</strong> and <strong>bishop</strong> are what’s known as “minor pieces”. The knights go next to the rooks and the bishops the square after.
-                  </p>
-                </section>
-              </li>
-              <li class="h4 subheader-link" id="place-the-king-&-queen">
-                place the king and queen
-                <section class="section expandable">
-                  <figure>
-                    <img src="assets/img/setup/finished-setup.svg" alt="chess kings and queens placed on a chess board">
-                  </figure>
-                  <p class="section-column centered-text">
-                    The <strong>queen</strong> is always placed on a square of her own color. The <strong>king</strong> slots into the last remaining square.
-                  </p>
-                </section>
-              </li>
-          </ol>
-          <div class="page-nav-links">
-            <a class="page-link" href="index.html"><strong>⬅</strong> Home</a>
-            <a class="page-link" href="rules.html">Rules ➡</a>
-          </div>
-        </article>
-      </main>
+          </li>
+          <li class="h4 subheader-link" id="place-the-pawns">
+            Place the pawns
+            <div class="fig-container expandable">
+              <figure>
+                <img src="assets/img/setup/pawns.svg" alt="chess pawns placed on a chess board">
+              </figure>
+              <p class=" align-center">The <strong>white pawns</strong> are placed across the <strong>2nd
+                  rank</strong> and <strong>black pawns</strong> across the <strong>7th rank</strong>.</p>
+              </section>
+          </li>
+          <li class="h4 subheader-link" id="place-the-rooks">
+            Place the rooks
+            <div class="fig-container expandable">
+              <figure>
+                <img src="assets/img/setup/rooks.svg" alt="chess rooks placed on a chess board">
+              </figure>
+              <p class=" align-center">
+                <strong>Rooks</strong> go on the corners of the board on their respective sides.
+              </p>
+              </section>
+          </li>
+          <li class="h4 subheader-link" id="place-the-knights-&-bishops">
+            Place the knights and bishops
+            <div class="fig-container expandable">
+              <figure>
+                <img src="assets/img/setup/minor-pieces.svg" alt="chess knights and bishops placed on a chess board">
+              </figure>
+              <p class=" align-center">
+                The <strong>knight</strong> and <strong>bishop</strong> are what’s known as “minor pieces”. The knights
+                go next to the rooks and the bishops the square after.
+              </p>
+              </section>
+          </li>
+          <li class="h4 subheader-link" id="place-the-king-&-queen">
+            place the king and queen
+            <div class="fig-container expandable">
+              <figure>
+                <img src="assets/img/setup/finished-setup.svg" alt="chess kings and queens placed on a chess board">
+              </figure>
+              <p class=" align-center">
+                The <strong>queen</strong> is always placed on a square of her own color. The <strong>king</strong>
+                slots into the last remaining square.
+              </p>
+              </section>
+          </li>
+        </ol>
+        <div class="page-nav-links">
+          <a class="page-link" href="index.html"><strong>⬅</strong> Home</a>
+          <a class="page-link" href="rules.html">Rules ➡</a>
+        </div>
+      </article>
+    </main>
 
-      <footer>
-        <a
-          href="https://github.com/arlandfran/the-beginners-gambit"
-          target="_blank"
-          >Github
-          <span id="external-link"
-            ><svg id="box-arrow" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M13 10V9h-2v1h2zM6.5 5h1V3h-1v2zM13 3.5h1v-.9l-.89-.1-.11 1zM11 14H2v2h9v-2zm-9 0V5H0v9h2zm9-4v4h2v-4h-2zM2 5h4.5V3H2v2zm0 9H0c0 1.1.9 2 2 2v-2zm9 2a2 2 0 002-2h-2v2zM2 5V3a2 2 0 00-2 2h2zm3.95 6.04l7.71-6.79-1.32-1.5-7.7 6.8 1.31 1.5zM12 3.5V8h2V3.5h-2zm1.11-1L8.61 2l-.22 2 4.5.5.22-2z"
-              /></svg></span
-        ></a>
-      </footer>
-    </div>
+    <footer>
+      <a href="https://github.com/arlandfran/the-beginners-gambit" target="_blank">Github
+        <span id="external-link"><svg id="box-arrow" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13 10V9h-2v1h2zM6.5 5h1V3h-1v2zM13 3.5h1v-.9l-.89-.1-.11 1zM11 14H2v2h9v-2zm-9 0V5H0v9h2zm9-4v4h2v-4h-2zM2 5h4.5V3H2v2zm0 9H0c0 1.1.9 2 2 2v-2zm9 2a2 2 0 002-2h-2v2zM2 5V3a2 2 0 00-2 2h2zm3.95 6.04l7.71-6.79-1.32-1.5-7.7 6.8 1.31 1.5zM12 3.5V8h2V3.5h-2zm1.11-1L8.61 2l-.22 2 4.5.5.22-2z" />
+          </svg></span></a>
+    </footer>
+  </div>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

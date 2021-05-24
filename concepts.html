@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Beginner's Gambit | Concepts</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <div id="app">
+    <header class="navbar">
+      <a class="logo" href="index.html">The Beg<span><svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z" />
+            <path d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z" />
+          </svg></span>nner's Gambit</a>
+      <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
+        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z" />
+        </svg>
+      </button>
+      <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
+          fill="#000" />
+        <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
+      </svg>
+    </header>
+
+    <aside class="sidebar">
+      <nav>
+        <ul id="sidebar-links">
+          <li class="sidebar-link"><a href="index.html">Home</a></li>
+          <li class="sidebar-link"><a href="setup.html">Setup</a></li>
+          <li class="sidebar-link"><a href="rules.html">Rules</a></li>
+          <ul class="sidebar-link active">
+            <li>
+              <a href="concepts.html">Concepts</a>
+            </li>
+            <ul class="sidebar-subheader-group">
+              <li>
+                <a href="concepts.html#core-concepts">Core Concepts</a>
+              </li>
+              <li>
+                <a href="concepts.html#phases-of-the-game">Phases of the Game</a>
+              </li>
+              <li>
+                <a href="concepts.html#material-advantage">Material Advantage</a>
+              </li>
+              <li>
+                <a href="concepts.html#tempo">Tempo</a>
+              </li>
+              <ul>
+                <a href="concepts.html#pawn-structure">Pawn Structure</a>
+                <li class="sidebar-subheader-link">
+                  <a href="concepts.html#isolated-pawns">Isolated Pawns</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="concepts.html#doubled-pawns">Doubled Pawns</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="concepts.html#backward-pawns">Backward Pawns</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="concepts.html#connected-pawns">Connected Pawns</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="concepts.html#pawn-chains">Pawn Chains</a>
+                </li>
+                <li class="sidebar-subheader-link">
+                  <a href="concepts.html#passed-pawns">Passed Pawns</a>
+                </li>
+              </ul>
+              <li>
+                <a href="concepts.html#piece-activity">Piece Activity</a>
+              </li>
+              <li>
+                <a href="concepts.html#king-safety">King Safety</a>
+              </li>
+            </ul>
+          </ul>
+          <li class="sidebar-link"><a href="opening-principles.html">Opening Principles</a></li>
+          <li class="sidebar-link"><a href="#">Tactics</a></li>
+          <li class="sidebar-link"><a href="#">Mating Patterns</a></li>
+          <li class="sidebar-link"><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <article class="page">
+        <section>
+          <h1 class="h3 subheader-link" id="core-concepts">Core Concepts</h1>
+          <p>
+            Now that you’ve learnt the rules, it’s time to take a look at some
+            core concepts that you should understand as a beginner.
+          </p>
+          <p>
+            Understanding these concepts will not only improve your gameplay but
+            also increase your enjoyment of the game as you naturally improve,
+            learn to spot tactics and win games. So let’s take a look!
+          </p>
+        </section>
+        <section>
+          <h2 class="h4 subheader-link" id="phases-of-the-game">Phases of the Game</h2>
+          <p>
+            The game can be divided into three phases. Each phase has its own
+            strategic concerns and a lot of theory has been explored over the
+            years on each of these phases.
+          </p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <input type="checkbox" class="accordion-toggle" id="opening" />
+              <label for="opening" class="accordion-title">
+                The Opening
+              </label>
+              <div class="accordion-content px-1">
+                <p>
+                  The opening refers to the first moves of the game. There are 3
+                  main strategic aims in the opening:
+                </p>
+                <ol class="indent">
+                  <li>Develop your pieces</li>
+                  <li>Control the center</li>
+                  <li>Bring your king to safety</li>
+                </ol>
+                <p>
+                  Development of your pieces simply means moving them from their
+                  starting squares onto more advantageous squares, and control
+                  of the center is another important opening principle that can
+                  be achieved by developing your pieces toward the center.
+                  Castling is the most common way of getting your king to safety
+                  and castling early is recommended as an exposed king can lead
+                  to troublesome attacks if you’re not careful.
+                </p>
+                <div class="page-nav-link">
+                  <a href="#" class="page-link">Opening Principles ➡</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" class="accordion-toggle" id="middlegame" />
+              <label for="middlegame" class="accordion-title">
+                The Middlegame
+              </label>
+              <div class="accordion-content px-1">
+                <p>
+                  There isn’t a defined point at which the game transitions from
+                  the opening to the middlegame, but generally it’s when most or
+                  all of the pieces have moved from their starting squares and
+                  the king has been moved to safety.
+                </p>
+                <p>
+                  The middlegame is the most exciting part of chess as it’s the
+                  phase of the game that feels most like a strategic battle.
+                  There are no set rules on the best way to approach the middle
+                  game, as there are so many different positions that can occur
+                  on the board.
+                </p>
+                <p>
+                  It’s all about tactics, tactics, tactics. And the player that
+                  can come up with and co-ordinate the best combination of moves
+                  will win the game.
+                </p>
+                <div class="page-nav-link">
+                  <a href="#" class="page-link">Tactics ➡</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <input type="checkbox" class="accordion-toggle" id="endgame" />
+              <label for="endgame" class="accordion-title">
+                The Endgame
+              </label>
+              <div class="accordion-content px-1">
+                <p>
+                  Similar to the middlegame there isn’t an exact definition of
+                  when the game transitions into the endgame, but at this
+                  stage most of the pieces will have been captured, the kings
+                  are active and it becomes more difficult to deliver
+                  checkmate.
+                </p>
+                <p>
+                  This usually shifts the the strategic focus from attacking
+                  the king to escorting your pawns to the end of the board to
+                  promote to a queen.
+                </p>
+                <div class="page-nav-link">
+                  <a href="#" class="page-link">Mating Patterns ➡</a>
+                </div>
+              </div>
+              </label>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="h4 subheader-link" id="material-advantage">Material Advantage</h2>
+          <table>
+            <tr>
+              <th>
+                <img src="assets/img/concepts/pawn.svg" alt="Pawn" class="material-icon">
+              </th>
+              <th>
+                <img src="assets/img/concepts/knight.svg" alt="Knight" class="material-icon">
+              </th>
+              <th>
+                <img src="assets/img/concepts/bishop.svg" alt="Bishop" class="material-icon">
+              </th>
+              <th>
+                <img src="assets/img/concepts/rook.svg" alt="Rook" class="material-icon">
+              </th>
+              <th>
+                <img src="assets/img/concepts/queen.svg" alt="Queen" class="material-icon">
+              </th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>3</td>
+              <td>3</td>
+              <td>5</td>
+              <td>9</td>
+            </tr>
+          </table>
+          <p>
+            Each piece in the game has an assigned value relative to that of a pawn which is worth 1 point.
+          </p>
+          <p>
+            Knights & bishops are both worth 3 points and are known as <strong>minor pieces</strong>.
+          </p>
+          <p>
+            Rooks are worth 5 points and the queen 9 points, they are known as <strong>major pieces</strong>.
+          </p>
+          <p>
+            The king does not have a value because it cannot be captured, though it is able to capture other pieces if
+            able.
+          </p>
+          <p>
+            While the piece values are not formally part of the rules, being able to calculate material will help you
+            recognise when an exchange is winning, when you have a material advantage on the board and to execute
+            multiple
+            attacks on the enemy king with your material lead.
+          </p>
+          <p>
+            Do keep in mind however that the objective of the game is to checkmate the king, not win the most material!
+          </p>
+        </section>
+        <section>
+          <h2 class="h4 subheader-link" id="tempo">Tempo</h2>
+          <p>
+            In chess, a tempo is regarded as a “turn” or “move”. The concept of tempo is important in chess as when one
+            player gains a tempo, it effectively means that his opponent has been forced to waste one or more moves.
+            This is usually done by developing a piece that attacks another piece of <strong>greater value</strong>,
+            this results in the more valuable piece having to move or be captured.
+          </p>
+          <p>
+            The benefit of gaining a tempo is that it enables a player to develop their pieces more swiftly and
+            effectively. In the opening part of a game, this usually results in a lead in development.
+          </p>
+          <p>
+            This is a example showcasing how white can lose tempo with what looks like a simple developing move. The
+            reason this is a mistake is black can simply play pawn to d5 and now white has to waste a tempo bringing
+            the bishop to safety.
+          </p>
+          <div class="fig-container">
+            <figure>
+              <img src="assets/img/concepts/lose-tempo.svg" alt="Illustration of white losing tempo">
+            </figure>
+          </div>
+
+          <p>
+            Tempo is gained when you make a move that forces your opponent to respond. The more you can force your
+            opponent to respond to your moves is less time for them setting up their own strategies and attacks.
+          </p>
+          <p>
+            In this example black wants to play knight captures bishop e3. Why? Because after the queen captures
+            back, then black can play bishop d4 - an absolute pin on white’s queen. However white is currently
+            threatening to take black’s queen on a5. Here black can play queen to h5. This move not only brings the
+            the queen to safety but also makes a threatens checkmate at the same time. Thus white is forced to
+            defend against it, getting black the tempo it needs to play knight takes bishop e3.
+          </p>
+          <div class="fig-container">
+            <figure>
+              <img src="assets/img/concepts/gain-tempo.svg" alt="Illustration of black gaining tempo">
+            </figure>
+          </div>
+        </section>
+        <section>
+          <h2 class="h4 subheader-link" id="pawn-structure">Pawn Structure</h2>
+          <p>
+            Pawn structures are more of an intermediate concept but it’s something to keep in mind as you start to gain
+            experience with chess. A pawn structure is the configuration of pawns on the chess board and since pawns are
+            the least mobile of all the pieces, the structure is mainly static during the opening and middle phases of
+            the game.
+          </p>
+          <p>
+            Pawns are the only pieces in the game that cannot move backwards, so it’s very important to not leave any
+            weaknesses in your pawn structure for the enemy to exploit. A strong pawn structure is advantageous as the
+            pawns can defend themselves, and your pieces don’t have to be anchored defending pawns when they can
+            available for more useful purposes.
+          </p>
+          <p>
+            Your objective here is to keep your pawn structure strong while weakening your opponent’s. Pawn structures
+            affect the development of pieces and determines which squares are weak.
+          </p>
+          <p>
+            Here are some cases where the pawns are weak and cannot defend themselves:
+          </p>
+          <section>
+            <h3 class="h5 subheader-link" id="isolated-pawns">Isolated Pawns</h3>
+            <p>
+              Isolated pawns are pawns that don’t have any pawns on either side of them. Here they don’t have support
+              from other pawns and if they are attacked they will require support from their pieces.
+            </p>
+            <div class="fig-container">
+              <figure>
+                <img src="assets/img/concepts/isolated-pawns.svg" alt="Illustration of isolated pawns">
+                <figcaption class="text-caption align-center text-left">
+                  In this example white has 2 isolated pawns and black has 1.
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              One thing to keep in mind is that although isolated pawns are generally weak, the open files next to them
+              increases the mobility of your pieces, particularly for the rooks that enjoy open files.
+            </p>
+          </section>
+          <section>
+            <h3 class="h5 subheader-link" id="doubled-pawns">Doubled Pawns</h3>
+            <p>
+              Doubled-pawns are 2 pawns that are stacked on top of each other. The main weakness of doubled-pawns lies
+              in the fact that the rear pawn is restricted in its movement and also cannot defend the pawn in front of
+              him.
+            </p>
+            <div class="fig-container">
+              <figure>
+                <img src="assets/img/concepts/doubled-pawns.svg" alt="Illustration of doubled pawns">
+              </figure>
+            </div>
+            <p>
+              Like isolated pawns, there are advantages in having an open file, and in some situations having doubled
+              pawns can work together to control important squares like the center.
+            </p>
+          </section>
+          <section>
+            <h3 class="h5 subheader-link" id="backward-pawns">Backward Pawns</h3>
+            <p>Backward pawns are pawns that:</p>
+            <ul class="indent">
+              <li>
+                Cannot be protected by other pawns since it is further back than the other pawns.
+              </li>
+              <li>
+                The square in front of is controlled by the opponent which means it cannot move forward without being
+                captured.
+              </li>
+            </ul>
+            <div class="fig-container">
+              <figure>
+                <img src="assets/img/concepts/backward-pawns.svg" alt="Illustration of backward pawns">
+              </figure>
+            </div>
+            <p>
+              A backward pawn is considered a weak pawn because it can be attacked on the file by enemy pieces and it
+              cannot be defended by other pawns.
+            </p>
+            <p>
+              Those are some cases where your pawns are weak. Now lets take a look at when your pawns are strong.
+            </p>
+          </section>
+          <section>
+            <h3 class="h5 subheader-link" id="connected-pawns">Connected Pawns</h3>
+            <p>
+              Connected pawns are pawns that have a pawn on either side of it. Connected pawns can usually defend each
+              other and they are therefore considered strong. At the start of a new game all the pawns are connected but
+              as the game continue and some exchanges are made the pawns become disconnected/weaker.
+            </p>
+            <div class="fig-container">
+              <figure>
+                <img src="assets/img/concepts/connected-pawns.svg" alt="Illustration of connected pawns">
+              </figure>
+            </div>
+            <p>
+              When a group of pawns gets disconnected from the rest of the pawn structure – they become a pawn-island.
+              In the example illustration above both white and black have 2 pawn islands each. Generally, the more pawn
+              islands you have, the weaker your pawn structure becomes, because you need resources to defend those pawn
+              islands.
+            </p>
+          </section>
+          <section>
+            <h3 class="h5 subheader-link" id="pawn-chains">Pawn Chains</h3>
+            <p>
+              Pawn chains consist in a group of pawns occupying a diagonal, therefore, in a pawn chain, every pawn is
+              defended by the pawn in the line below. Chains always have a base: the first pawn, and the only one not
+              defended by others; and a head, the most advanced pawn of all.
+            </p>
+            <div class="fig-container">
+              <figure>
+                <img src="assets/img/concepts/pawn-chains.svg" alt="Illustration of pawn chains">
+              </figure>
+            </div>
+            <p>
+              Chains are usually pretty secure, and it is a good idea to defend your central pawns using them. However,
+              the strength of the pawn chain depends on the security of the base, so if you want to undermine the pawn
+              structure of your opponent, attacking this weakest point would be a great idea: but note that this is not
+              always easy, and is more likely to result in an endgame, as there will be fewer pieces to defend it.
+            </p>
+          </section>
+          <section>
+            <h3 class="h5 subheader-link" id="passed-pawns">Passed Pawns</h3>
+            <p>
+              A passed pawn is a pawn that cannot be confronted by any enemy pawns. Paseds pawns are very valuable
+              strategic assets since your opponent will often have to allocate at least one piece to prevent the passed
+              pawn from advancing even further.
+            </p>
+            <div class="fig-container">
+              <figure>
+                <img src="assets/img/concepts/passed-pawns.svg" alt="Illustration of a passed pawn">
+              </figure>
+            </div>
+            <p>
+              When a passed pawn is supported by another pawn (as in the example above) it is called a protected passed
+              pawn. A protected passed pawn is usually more valuable than an unprotected passed pawn.
+            </p>
+            <p>
+              A protected passed pawn is an advantage that gives you a good chance of winning the game even if you are a
+              pawn or two behind in material.
+            </p>
+            <p>
+              These are the main patterns and concepts related to pawns. If you are presented with an opportunity to
+              capture a piece with more than 1 pawn, it’s a good practise to capture toward the center, as the more
+              squares you control in the center, the less space your opponent has to manouvre around.
+            </p>
+          </section>
+        </section>
+        <section>
+          <h2 class="h4 subheader-link" id="piece-activity">Piece Activity</h2>
+          <p>
+            Different from a material advantage, piece activity is more of an abstract concept. A player can have less
+            material than their opponent yet have more active pieces, which can lead to a decisive advantage.
+          </p>
+          <p>
+            Probably the most famous example of this is the famous Opera Game , played between Paul Morphy and a duo of
+            european noblemen, Duke Karl and Count Isuoard.
+          </p>
+          <div class="fig-container expandable">
+            <figure class="full-width">
+              <img src="assets/img/concepts/opera-game.svg" alt="Illustration of the ending position of the opera game">
+              <figcaption class="text-caption align-center text-left">
+                Notice here white is down material, but almost all of his pieces are active. Black's kingside, on the
+                other hand, is not in the game. Morhpy won this game is just in a few more moves.
+              </figcaption>
+            </figure>
+          </div>
+          <p>
+            The main takeaway here is to aim to continually increase the value of your pieces by developing them to more
+            active squares. For example, Knights are stronger in the center as opposed to the edge of the baord.
+            Remember active pieces have more firepower than poorly developed ones.
+          </p>
+        </section>
+        <section>
+          <h2 class="h4 subheader-link" id="king-safety">King Safety</h2>
+          <p>
+            King safety is one of the most critical strategic concepts in chess. Having an unsafe king can be a losing
+            disadvantage because it could lead to checkmate, and an exposed king doesn’t have any protection against
+            checks and threats from enemy pieces either.
+          </p>
+          <div class="fig-container expandable">
+            <figure class="full-width">
+              <img src="assets/img/concepts/king-safety.svg" alt="Illustration of king safety">
+              <figcaption class="text-caption align-center text-left">
+                In this example the position is equal in material but white’s king is totally exposed. Black can play a
+                tempo move like rook to e5 and white cannot block as the queen is more valuable than the rook and white
+                also loses it’s castling privileges.
+              </figcaption>
+            </figure>
+          </div>
+          <p>Exposed kings are a big weakness as they can:</p>
+          <ul class="indent">
+            <li>
+              Allow your opponent to gain tempo/development moves by putting your king in check
+            </li>
+            <li>
+              A king can be victim to a tactic such as a fork or skewer if left exposed.
+            </li>
+            <li>
+              When a king is in check, most of the other pieces become momentarily useless. In other words, when your
+              king is in check your other pieces becomes mere “spectators” until the check against your king is dealt
+              with.
+            </li>
+          </ul>
+          <p>
+            Since the king is the most important piece in the game, keeping the king safe is critical. The easiest way
+            to do this is to castle early. This achieves 2 objectives.
+          </p>
+          <p>
+            First the king moved away from the center of the baord. The center is usually the part of the board that
+            opens up first. Since both players are fighting for control of the center, the center pawns often get
+            exchanged – which opens up files in the middle of the board.
+          </p>
+          <p>
+            Secondly, it also helps you to develop a rook by bringing it out of the corner and connects your rooks.
+          </p>
+          <div class="fig-container expandable">
+            <figure class="full-width">
+              <img src="assets/img/concepts/forced-draw.svg" alt="Illustration of a forced draw">
+              <figcaption class="text-caption align-center text-left">
+                Notice in this example that black is actually up in material but has left its king exposed and
+                vulnerable. Even though black has a big advantage in material, white is able to force a draw by
+                repitition because the king is exposed
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+        <div class="page-nav-links">
+          <a href="rules.html" class="page-link">⬅ Rules</a>
+          <a href="opening-principles.html" class="page-link">Opening Principles ➡</a>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <a href="https://github.com/arlandfran/the-beginners-gambit" target="_blank">Github
+        <span id="external-link"><svg id="box-arrow" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13 10V9h-2v1h2zM6.5 5h1V3h-1v2zM13 3.5h1v-.9l-.89-.1-.11 1zM11 14H2v2h9v-2zm-9 0V5H0v9h2zm9-4v4h2v-4h-2zM2 5h4.5V3H2v2zm0 9H0c0 1.1.9 2 2 2v-2zm9 2a2 2 0 002-2h-2v2zM2 5V3a2 2 0 00-2 2h2zm3.95 6.04l7.71-6.79-1.32-1.5-7.7 6.8 1.31 1.5zM12 3.5V8h2V3.5h-2zm1.11-1L8.61 2l-.22 2 4.5.5.22-2z" />
+          </svg></span></a>
+    </footer>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

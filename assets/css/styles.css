@@ -52,6 +52,16 @@ button:hover {
   cursor: pointer;
 }
 
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  font-size: var(--h5);
+  font-weight: 700;
+}
+
 /* Typography */
 .h1 {
   margin-top: 1rem;
@@ -139,7 +149,7 @@ figcaption {
   padding-right: 1rem;
 }
 
-.centered-text {
+.align-center {
   max-width: 16rem;
   align-self: center;
 }
@@ -148,13 +158,21 @@ figcaption {
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .fixed-width {
   max-width: 30rem;
 }
 
+.full-width {
+  width: 100%;
+}
+
 .indent {
-  text-indent: 2rem;
-  list-style-position: inside;
+  padding-left: 2rem;
+  /* list-style-position: inside; */
 }
 
 /* Sitewide */
@@ -237,8 +255,14 @@ nav ul li {
   font-size: var(--h6);
 }
 
+.sidebar-subheader-group li {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
 .sidebar-subheader-link {
-  padding-top: 0.4rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   padding-left: 1rem;
   font-size: var(--base-font-size);
 }
@@ -261,10 +285,6 @@ main {
   margin-right: 2rem;
   width: 100%;
   max-width: 40rem;
-}
-
-.section-column {
-  width: 100%;
 }
 
 footer {
@@ -295,7 +315,7 @@ footer a {
   fill: black;
 }
 
-.go-next-link {
+.page-nav-link {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: right;
@@ -303,7 +323,7 @@ footer a {
 
 .page-link {
   text-transform: uppercase;
-  font-size: var(--h4);
+  font-size: var(--h5);
   font-weight: 700;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -328,7 +348,7 @@ footer a {
   scroll-margin-top: 5rem;
 }
 
-.section {
+.fig-container {
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: flex;
@@ -353,11 +373,75 @@ figure {
   margin-top: 0;
 }
 
+/* Components */
+
+/* Accordion*/
+.accordion {
+  overflow: hidden;
+  border: 2px solid black;
+  border-bottom: none;
+}
+
+.accordion-item {
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion-toggle {
+  display: none;
+}
+
+.accordion-title {
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: var(--h5);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.accordion-title::after {
+  content: "\02C5";
+  align-self: center;
+  transition: ease 0.35s;
+}
+
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: ease-in-out 0.4s;
+  background: white;
+  border-bottom: 2px solid black;
+}
+
+input:checked ~ .accordion-title {
+  color: var(--primary-color);
+}
+
+input:checked ~ .accordion-title::after {
+  transform: rotate(-180deg);
+}
+
+input:checked ~ .accordion-content {
+  max-height: 100vh;
+}
+
 /* Media queries */
 @media screen and (min-width: 425px) {
   figure {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .material-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  td {
+    font-size: var(--h4);
   }
 }
 
