@@ -171,8 +171,8 @@ figcaption {
 }
 
 .indent {
-  text-indent: 2rem;
-  list-style-position: inside;
+  padding-left: 2rem;
+  /* list-style-position: inside; */
 }
 
 /* Sitewide */
