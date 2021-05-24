@@ -158,6 +158,10 @@ figcaption {
   text-align: left;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .fixed-width {
   max-width: 30rem;
 }
