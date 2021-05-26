@@ -116,7 +116,7 @@
               issues, feedback or just have an idea for a feature request or new
               content, please let me know!
             </p>
-            <form class="form">
+            <form class="form" onsubmit="return false;">
               <label for="name" class="form-label"> Name (Optional) </label>
               <input
                 type="text"
@@ -142,6 +142,7 @@
                 name="message"
                 id="message"
                 class="form-input"
+                required
               ></textarea>
               <label for="file" class="form-label">
                 Screenshot (Optional)
@@ -151,16 +152,11 @@
               </label>
               <input type="file" name="file" id="file" class="form-input" />
               <label for="submit" class="form-button">Send Feedback</label>
-              <input
-                type="checkbox"
-                name="submit"
-                id="submit"
-                class="form-feedback-toggle"
-              />
+              <input type="submit" name="submit" id="submit" class="hide" />
               <div>
-                Thank you for submitting your feedback! This form is not
-                functional so I am not receiving any information through this
-                form.
+                <strong>Disclaimer</strong><br />
+                This form is not functional. Clicking the send button does not
+                send any information and only validates required inputs.
               </div>
             </form>
           </section>

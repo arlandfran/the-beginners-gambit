@@ -184,6 +184,10 @@ figcaption {
   max-width: 24rem;
 }
 
+.hide {
+  display: none;
+}
+
 /* Sitewide */
 #app {
   display: flex;
@@ -483,18 +487,6 @@ input:checked ~ .accordion-content {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-}
-
-.form-feedback-toggle {
-  display: none;
-}
-
-.form-feedback-toggle ~ div {
-  display: none;
-}
-
-.form-feedback-toggle:checked ~ div {
-  display: block;
 }
 
 /* Media queries */
