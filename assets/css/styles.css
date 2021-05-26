@@ -174,7 +174,14 @@ figcaption {
 
 .indent {
   padding-left: 2rem;
-  /* list-style-position: inside; */
+}
+
+.short {
+  max-width: 16rem;
+}
+
+.medium {
+  max-width: 24rem;
 }
 
 /* Sitewide */
@@ -447,19 +454,19 @@ form {
   font-weight: 600;
 }
 
-.contact-label {
+.form-label {
   display: block;
   cursor: pointer;
 }
 
-.contact-input {
+.form-input {
   padding: 0.5rem;
   border: 2px solid black;
   font-family: var(--sans-serif);
   font-weight: 600;
 }
 
-.contact-input:focus {
+.form-input:focus {
   background: var(--focus);
   color: white;
 }
@@ -467,6 +474,31 @@ form {
 .hint {
   display: block;
   font-size: var(--caption);
+}
+
+.form-button {
+  width: 12rem;
+  padding: 0.4rem;
+
+  border: 2px solid black;
+  font-family: var(--sans-serif);
+  font-size: var(--h6);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form-feedback-toggle {
+  display: none;
+}
+
+.form-feedback-toggle ~ div {
+  display: none;
+}
+
+.form-feedback-toggle:checked ~ div {
+  display: block;
 }
 
 /* Media queries */

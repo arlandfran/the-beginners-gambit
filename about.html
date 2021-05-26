@@ -117,9 +117,14 @@
               content, please let me know!
             </p>
             <form class="form">
-              <label for="name" class="contact-label"> Name (Optional) </label>
-              <input type="text" name="name" id="name" class="contact-input" />
-              <label for="email" class="contact-label">
+              <label for="name" class="form-label"> Name (Optional) </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-input short"
+              />
+              <label for="email" class="form-label">
                 Email (Optional)
                 <span class="hint">To contact you about your query</span>
               </label>
@@ -127,26 +132,38 @@
                 type="email"
                 name="email"
                 id="email"
-                class="contact-input"
+                class="form-input medium"
               />
-              <label for="message" class="contact-label">
+              <label for="message" class="form-label">
                 Message
                 <span class="hint"> Let me know what can be improved </span>
               </label>
               <textarea
                 name="message"
                 id="message"
-                class="contact-input"
+                class="form-input"
                 cols="30"
                 rows="6"
               ></textarea>
-              <label for="file" class="contact-label">
+              <label for="file" class="form-label">
                 Screenshot (Optional)
                 <span class="hint">
                   Where applicable include a screenshot of the issue
                 </span>
               </label>
-              <input type="file" name="file" id="file" class="contact-input" />
+              <input type="file" name="file" id="file" class="form-input" />
+              <label for="submit" class="form-button">Send Feedback</label>
+              <input
+                type="checkbox"
+                name="submit"
+                id="submit"
+                class="form-feedback-toggle"
+              />
+              <div>
+                Thank you for submitting your feedback! This form is not
+                functional so I am not receiving any information through this
+                form.
+              </div>
             </form>
           </section>
         </article>
