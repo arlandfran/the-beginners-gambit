@@ -3,6 +3,7 @@
   /* Colors */
   --primary-color: #6610f2;
   --divider-color: rgba(0, 0, 0, 0.1);
+  --focus: #8540f5;
   /* Type Scale */
   --h1: 3.052rem; /*h2 x1.25*/
   --h2: 2.441rem; /*h3 x1.25*/
@@ -11,6 +12,7 @@
   --h5: 1.25rem; /*Base x1.25*/
   --h6: 1.125rem; /*Doesn't follow type scale - 18px*/
   --base-font-size: 1rem; /*16.00px*/
+  --caption: 0.8rem; /*12.8px*/
   /* Font Families */
   --sans-serif: Poppins, sans-serif;
   --serif: "PT Serif", serif;
@@ -437,26 +439,34 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
   border: 2px solid black;
   font-size: var(--h6);
   font-weight: 600;
-  padding: 1rem;
 }
 
 .contact-label {
+  display: block;
   cursor: pointer;
 }
 
 .contact-input {
   padding: 0.5rem;
   border: 2px solid black;
-  color: white;
-  font-family: Poppins, sans-serif;
+  font-family: var(--sans-serif);
   font-weight: 600;
 }
 
 .contact-input:focus {
-  background: var(--primary-color);
+  background: var(--focus);
+  color: white;
+}
+
+.hint {
+  display: block;
+  font-size: var(--caption);
 }
 
 /* Media queries */

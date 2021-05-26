@@ -118,7 +118,35 @@
             </p>
             <form class="form">
               <label for="name" class="contact-label"> Name (Optional) </label>
-              <input type="text" name="name" class="contact-input" id="name" />
+              <input type="text" name="name" id="name" class="contact-input" />
+              <label for="email" class="contact-label">
+                Email (Optional)
+                <span class="hint">To contact you about your query</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contact-input"
+              />
+              <label for="message" class="contact-label">
+                Message
+                <span class="hint"> Let me know what can be improved </span>
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                class="contact-input"
+                cols="30"
+                rows="6"
+              ></textarea>
+              <label for="file" class="contact-label">
+                Screenshot (Optional)
+                <span class="hint">
+                  Where applicable include a screenshot of the issue
+                </span>
+              </label>
+              <input type="file" name="file" id="file" class="contact-input" />
             </form>
           </section>
         </article>
