@@ -3,6 +3,7 @@
   /* Colors */
   --primary-color: #6610f2;
   --divider-color: rgba(0, 0, 0, 0.1);
+  --focus: #8540f5;
   /* Type Scale */
   --h1: 3.052rem; /*h2 x1.25*/
   --h2: 2.441rem; /*h3 x1.25*/
@@ -11,6 +12,7 @@
   --h5: 1.25rem; /*Base x1.25*/
   --h6: 1.125rem; /*Doesn't follow type scale - 18px*/
   --base-font-size: 1rem; /*16.00px*/
+  --caption: 0.8rem; /*12.8px*/
   /* Font Families */
   --sans-serif: Poppins, sans-serif;
   --serif: "PT Serif", serif;
@@ -172,7 +174,14 @@ figcaption {
 
 .indent {
   padding-left: 2rem;
-  /* list-style-position: inside; */
+}
+
+.short {
+  max-width: 16rem;
+}
+
+.medium {
+  max-width: 24rem;
 }
 
 /* Sitewide */
@@ -428,6 +437,66 @@ input:checked ~ .accordion-content {
   max-height: 100vh;
 }
 
+/* Contact Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  width: 16rem;
+  border: 2px solid black;
+  font-size: var(--h6);
+  font-weight: 600;
+}
+
+.form-label {
+  display: block;
+  cursor: pointer;
+}
+
+.form-input {
+  padding: 0.5rem;
+  border: 2px solid black;
+  font-family: var(--sans-serif);
+  font-weight: 600;
+}
+
+.form-input:focus {
+  background: var(--focus);
+  color: white;
+}
+
+.hint {
+  display: block;
+  font-size: var(--caption);
+}
+
+.form-button {
+  width: 12rem;
+  padding: 0.4rem;
+  border: 2px solid black;
+  font-family: var(--sans-serif);
+  font-size: var(--h6);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form-feedback-toggle {
+  display: none;
+}
+
+.form-feedback-toggle ~ div {
+  display: none;
+}
+
+.form-feedback-toggle:checked ~ div {
+  display: block;
+}
+
 /* Media queries */
 @media screen and (min-width: 425px) {
   figure {
@@ -442,6 +511,10 @@ input:checked ~ .accordion-content {
 
   td {
     font-size: var(--h4);
+  }
+
+  .form {
+    width: 100%;
   }
 }
 

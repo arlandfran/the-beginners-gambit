@@ -1,363 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Beginner's Gambit | Tactics</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="app">
-        <header class="navbar">
-            <a class="logo" href="index.html">The Beg<span><svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z" />
-                        <path d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z" />
-                    </svg></span>nner's Gambit</a>
-            <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
-                <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z" />
-                </svg>
-            </button>
-            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
-                    fill="#000" />
-                <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
-            </svg>
-        </header>
+      <header class="navbar">
+        <a class="logo" href="index.html"
+          >The Beg<span
+            ><svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z"
+              />
+              <path
+                d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z"
+              /></svg></span
+          >nner's Gambit</a
+        >
+        <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
+          <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z"
+            />
+          </svg>
+        </button>
+        <svg
+          width="32"
+          height="32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
+            fill="#000"
+          />
+          <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
+        </svg>
+      </header>
 
-        <aside class="sidebar">
-            <nav>
-                <ul id="sidebar-links">
-                    <li class="sidebar-link"><a href="index.html">Home</a></li>
-                    <li class="sidebar-link"><a href="setup.html">Setup</a></li>
-                    <li class="sidebar-link"><a href="rules.html">Rules</a></li>
-                    <li class="sidebar-link"><a href="concepts.html">Concepts</a></li>
-                    <li class="sidebar-link"><a href="opening-principles.html">Opening Principles</a></li>
-                    <ul class="sidebar-link active">
-                        <li>
-                            <a href="tactics.html">Tactics</a>
-                        </li>
-                        <ul class="sidebar-subheader-group">
-                            <li>
-                                <a href="tactics.html#forks">Forks</a>
-                            </li>
-                            <li>
-                                <a href="tactics.html#pins">Pins</a>
-                            </li>
-                            <li>
-                                <a href="tactics.html#skewers">Skewers</a>
-                            </li>
-                            <li>
-                                <a href="tactics.html#discovered-attacks">Discovered attacks</a>
-                            </li>
-                            <li>
-                                <a href="tactics.html#remove-the-defender">Remove the defender</a>
-                            </li>
-                        </ul>
-                    </ul>
-                    <li class="sidebar-link"><a href="mating-patterns.html">Mating Patterns</a></li>
-                    <li class="sidebar-link"><a href="#">About</a></li>
-                </ul>
-            </nav>
-        </aside>
+      <aside class="sidebar">
+        <nav>
+          <ul id="sidebar-links">
+            <li class="sidebar-link"><a href="index.html">Home</a></li>
+            <li class="sidebar-link"><a href="setup.html">Setup</a></li>
+            <li class="sidebar-link"><a href="rules.html">Rules</a></li>
+            <li class="sidebar-link"><a href="concepts.html">Concepts</a></li>
+            <li class="sidebar-link">
+              <a href="opening-principles.html">Opening Principles</a>
+            </li>
+            <ul class="sidebar-link active">
+              <li>
+                <a href="tactics.html">Tactics</a>
+              </li>
+              <ul class="sidebar-subheader-group">
+                <li>
+                  <a href="tactics.html#forks">Forks</a>
+                </li>
+                <li>
+                  <a href="tactics.html#pins">Pins</a>
+                </li>
+                <li>
+                  <a href="tactics.html#skewers">Skewers</a>
+                </li>
+                <li>
+                  <a href="tactics.html#discovered-attacks"
+                    >Discovered attacks</a
+                  >
+                </li>
+                <li>
+                  <a href="tactics.html#remove-the-defender"
+                    >Remove the defender</a
+                  >
+                </li>
+              </ul>
+            </ul>
+            <li class="sidebar-link">
+              <a href="mating-patterns.html">Mating Patterns</a>
+            </li>
+            <li class="sidebar-link"><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-        <main>
-            <article class="page">
-                <h1 class="h3">Tactics</h1>
-                <p>
-                    Now that you’ve gone through some opening principles for the opening, the midgame is all about
-                    coming up with tactics and combinations to attack the opponent king.
-                </p>
-                <p>
-                    There are varying definitions for what constitutes a tactic or a combination but the simplest way to
-                    think of these two concepts as a beginner is that a tactic in chess is a move or series of moves
-                    that give you an advantage on the board, whether its material gain or an attack that leads to
-                    checkmate.
-                </p>
-                <p>
-                    A combination is thought of as a forced sequence of moves that involves a sacrifice of a piece that
-                    either leads to checkmate or a clear advantage.
-                </p>
-                <p>
-                    Let’s take a look at some of the most common tactical motifs that you should be familiar with.
-                </p>
-                <section>
-                    <h2 class="h4 subheader-link" id="forks">Forks</h2>
-                    <p>
-                        A fork (also known as a double attack) is a tactic where a piece threatens to capture more than
-                        1 piece at the same time. It’s most commonly executed with a knight but you can fork with a
-                        rook, bishop, queen, even a pawn.
-                    </p>
-                    <div class="fig-container">
-                        <figure>
-                            <img src="assets/img/tactics/fork.svg" alt="Illustration of a knight forking 2 rooks">
-                            <figcaption class="text-caption align-center text-left">
-                                This is an illustrative example of a knight threatening two pieces at once.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <p>
-                        A fork is a powerful tactic because it is usually hard for your opponent to defend against 2
-                        threats at once if the knight that is forking cannot be captured.
-                    </p>
-                    <p>
-                        If one of the pieces being forked is a king and the attacking knight cannot be captured, then
-                        the other piece is a guaranteed capture as the king has to move out of check.
-                    </p>
-                    <div class="fig-container expandable full-width">
-                        <figure>
-                            <img src="assets/img/tactics/fried-liver.svg"
-                                alt="Illustration of the fried liver attack with white">
-                            <figcaption class="text-caption align-center text-left">
-                                This example is common in lower levels of play. Here black doesn’t pay attention to the
-                                threat of a fork on the f7 square and allows the knight to capture the pawn forking both
-                                the
-                                queena and the rook. The king cannot capture as the knight is defended by the bishop and
-                                so
-                                blacks only response is to move the queen to safety while the rook is lost.
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/img/tactics/pawn-fork.svg" alt="Illustration of a pawn forking 2 knights">
-                            <figcaption class="text-caption align-center text-left">
-                                Here the white has a pawn fork on both of black’s knights. Black cannot defend both and
-                                so
-                                it has to get 1 to safety while the other is lost.
-                            </figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <section>
-                    <h2 class="h4 subheader-link" id="pins">Pins</h2>
-                    <p>
-                        A pin is a tactic in which a piece is inhibited from moving because doing so would expose the
-                        more valuable piece behind it to the threat of capture. If the piece behind was the king then it
-                        would be known as an <strong>absolute pin</strong> as the piece being pinned would be unable to
-                        move as it would put the king in check. A regular pin would be referred to as a <strong>relative
-                            pin</strong> and is when the piece shielded by the pinned piece is a piece other than the
-                        king, but usually more valuable than the pinned piece.
-                    </p>
-                    <div class="fig-container expandable">
-                        <figure class="full-width">
-                            <img src="assets/img/tactics/pins.svg"
-                                alt="Illustration of a relative pin and an absolute pin">
-                            <figcaption class="text-caption align-center text-left">
-                                An absolute pin vs a relative pin. The queen on the left is unable move as doing so
-                                would
-                                put the king in check. The bishop on the right can move, but if it did, it would expose
-                                the
-                                more valuable queen behind it to the threat of capture.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <p>
-                        The power of a pin lies in the fact that the pinned piece is unable to move at the risk of
-                        exposing a more valuable piece (or in the case of an absolute pin, unable to move at all). Thus
-                        from there you can start to take advantage of the pin and potentially win the pinned piece or
-                        the piece behind it.
-                    </p>
-                    <p>
-                        Pins can only be executed by the the 3 long range pieces. Namely the rooks, queen and bishops.
-                    </p>
-                    <p>
-                        The previous example showed the rook orchestrating a pin, here are some more examples:
-                    </p>
-                    <div class="fig-container expandable full-width">
-                        <figure>
-                            <img src="assets/img/tactics/absolute-pin.svg" alt="Illustration of an absolute pin">
-                            <figcaption class="text-caption align-center text-left">
-                                Here the white bishop has an absolute pin. Black’s king and queen are on the same
-                                diagonal and so black has no choice to trade its queen for a less valuable piece.
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/img/tactics/relative-pin.svg" alt="Illustration of a relative pin">
-                            <figcaption class="text-caption align-center text-left">
-                                This example showcases how powerful a queen can be. Here the queen has 2 relative pins
-                                on black’s knight and bishop.
-                                If black tries to capture the knight then the rook behind is exposed. If black tries to
-                                capture the bishop, then the queen is exposed. This example shows why high-valued pieces
-                                are not ideal defenders.
-                            </figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <section>
-                    <h2 class="h4 subheader-link" id="skewers">Skewers</h2>
-                    <p>
-                        Think of skewers as the opposite of pins. Whereas the piece behind the pinned piece is more
-                        valuable, in a skewer the more valuable piece is in front. Skewers are effective in winning
-                        pieces that are only defended by higher value material.
-                    </p>
-                    <div class="fig-container expandable">
-                        <figure class="full-width">
-                            <img src="assets/img/tactics/relative-skewer.svg" alt="Illustration of a relative skewer">
-                            <figcaption class="text-caption align-center text-left">
-                                Here white’s bishop has a skewer on black’s queen. The queen must get to safety
-                                otherwise black is just losing a queen, but doing so exposes the rook on d8 for capture.
-                                Black can capture but the bishop is defended by white’s queen. This skewer results in
-                                rook for bishop trade which is advantageous for white.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <p>
-                        Like pins you also have relative skewers and absolute skewers. Absolute skewers involve the
-                        king, therefore they cannot be ignored. An absolute skewer guarantees the loss of material,
-                        because the defender is forced to either get their king out of check or block the check.
-                    </p>
-                    <p>
-                        Remember that with skewers, the more valuable piece is in front, so a relative skewer would mean
-                        that the high value piece is under attack, and moving the piece would expose a lower value
-                        piece.
-                    </p>
-                    <div class="fig-container expandable full-width">
-                        <figure>
-                            <img src="assets/img/tactics/absolute-skewer-1.svg"
-                                alt="Illustration of an absolute skewer winning a bishop">
-                            <figcaption class="text-caption align-center text-left">
-                                Here is an example of an absolute skewer. Rook to h6 is check on the king. The king has
-                                no pieces to block the check and so has to move, in turn leaving the undefended bishop
-                                on c6 to be captured.
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/img/tactics/absolute-skewer-2.svg"
-                                alt="Illustration of an absoulte skewer winning a queen">
-                            <figcaption class="text-caption align-center text-left">
-                                This is another absolute skewer. Here black can respond by capturing the white’s rook on
-                                c5 but the queens capture is guaranteed and white is winning.
-                            </figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <section>
-                    <h2 class="h4 subheader-link" id="discovered-attacks">Discovered Attacks</h2>
-                    <p>
-                        This tactic is employed when you move a piece to reveal a previously blocked threat by another
-                        piece. The power of a discovered attack lies in the fact that you can potentially use the moving
-                        piece to make a strong threat on its own.
-                    </p>
-                    <p>
-                        When the piece that moves delivers a check, this is known as a discovered check. Here’s an
-                        example:
-                    </p>
-                    <div class="fig-container expandable">
-                        <figure class="full-width">
-                            <img src="assets/img/tactics/discovered-attack-1.svg"
-                                alt="Illustration of a discovered check winning a queen">
-                            <figcaption class="text-caption align-center text-left">
-                                The discovery here is the queen that was initially behind the rook on c6. Notice that
-                                white’s queen is undefended. By moving the rook to c3, giving a check on white’s king,
-                                black’s queen is now threatening capture whereas before, this threat was blocked by the
-                                rook. White has to respond to the check by either blocking it or moving the king but
-                                either way the queen is lost.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <p>
-                        Discoveries are a powerful tactic as you have multiple ways to employ them on the board to gain
-                        an advantage.
-                    </p>
-                    <p>
-                        Here is a position in which white executes a discovery using the moving piece to create a double
-                        attack that black can’t defend against.
-                    </p>
-                    <div class="fig-container expandable">
-                        <figure class="full-width">
-                            <img src="assets/img/tactics/discovered-attack-2.svg"
-                                alt="Illustration of a discovered attack winning a rook">
-                            <figcaption class="text-caption align-center text-left">
-                                Bishop to g5 is a discovered attack on black’s queen and also an attack on the rook.
-                                Black has no way to defend against both and so black’s best response is to move the
-                                queen to safety and lose the rook.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <p>
-                        Discoveries can also be used to capture seemingly protected material.
-                    </p>
-                    <div class="fig-container expandable">
-                        <figure class="full-width">
-                            <img src="assets/img/tactics/discovered-attack-3.svg"
-                                alt="Illustration of a discovered attack winning a bishop and gaining tempo">
-                            <figcaption class="text-caption align-center text-left">
-                                The bishop on d5 is seemingly protected by the pawn, but if white captures with the
-                                knight then a discovered attack is unveiled against black’s queen. Black must move the
-                                queen to safety and white can use the extra tempo gained by the discovery to get it’s
-                                knight back to safety.
-                            </figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <section>
-                    <h2 class="h4 subheader-link" id="remove-the-defender">Remove the defender</h2>
-                    <p>
-                        Removing the defender in chess refers to capturing a piece that is performing a defensive role.
-                    </p>
-                    <p>
-                        This is a important tactic in chess as it often leads to a material gain or a positional
-                        advantage on the board.
-                    </p>
-                    <div class="fig-container expandable">
-                        <figure class="full-width">
-                            <img src="assets/img/tactics/remove-the-defender-1.svg"
-                                alt="Illustration of a black removing a defender to fork whites king and win a rook">
-                            <figcaption class="text-caption align-center text-left">
-                                Black can take advantage of the fact that white’s bishop on d4 is only defended by 1
-                                piece. By removing it’s defender with the bishop, white has to retake with the queen and
-                                has no way to defend against it’s bishop being captured and black forking both white’s
-                                king and rook, further losing material.
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <p>
-                        Being able to recognise when you can employ this tactic comes with time and experience, but a
-                        good tip in trying to identify when you can is when you are trying to make an attack.
-                    </p>
-                    <p>
-                        If there is a piece defending against the attack, look at the position and see if that defending
-                        piece is in turn being defended itself, and if so, are you in a position to remove it without
-                        new defenders strengthening the original defender.
-                    </p>
-                    <div class="fig-container expandable">
-                        <figure class="full-width">
-                            <img src="assets/img/tactics/remove-the-defender-2.svg"
-                                alt="Illustration of a white removing a defender to place an absolute pin on blacks queen">
-                            <figcaption class="text-caption align-center text-left">
-                                White’s rook to g4 is an absolute pin on black’s queen, but the square is defended twice
-                                by the pawn on f5 and the bishop on c7. White can remove both defenders here but it has
-                                to do so in the correct order. Once the defenders are removed, rook to g1 wins black’s
-                                queen.
-                            </figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <div class="page-nav-links">
-                    <a href="opening-principles.html" class="page-link">⬅ Opening Principles</a>
-                    <a href="mating-patterns.html" class="page-link">Mating Patterns ➡</a>
-                </div>
-            </article>
-        </main>
+      <main>
+        <article class="page">
+          <h1 class="h3">Tactics</h1>
+          <p>
+            Now that you’ve gone through some opening principles for the
+            opening, the midgame is all about coming up with tactics and
+            combinations to attack the opponent king.
+          </p>
+          <p>
+            There are varying definitions for what constitutes a tactic or a
+            combination but the simplest way to think of these two concepts as a
+            beginner is that a tactic in chess is a move or series of moves that
+            give you an advantage on the board, whether its material gain or an
+            attack that leads to checkmate.
+          </p>
+          <p>
+            A combination is thought of as a forced sequence of moves that
+            involves a sacrifice of a piece that either leads to checkmate or a
+            clear advantage.
+          </p>
+          <p>
+            Let’s take a look at some of the most common tactical motifs that
+            you should be familiar with.
+          </p>
+          <section>
+            <h2 class="h4 subheader-link" id="forks">Forks</h2>
+            <p>
+              A fork (also known as a double attack) is a tactic where a piece
+              threatens to capture more than 1 piece at the same time. It’s most
+              commonly executed with a knight but you can fork with a rook,
+              bishop, queen, even a pawn.
+            </p>
+            <div class="fig-container">
+              <figure>
+                <img
+                  src="assets/img/tactics/fork.svg"
+                  alt="Illustration of a knight forking 2 rooks"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  This is an illustrative example of a knight threatening two
+                  pieces at once.
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              A fork is a powerful tactic because it is usually hard for your
+              opponent to defend against 2 threats at once if the knight that is
+              forking cannot be captured.
+            </p>
+            <p>
+              If one of the pieces being forked is a king and the attacking
+              knight cannot be captured, then the other piece is a guaranteed
+              capture as the king has to move out of check.
+            </p>
+            <div class="fig-container expandable full-width">
+              <figure>
+                <img
+                  src="assets/img/tactics/fried-liver.svg"
+                  alt="Illustration of the fried liver attack with white"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  This example is common in lower levels of play. Here black
+                  doesn’t pay attention to the threat of a fork on the f7 square
+                  and allows the knight to capture the pawn forking both the
+                  queena and the rook. The king cannot capture as the knight is
+                  defended by the bishop and so blacks only response is to move
+                  the queen to safety while the rook is lost.
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="assets/img/tactics/pawn-fork.svg"
+                  alt="Illustration of a pawn forking 2 knights"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  Here the white has a pawn fork on both of black’s knights.
+                  Black cannot defend both and so it has to get 1 to safety
+                  while the other is lost.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 subheader-link" id="pins">Pins</h2>
+            <p>
+              A pin is a tactic in which a piece is inhibited from moving
+              because doing so would expose the more valuable piece behind it to
+              the threat of capture. If the piece behind was the king then it
+              would be known as an <strong>absolute pin</strong> as the piece
+              being pinned would be unable to move as it would put the king in
+              check. A regular pin would be referred to as a
+              <strong>relative pin</strong> and is when the piece shielded by
+              the pinned piece is a piece other than the king, but usually more
+              valuable than the pinned piece.
+            </p>
+            <div class="fig-container expandable">
+              <figure class="full-width">
+                <img
+                  src="assets/img/tactics/pins.svg"
+                  alt="Illustration of a relative pin and an absolute pin"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  An absolute pin vs a relative pin. The queen on the left is
+                  unable move as doing so would put the king in check. The
+                  bishop on the right can move, but if it did, it would expose
+                  the more valuable queen behind it to the threat of capture.
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              The power of a pin lies in the fact that the pinned piece is
+              unable to move at the risk of exposing a more valuable piece (or
+              in the case of an absolute pin, unable to move at all). Thus from
+              there you can start to take advantage of the pin and potentially
+              win the pinned piece or the piece behind it.
+            </p>
+            <p>
+              Pins can only be executed by the the 3 long range pieces. Namely
+              the rooks, queen and bishops.
+            </p>
+            <p>
+              The previous example showed the rook orchestrating a pin, here are
+              some more examples:
+            </p>
+            <div class="fig-container expandable full-width">
+              <figure>
+                <img
+                  src="assets/img/tactics/absolute-pin.svg"
+                  alt="Illustration of an absolute pin"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  Here the white bishop has an absolute pin. Black’s king and
+                  queen are on the same diagonal and so black has no choice to
+                  trade its queen for a less valuable piece.
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="assets/img/tactics/relative-pin.svg"
+                  alt="Illustration of a relative pin"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  This example showcases how powerful a queen can be. Here the
+                  queen has 2 relative pins on black’s knight and bishop. If
+                  black tries to capture the knight then the rook behind is
+                  exposed. If black tries to capture the bishop, then the queen
+                  is exposed. This example shows why high-valued pieces are not
+                  ideal defenders.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 subheader-link" id="skewers">Skewers</h2>
+            <p>
+              Think of skewers as the opposite of pins. Whereas the piece behind
+              the pinned piece is more valuable, in a skewer the more valuable
+              piece is in front. Skewers are effective in winning pieces that
+              are only defended by higher value material.
+            </p>
+            <div class="fig-container expandable">
+              <figure class="full-width">
+                <img
+                  src="assets/img/tactics/relative-skewer.svg"
+                  alt="Illustration of a relative skewer"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  Here white’s bishop has a skewer on black’s queen. The queen
+                  must get to safety otherwise black is just losing a queen, but
+                  doing so exposes the rook on d8 for capture. Black can capture
+                  but the bishop is defended by white’s queen. This skewer
+                  results in rook for bishop trade which is advantageous for
+                  white.
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              Like pins you also have relative skewers and absolute skewers.
+              Absolute skewers involve the king, therefore they cannot be
+              ignored. An absolute skewer guarantees the loss of material,
+              because the defender is forced to either get their king out of
+              check or block the check.
+            </p>
+            <p>
+              Remember that with skewers, the more valuable piece is in front,
+              so a relative skewer would mean that the high value piece is under
+              attack, and moving the piece would expose a lower value piece.
+            </p>
+            <div class="fig-container expandable full-width">
+              <figure>
+                <img
+                  src="assets/img/tactics/absolute-skewer-1.svg"
+                  alt="Illustration of an absolute skewer winning a bishop"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  Here is an example of an absolute skewer. Rook to h6 is check
+                  on the king. The king has no pieces to block the check and so
+                  has to move, in turn leaving the undefended bishop on c6 to be
+                  captured.
+                </figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="assets/img/tactics/absolute-skewer-2.svg"
+                  alt="Illustration of an absoulte skewer winning a queen"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  This is another absolute skewer. Here black can respond by
+                  capturing the white’s rook on c5 but the queens capture is
+                  guaranteed and white is winning.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 subheader-link" id="discovered-attacks">
+              Discovered Attacks
+            </h2>
+            <p>
+              This tactic is employed when you move a piece to reveal a
+              previously blocked threat by another piece. The power of a
+              discovered attack lies in the fact that you can potentially use
+              the moving piece to make a strong threat on its own.
+            </p>
+            <p>
+              When the piece that moves delivers a check, this is known as a
+              discovered check. Here’s an example:
+            </p>
+            <div class="fig-container expandable">
+              <figure class="full-width">
+                <img
+                  src="assets/img/tactics/discovered-attack-1.svg"
+                  alt="Illustration of a discovered check winning a queen"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  The discovery here is the queen that was initially behind the
+                  rook on c6. Notice that white’s queen is undefended. By moving
+                  the rook to c3, giving a check on white’s king, black’s queen
+                  is now threatening capture whereas before, this threat was
+                  blocked by the rook. White has to respond to the check by
+                  either blocking it or moving the king but either way the queen
+                  is lost.
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              Discoveries are a powerful tactic as you have multiple ways to
+              employ them on the board to gain an advantage.
+            </p>
+            <p>
+              Here is a position in which white executes a discovery using the
+              moving piece to create a double attack that black can’t defend
+              against.
+            </p>
+            <div class="fig-container expandable">
+              <figure class="full-width">
+                <img
+                  src="assets/img/tactics/discovered-attack-2.svg"
+                  alt="Illustration of a discovered attack winning a rook"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  Bishop to g5 is a discovered attack on black’s queen and also
+                  an attack on the rook. Black has no way to defend against both
+                  and so black’s best response is to move the queen to safety
+                  and lose the rook.
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              Discoveries can also be used to capture seemingly protected
+              material.
+            </p>
+            <div class="fig-container expandable">
+              <figure class="full-width">
+                <img
+                  src="assets/img/tactics/discovered-attack-3.svg"
+                  alt="Illustration of a discovered attack winning a bishop and gaining tempo"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  The bishop on d5 is seemingly protected by the pawn, but if
+                  white captures with the knight then a discovered attack is
+                  unveiled against black’s queen. Black must move the queen to
+                  safety and white can use the extra tempo gained by the
+                  discovery to get it’s knight back to safety.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <section>
+            <h2 class="h4 subheader-link" id="remove-the-defender">
+              Remove the defender
+            </h2>
+            <p>
+              Removing the defender in chess refers to capturing a piece that is
+              performing a defensive role.
+            </p>
+            <p>
+              This is a important tactic in chess as it often leads to a
+              material gain or a positional advantage on the board.
+            </p>
+            <div class="fig-container expandable">
+              <figure class="full-width">
+                <img
+                  src="assets/img/tactics/remove-the-defender-1.svg"
+                  alt="Illustration of a black removing a defender to fork whites king and win a rook"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  Black can take advantage of the fact that white’s bishop on d4
+                  is only defended by 1 piece. By removing it’s defender with
+                  the bishop, white has to retake with the queen and has no way
+                  to defend against it’s bishop being captured and black forking
+                  both white’s king and rook, further losing material.
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              Being able to recognise when you can employ this tactic comes with
+              time and experience, but a good tip in trying to identify when you
+              can is when you are trying to make an attack.
+            </p>
+            <p>
+              If there is a piece defending against the attack, look at the
+              position and see if that defending piece is in turn being defended
+              itself, and if so, are you in a position to remove it without new
+              defenders strengthening the original defender.
+            </p>
+            <div class="fig-container expandable">
+              <figure class="full-width">
+                <img
+                  src="assets/img/tactics/remove-the-defender-2.svg"
+                  alt="Illustration of a white removing a defender to place an absolute pin on blacks queen"
+                />
+                <figcaption class="text-caption align-center text-left">
+                  White’s rook to g4 is an absolute pin on black’s queen, but
+                  the square is defended twice by the pawn on f5 and the bishop
+                  on c7. White can remove both defenders here but it has to do
+                  so in the correct order. Once the defenders are removed, rook
+                  to g1 wins black’s queen.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+          <div class="page-nav-links">
+            <a href="opening-principles.html" class="page-link"
+              >⬅ Opening Principles</a
+            >
+            <a href="mating-patterns.html" class="page-link"
+              >Mating Patterns ➡</a
+            >
+          </div>
+        </article>
+      </main>
 
-        <footer>
-            <a href="https://github.com/arlandfran/the-beginners-gambit" target="_blank">Github
-                <span id="external-link"><svg id="box-arrow" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M13 10V9h-2v1h2zM6.5 5h1V3h-1v2zM13 3.5h1v-.9l-.89-.1-.11 1zM11 14H2v2h9v-2zm-9 0V5H0v9h2zm9-4v4h2v-4h-2zM2 5h4.5V3H2v2zm0 9H0c0 1.1.9 2 2 2v-2zm9 2a2 2 0 002-2h-2v2zM2 5V3a2 2 0 00-2 2h2zm3.95 6.04l7.71-6.79-1.32-1.5-7.7 6.8 1.31 1.5zM12 3.5V8h2V3.5h-2zm1.11-1L8.61 2l-.22 2 4.5.5.22-2z" />
-                    </svg></span></a>
-        </footer>
+      <footer>
+        <a
+          href="https://github.com/arlandfran/the-beginners-gambit"
+          target="_blank"
+          >Github
+          <span id="external-link"
+            ><svg id="box-arrow" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13 10V9h-2v1h2zM6.5 5h1V3h-1v2zM13 3.5h1v-.9l-.89-.1-.11 1zM11 14H2v2h9v-2zm-9 0V5H0v9h2zm9-4v4h2v-4h-2zM2 5h4.5V3H2v2zm0 9H0c0 1.1.9 2 2 2v-2zm9 2a2 2 0 002-2h-2v2zM2 5V3a2 2 0 00-2 2h2zm3.95 6.04l7.71-6.79-1.32-1.5-7.7 6.8 1.31 1.5zM12 3.5V8h2V3.5h-2zm1.11-1L8.61 2l-.22 2 4.5.5.22-2z"
+              /></svg></span
+        ></a>
+      </footer>
     </div>
     <script src="assets/js/main.js"></script>
-</body>
-
+  </body>
 </html>
