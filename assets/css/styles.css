@@ -490,6 +490,12 @@ input:checked ~ .accordion-content {
 }
 
 /* Media queries */
+@media screen and (min-width: 375px) {
+  .form {
+    width: 20rem;
+  }
+}
+
 @media screen and (min-width: 425px) {
   figure {
     margin-left: 0;
