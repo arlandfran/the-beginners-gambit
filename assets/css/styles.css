@@ -277,6 +277,7 @@ nav ul li {
   font-size: var(--h5);
   font-weight: 600;
   letter-spacing: -0.02em;
+  user-select: none;
 }
 
 .sidebar-subheader-group {
