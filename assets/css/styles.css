@@ -339,6 +339,7 @@ footer a {
 }
 
 .page-link {
+  text-decoration: underline;
   text-transform: uppercase;
   font-size: var(--h5);
   font-weight: 700;
