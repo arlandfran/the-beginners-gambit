@@ -389,7 +389,7 @@ figure {
   display: flex;
   flex-wrap: wrap;
   width: min-content;
-  height: fit-content;
+  height: 100%;
   justify-content: center;
 }
 
