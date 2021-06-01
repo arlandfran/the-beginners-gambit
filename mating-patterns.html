@@ -26,13 +26,88 @@
               /></svg></span
           >nner's Gambit</a
         >
-        <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
+        <input
+          type="checkbox"
+          name="sidebar-toggle"
+          id="sidebarToggle"
+          class="sidebar-toggle"
+        />
+        <label for="sidebarToggle" class="hamburger">
           <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z"
             />
           </svg>
-        </button>
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <ul id="sidebar-links">
+              <li class="sidebar-link"><a href="index.html">Home</a></li>
+              <li class="sidebar-link"><a href="setup.html">Setup</a></li>
+              <li class="sidebar-link"><a href="rules.html">Rules</a></li>
+              <li class="sidebar-link"><a href="concepts.html">Concepts</a></li>
+              <li class="sidebar-link">
+                <a href="opening-principles.html">Opening Principles</a>
+              </li>
+              <li class="sidebar-link"><a href="tactics.html">Tactics</a></li>
+              <ul class="sidebar-link active">
+                <a href="mating-patterns.html">Mating Patterns</a>
+                <ul class="sidebar-subheader-group">
+                  <li>
+                    <a href="mating-patterns.html#queen-combinations"
+                      >Queen Combinations
+                    </a>
+                  </li>
+                  <ul>
+                    <li class="sidebar-subheader-link">
+                      <a href="mating-patterns.html#queen-and-knight">
+                        Queen and Knight
+                      </a>
+                    </li>
+                    <li class="sidebar-subheader-link">
+                      <a href="mating-patterns.html#queen-and-bishop">
+                        Queen and Bishop
+                      </a>
+                    </li>
+                    <li class="sidebar-subheader-link">
+                      <a href="mating-patterns.html#queen-and-pawn">
+                        Queen and Pawn
+                      </a>
+                    </li>
+                  </ul>
+                  <li>
+                    <a href="mating-patterns.html#rook-combinations">
+                      Rook Combinations
+                    </a>
+                  </li>
+                  <ul>
+                    <li class="sidebar-subheader-link">
+                      <a href="mating-patterns.html#2-rook-mate">
+                        2 Rook Mate
+                      </a>
+                    </li>
+                    <li class="sidebar-subheader-link">
+                      <a href="mating-patterns.html#back-rank-mate">
+                        Back Rank Mate
+                      </a>
+                    </li>
+                  </ul>
+                  <li>
+                    <a href="mating-patterns.html#smothered-mate">
+                      Smothered Mate
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mating-patterns.html#suffocation-mate">
+                      Suffocation Mate
+                    </a>
+                  </li>
+                </ul>
+              </ul>
+              <li class="sidebar-link"><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </aside>
         <svg
           width="32"
           height="32"
@@ -46,74 +121,6 @@
           <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
         </svg>
       </header>
-
-      <aside class="sidebar">
-        <nav>
-          <ul id="sidebar-links">
-            <li class="sidebar-link"><a href="index.html">Home</a></li>
-            <li class="sidebar-link"><a href="setup.html">Setup</a></li>
-            <li class="sidebar-link"><a href="rules.html">Rules</a></li>
-            <li class="sidebar-link"><a href="concepts.html">Concepts</a></li>
-            <li class="sidebar-link">
-              <a href="opening-principles.html">Opening Principles</a>
-            </li>
-            <li class="sidebar-link"><a href="tactics.html">Tactics</a></li>
-            <ul class="sidebar-link active">
-              <a href="mating-patterns.html">Mating Patterns</a>
-              <ul class="sidebar-subheader-group">
-                <li>
-                  <a href="mating-patterns.html#queen-combinations"
-                    >Queen Combinations
-                  </a>
-                </li>
-                <ul>
-                  <li class="sidebar-subheader-link">
-                    <a href="mating-patterns.html#queen-and-knight">
-                      Queen and Knight
-                    </a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="mating-patterns.html#queen-and-bishop">
-                      Queen and Bishop
-                    </a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="mating-patterns.html#queen-and-pawn">
-                      Queen and Pawn
-                    </a>
-                  </li>
-                </ul>
-                <li>
-                  <a href="mating-patterns.html#rook-combinations">
-                    Rook Combinations
-                  </a>
-                </li>
-                <ul>
-                  <li class="sidebar-subheader-link">
-                    <a href="mating-patterns.html#2-rook-mate"> 2 Rook Mate </a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="mating-patterns.html#back-rank-mate">
-                      Back Rank Mate
-                    </a>
-                  </li>
-                </ul>
-                <li>
-                  <a href="mating-patterns.html#smothered-mate">
-                    Smothered Mate
-                  </a>
-                </li>
-                <li>
-                  <a href="mating-patterns.html#suffocation-mate">
-                    Suffocation Mate
-                  </a>
-                </li>
-              </ul>
-            </ul>
-            <li class="sidebar-link"><a href="about.html">About</a></li>
-          </ul>
-        </nav>
-      </aside>
 
       <main>
         <article class="page">
@@ -417,7 +424,5 @@
         ></a>
       </footer>
     </div>
-
-    <script src="assets/js/main.js"></script>
   </body>
 </html>

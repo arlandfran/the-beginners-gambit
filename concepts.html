@@ -21,21 +21,20 @@
               d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z" />
             <path d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z" />
           </svg></span>nner's Gambit</a>
-      <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
-        <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z" />
-        </svg>
-      </button>
-      <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
-          fill="#000" />
-        <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
-      </svg>
-    </header>
-
-    <aside class="sidebar">
+      <input
+          type="checkbox"
+          name="sidebar-toggle"
+          id="sidebarToggle"
+          class="sidebar-toggle"
+        />
+        <label for="sidebarToggle" class="hamburger">
+          <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z"
+            />
+          </svg>
+        </label>
+        <aside class="sidebar">
       <nav>
         <ul id="sidebar-links">
           <li class="sidebar-link"><a href="index.html">Home</a></li>
@@ -91,6 +90,15 @@
         </ul>
       </nav>
     </aside>
+      <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
+          fill="#000" />
+        <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
+      </svg>
+    </header>
+
+    
 
     <main>
       <article class="page">
@@ -530,7 +538,6 @@
           </svg></span></a>
     </footer>
   </div>
-  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

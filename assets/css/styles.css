@@ -235,9 +235,19 @@ header {
   fill: black;
 }
 
-.sidebar-toggle {
+.hamburger {
+  cursor: pointer;
   display: contents;
   margin-left: 1rem;
+}
+
+/* .sidebar-toggle {
+  display: contents;
+  margin-left: 1rem;
+} */
+
+.sidebar-toggle {
+  display: none;
 }
 
 nav ul li {
@@ -248,11 +258,13 @@ nav ul li {
   height: 100%;
   width: 16rem;
   position: fixed;
-  top: 0;
+  top: 4rem;
+  left: 0;
   z-index: 1;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
   overflow-x: hidden;
   transition: transform 0.2s ease;
+  border-top: 1px solid var(--divider-color);
   border-right: 1px solid var(--divider-color);
   background-color: white;
 }
@@ -265,6 +277,7 @@ nav ul li {
   font-size: var(--h5);
   font-weight: 600;
   letter-spacing: -0.02em;
+  user-select: none;
 }
 
 .sidebar-subheader-group {
@@ -528,7 +541,11 @@ input:checked ~ .accordion-content {
 }
 
 /* Must be afterward to override sidebar hiding under 768px */
-.sidebar-open {
+/* .sidebar-open {
+  transform: translateX(0%);
+} */
+
+input[type="checkbox"]:checked ~ .sidebar {
   transform: translateX(0%);
 }
 
