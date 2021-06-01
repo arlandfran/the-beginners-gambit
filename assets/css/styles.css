@@ -28,10 +28,6 @@
 }
 
 /* General styles */
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: var(--sans-serif);
 }
@@ -561,8 +557,14 @@ input[type="checkbox"]:checked ~ .sidebar {
   }
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
+@supports (scroll-behavior: smooth) {
   html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 }
