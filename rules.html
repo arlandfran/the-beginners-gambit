@@ -27,13 +27,106 @@
               /></svg></span
           >nner's Gambit</a
         >
-        <button class="sidebar-toggle" onclick="toggleSideBar()" role="button">
+        <input
+          type="checkbox"
+          name="sidebar-toggle"
+          id="sidebarToggle"
+          class="sidebar-toggle"
+        />
+        <label for="sidebarToggle" class="hamburger">
           <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z"
             />
           </svg>
-        </button>
+        </label>
+        <aside class="sidebar">
+          <nav>
+            <ul id="sidebar-links">
+              <li class="sidebar-link"><a href="index.html">Home</a></li>
+              <li class="sidebar-link"><a href="setup.html">Setup</a></li>
+              <ul class="sidebar-link active">
+                <li>
+                  <a href="rules.html">Rules</a>
+                </li>
+                <ul class="sidebar-subheader-group">
+                  <a href="rules.html#movement">Movement</a>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#king">King</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#queen">Queen</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#rook">Rook</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#bishop">Bishop</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#knight">Knight</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#pawn">Pawn</a>
+                  </li>
+                </ul>
+                <ul class="sidebar-subheader-group">
+                  <a href="rules.html#special-moves">Special Moves</a>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#castling">Castling</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#en-passant">En Passant</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#promotion">Promotion</a>
+                  </li>
+                </ul>
+                <ul class="sidebar-subheader-group">
+                  <a href="rules.html#conditions">Conditions</a>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#checkmate">Checkmate</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#resignation">Resignation</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#timeout">Timeout</a>
+                  </li>
+                </ul>
+                <ul class="sidebar-subheader-group">
+                  <a href="rules.html#draws">Draws</a>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#stalemate">Stalemate</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#insufficient-material"
+                      >Insufficient Material</a
+                    >
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#repitition">Repitition</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#fifty-move-rule">Fifty-move Rule</a>
+                  </li>
+                  <li class="sidebar-subheader-link">
+                    <a href="rules.html#mutual-agreement">Mutual Agreement</a>
+                  </li>
+                </ul>
+              </ul>
+              <li class="sidebar-link"><a href="concepts.html">Concepts</a></li>
+              <li class="sidebar-link">
+                <a href="opening-principles.html">Opening Principles</a>
+              </li>
+              <li class="sidebar-link"><a href="tactics.html">Tactics</a></li>
+              <li class="sidebar-link">
+                <a href="mating-patterns.html">Mating Patterns</a>
+              </li>
+              <li class="sidebar-link"><a href="about.html">About</a></li>
+            </ul>
+          </nav>
+        </aside>
         <svg
           width="32"
           height="32"
@@ -47,93 +140,7 @@
           <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
         </svg>
       </header>
-      <aside class="sidebar">
-        <nav>
-          <ul id="sidebar-links">
-            <li class="sidebar-link"><a href="index.html">Home</a></li>
-            <li class="sidebar-link"><a href="setup.html">Setup</a></li>
-            <ul class="sidebar-link active">
-              <li>
-                <a href="rules.html">Rules</a>
-              </li>
-              <ul class="sidebar-subheader-group">
-                <a href="rules.html#movement">Movement</a>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#king">King</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#queen">Queen</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#rook">Rook</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#bishop">Bishop</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#knight">Knight</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#pawn">Pawn</a>
-                </li>
-              </ul>
-              <ul class="sidebar-subheader-group">
-                <a href="rules.html#special-moves">Special Moves</a>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#castling">Castling</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#en-passant">En Passant</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#promotion">Promotion</a>
-                </li>
-              </ul>
-              <ul class="sidebar-subheader-group">
-                <a href="rules.html#conditions">Conditions</a>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#checkmate">Checkmate</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#resignation">Resignation</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#timeout">Timeout</a>
-                </li>
-              </ul>
-              <ul class="sidebar-subheader-group">
-                <a href="rules.html#draws">Draws</a>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#stalemate">Stalemate</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#insufficient-material"
-                    >Insufficient Material</a
-                  >
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#repitition">Repitition</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#fifty-move-rule">Fifty-move Rule</a>
-                </li>
-                <li class="sidebar-subheader-link">
-                  <a href="rules.html#mutual-agreement">Mutual Agreement</a>
-                </li>
-              </ul>
-            </ul>
-            <li class="sidebar-link"><a href="concepts.html">Concepts</a></li>
-            <li class="sidebar-link">
-              <a href="opening-principles.html">Opening Principles</a>
-            </li>
-            <li class="sidebar-link"><a href="tactics.html">Tactics</a></li>
-            <li class="sidebar-link">
-              <a href="mating-patterns.html">Mating Patterns</a>
-            </li>
-            <li class="sidebar-link"><a href="about.html">About</a></li>
-          </ul>
-        </nav>
-      </aside>
+
       <main>
         <article class="page">
           <h1 class="h3">Rules</h1>
