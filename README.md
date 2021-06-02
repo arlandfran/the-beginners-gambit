@@ -53,13 +53,23 @@ The white and black are used for background and text. The indigo is utilised for
 
 #### Typography
 
-The font used was **_Poppins_** by the Indian Type Foundry. This font was chosen for the following:
+The font used was for headings and body text was **_Poppins_** by the Indian Type Foundry. This font was chosen for the following:
 
 - Geometric Typeface - The geometric style of this Sans-serif font was suitable for the modern look and feel the site was aiming for.
 
 - Tall x-height - Typefaces with tall x-heights have better legibility at small font sizes, this made it a great choice for improved readability on mobile devices.
 
-- Variety of font styles - Poppins has 18 different font weights. This allows me to utilise a single typeface for the entire site and only send a single server request for Google Fonts, improving loading times.
+The font used for captions was **_PT Serif_** by ParaType. This typeface was chosen for its popularity as a serif font and is used only for figure caption text. It serves as a nice contrast to Poppins and is a popular font pairing.
+
+## Features
+
+### Site Wide
+
+#### Responsive Navigation
+
+Every page features a header component with a responsive hamburger icon and logo brand that doubles as a home page link. Navigation is housed in a sidebar that houses all page links. On mobile viewports it's hidden off-canvas and toggled by the hamburger icon. On tablet viewports and above, it's housed on the left side of the page. Internal page links are also grouped and allow for quick and easy navigation within the same page.
+
+####
 
 ## testing
 
