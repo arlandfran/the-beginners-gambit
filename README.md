@@ -35,6 +35,13 @@ The goals for the user are:
 High-fidelity Wireframes:
 
 - [Home](assets/img/wireframes/home.jpg)
+- [Setup](assets/img/wireframes/setup.jpg)
+- [Rules](assets/img/wireframes/rules.jpg)
+- [Concepts](assets/img/wireframes/concepts.jpg)
+- [Opening Principles](assets/img/wireframes/opening-principles)
+- [Tactics](assets/img/wireframes/tactics.jpg)
+- [Mating Patterns](assets/img/wireframes/mating-patterns.jpg)
+- [About](assets/img/wireframes/about.jpg)
 
 ## testing
 
