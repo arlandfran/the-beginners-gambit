@@ -32,7 +32,7 @@ The goals for the user are:
 
 ### Design
 
-High-fidelity Wireframes:
+#### Wireframes
 
 - [Home](assets/img/wireframes/home.jpg)
 - [Setup](assets/img/wireframes/setup.jpg)
@@ -42,6 +42,16 @@ High-fidelity Wireframes:
 - [Tactics](assets/img/wireframes/tactics.jpg)
 - [Mating Patterns](assets/img/wireframes/mating-patterns.jpg)
 - [About](assets/img/wireframes/about.jpg)
+
+#### Accessibility Considerations
+
+##### Colors
+
+![Color Pallette](assets/img/colors.png)
+
+The colors used are compliant with WCAG guidelines for color contrast, with all colors (excluding white) achieving level AAA contrast against a white background.
+
+The white and black are used for background and text. The indigo is utilised for accenting UI components and providing color to various states such as `:hover` and `:active`.
 
 ## testing
 
