@@ -26,9 +26,13 @@ The goals for the user are:
 
 2. As a new visitor to the site, I want to be able to use the site on my phone/tablet to quickly refer to when playing a chess game.
 
-3. As a new visitor to the site, I want to be able to see illustrations and examples as opposed to heavy verbose articles.
+3. As a new visitor to the site and a chess beginner, I want to be able to see illustrations and examples as opposed to heavy verbose articles.
 
 4. As a returning visitor to the website, I want to be able share these pages with my friends so they can quickly learn the rules.
+
+### Design
+
+View High-fidelity Wireframes Here
 
 ## testing
 
