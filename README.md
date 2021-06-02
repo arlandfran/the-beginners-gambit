@@ -32,7 +32,7 @@ The goals for the user are:
 
 ### Design
 
-View High-fidelity Wireframes Here
+[View High-fidelity Wireframes Here](wireframes.md)
 
 ## testing
 
