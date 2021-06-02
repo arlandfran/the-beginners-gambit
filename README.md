@@ -43,15 +43,23 @@ The goals for the user are:
 - [Mating Patterns](assets/img/wireframes/mating-patterns.jpg)
 - [About](assets/img/wireframes/about.jpg)
 
-#### Accessibility Considerations
-
-##### Colors
+#### Colors
 
 ![Color Pallette](assets/img/colors.png)
 
-The colors used are compliant with WCAG guidelines for color contrast, with all colors (excluding white) achieving level AAA contrast against a white background.
-
 The white and black are used for background and text. The indigo is utilised for accenting UI components and providing color to various states such as `:hover` and `:active`.
+
+> The colors used are compliant with WCAG guidelines for color contrast, with all colors (excluding white) achieving level AAA contrast against a white background.
+
+#### Typography
+
+The font used was **_Poppins_** by the Indian Type Foundry. This font was chosen for the following:
+
+- Geometric Typeface - The geometric style of this Sans-serif font was suitable for the modern look and feel the site was aiming for.
+
+- Tall x-height - Typefaces with tall x-heights have better legibility at small font sizes, this made it a great choice for improved readability on mobile devices.
+
+- Variety of font styles - Poppins has 18 different font weights. This allows me to utilise a single typeface for the entire site and only send a single server request for Google Fonts, improving loading times.
 
 ## testing
 
