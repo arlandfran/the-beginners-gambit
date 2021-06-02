@@ -343,7 +343,7 @@ footer a {
 }
 
 .page-link {
-  text-decoration: underline;
+  text-decoration: underline var(--primary-color) dotted;
   text-transform: uppercase;
   font-size: var(--h5);
   font-weight: 700;
