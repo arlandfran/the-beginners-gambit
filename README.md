@@ -32,7 +32,9 @@ The goals for the user are:
 
 ### Design
 
-View High-fidelity Wireframes Here
+High-fidelity Wireframes:
+
+- [Home](assets/img/wireframes/home.jpg)
 
 ## testing
 
