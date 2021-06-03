@@ -154,6 +154,10 @@ The content for this project were adapted from the following sites:
 
 ### Code
 
+The following CodePen was referenced when building the off-canvas sidebar component.
+
+- [Pure CSS Sidebar Toggle Menu - Jelena Jovanovic](https://codepen.io/plavookac/pen/qomrMw)
+
 The following articles were referenced when building the accordion component.
 
 - [Pure CSS accordion without Javascript - Supfort](https://supfort.com/pure-css-accordion-without-javascript)
@@ -167,5 +171,5 @@ All icons (_exluding share button icons_) and illustrations were custom made usi
 
 ### Acknowledgements
 
-- The Code Institute Slack community for being a great space for resources, tips and support.
+- The Code Institute Slack community for all the great resources, tips and support.
 - My mentor [Precious Ijege](https://github.com/precious-ijege) for his support and feedback with the project.
