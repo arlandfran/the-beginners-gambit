@@ -259,6 +259,10 @@ nav ul li {
   background-color: white;
 }
 
+.sidebar-links {
+  text-transform: capitalize;
+}
+
 .sidebar-link {
   display: block;
   padding-left: 1.5rem;
@@ -277,14 +281,10 @@ nav ul li {
   font-size: var(--h6);
 }
 
-.sidebar-subheader-group li {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-}
-
 .sidebar-subheader-link {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+  padding-left: 1rem;
   font-size: var(--base-font-size);
 }
 

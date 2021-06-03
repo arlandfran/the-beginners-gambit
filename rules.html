@@ -5,38 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Beginner's Gambit | Rules</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
     <div id="app">
       <header class="navbar">
-        <a class="logo" href="index.html"
-          >The Beg<span
-            ><svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z"
-              />
-              <path
-                d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z"
-              /></svg></span
-          >nner's Gambit</a
-        >
-        <input
-          type="checkbox"
-          name="sidebar-toggle"
-          id="sidebarToggle"
-          class="sidebar-toggle"
-        />
+        <a class="logo" href="index.html">
+          The Beg
+          <span>
+            <svg id="logo-glyph" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11 11H0s0-2.865 1.833-2.865c1.834 0 1.834-1.718 1.834-1.718h3.666s0 1.718 1.834 1.718C11 8.135 11 11 11 11zM3.667 6.417h3.666s-1.186 0-1.156-1.09h-1.35c.03 1.09-1.16 1.09-1.16 1.09z" />
+              <path d="M8.25 2.75a2.75 2.75 0 11-5.5 0 2.75 2.75 0 015.5 0z" />
+            </svg>
+          </span>
+          nner's Gambit
+        </a>
+        <input type="checkbox" name="sidebar-toggle" id="sidebarToggle" class="sidebar-toggle" />
         <label for="sidebarToggle" class="hamburger">
           <svg id="hamburger" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z"
-            />
+            <path d="M6 16c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 21c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1zM6 11c0-.6.4-1 1-1h18a1 1 0 110 2H7a1 1 0 01-1-1z" />
           </svg>
         </label>
         <aside class="sidebar">
@@ -44,98 +33,64 @@
             <ul id="sidebar-links">
               <li class="sidebar-link"><a href="index.html">Home</a></li>
               <li class="sidebar-link"><a href="setup.html">Setup</a></li>
-              <ul class="sidebar-link active">
-                <li>
-                  <a href="rules.html">Rules</a>
-                </li>
+              <li class="sidebar-link active">
+                <a href="rules.html">Rules</a>
                 <ul class="sidebar-subheader-group">
-                  <a href="rules.html#movement">Movement</a>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#king">King</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#queen">Queen</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#rook">Rook</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#bishop">Bishop</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#knight">Knight</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#pawn">Pawn</a>
+                  <li>
+                    <a href="rules.html#movement">Movement</a>
+                    <ul>
+                      <li class="sidebar-subheader-link"><a href="rules.html#king">King</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#queen">Queen</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#rook">Rook</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#bishop">Bishop</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#knight">Knight</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#pawn">Pawn</a></li>
+                    </ul>
                   </li>
                 </ul>
                 <ul class="sidebar-subheader-group">
-                  <a href="rules.html#special-moves">Special Moves</a>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#castling">Castling</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#en-passant">En Passant</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#promotion">Promotion</a>
+                  <li>
+                    <a href="rules.html#special-moves">Special Moves</a>
+                    <ul>
+                      <li class="sidebar-subheader-link"><a href="rules.html#castling">Castling</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#en-passant">En Passant</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#promotion">Promotion</a></li>
+                    </ul>
                   </li>
                 </ul>
                 <ul class="sidebar-subheader-group">
-                  <a href="rules.html#conditions">Conditions</a>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#checkmate">Checkmate</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#resignation">Resignation</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#timeout">Timeout</a>
+                  <li>
+                    <a href="rules.html#conditions">Conditions</a>
+                    <ul>
+                      <li class="sidebar-subheader-link"><a href="rules.html#checkmate">Checkmate</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#resignation">Resignation</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#timeout">Timeout</a></li>
+                    </ul>
                   </li>
                 </ul>
                 <ul class="sidebar-subheader-group">
-                  <a href="rules.html#draws">Draws</a>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#stalemate">Stalemate</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#insufficient-material"
-                      >Insufficient Material</a
-                    >
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#repitition">Repitition</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#fifty-move-rule">Fifty-move Rule</a>
-                  </li>
-                  <li class="sidebar-subheader-link">
-                    <a href="rules.html#mutual-agreement">Mutual Agreement</a>
+                  <li>
+                    <a href="rules.html#draws">Draws</a>
+                    <ul>
+                      <li class="sidebar-subheader-link"><a href="rules.html#stalemate">Stalemate</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#insufficient-material">Insufficient Material</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#repitition">Repitition</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#fifty-move-rule">Fifty-Move Rule</a></li>
+                      <li class="sidebar-subheader-link"><a href="rules.html#mutual-agreement">Mutual Agreement</a></li>
+                    </ul>
                   </li>
                 </ul>
-              </ul>
+              </li>
               <li class="sidebar-link"><a href="concepts.html">Concepts</a></li>
-              <li class="sidebar-link">
-                <a href="opening-principles.html">Opening Principles</a>
-              </li>
+              <li class="sidebar-link"><a href="opening-principles.html">Opening Principles</a></li>
               <li class="sidebar-link"><a href="tactics.html">Tactics</a></li>
-              <li class="sidebar-link">
-                <a href="mating-patterns.html">Mating Patterns</a>
-              </li>
+              <li class="sidebar-link"><a href="mating-patterns.html">Mating Patterns</a></li>
               <li class="sidebar-link"><a href="about.html">About</a></li>
             </ul>
           </nav>
         </aside>
-        <svg
-          width="32"
-          height="32"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z"
-            fill="#000"
-          />
+        <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M26 26H6s0-5 3.3-5c3.4 0 3.4-3 3.4-3h6.6s0 3 3.4 3c3.3 0 3.3 5 3.3 5zM12.7 18h6.6s-2.1 0-2-2.2h-2.5c0 2.2-2.1 2.2-2.1 2.2z" fill="#000" />
           <path d="M21 11a5 5 0 11-10 0 5 5 0 0110 0z" fill="#000" />
         </svg>
       </header>
@@ -146,13 +101,15 @@
           <ol class="px-1">
             <li>White moves first</li>
             <li>No skipping moves</li>
-            <li>Game continues until any of these conditions are fulfilled:</li>
-            <ul class="indent">
-              <li>Checkmate</li>
-              <li>Resignation</li>
-              <li>Timeout</li>
-              <li>Draw</li>
-            </ul>
+            <li>
+              Game continues until any of these conditions are fulfilled:
+              <ul class="indent">
+                <li>Checkmate</li>
+                <li>Resignation</li>
+                <li>Timeout</li>
+                <li>Draw</li>
+              </ul>
+            </li>
           </ol>
           <h2 class="h4 subheader-link" id="movement">Movement</h2>
           <ul class="px-1">
@@ -164,24 +121,17 @@
               <strong>Knights</strong> & <strong>Castling</strong>.
             </li>
             <li>
-              Pieces can move into vacant squares or squares occupied by
-              opponent pieces by capturing them.
+              Pieces can move into vacant squares or squares occupied by opponent pieces by capturing them.
             </li>
             <li>
               If a piece is captured it is permanently removed from the game.
             </li>
-            <li>
-              The <strong>King</strong> is the only piece that cannot be
-              captured. It can only be put in check.
-            </li>
+            <li>The <strong>King</strong> is the only piece that cannot be captured. It can only be put in check.</li>
           </ul>
           <div class="fig-container expandable">
             <figure>
               <p class="h5 fig-subheading subheader-link" id="king">King</p>
-              <img
-                src="assets/img/rules/king.svg"
-                alt="chess king movements highlighted on a chess board"
-              />
+              <img src="assets/img/rules/king.svg" alt="chess king movements highlighted on a chess board" />
               <figcaption class="align-center">
                 <strong>Movement:</strong>
                 <br />
@@ -195,28 +145,18 @@
             </figure>
             <figure>
               <p class="h5 fig-subheading subheader-link" id="queen">Queen</p>
-              <img
-                src="assets/img/rules/queen.svg"
-                alt="chess queen movements highlighted on a chess board"
-              />
+              <img src="assets/img/rules/queen.svg" alt="chess queen movements highlighted on a chess board" />
               <figcaption class="align-center">
                 <strong>Movement:</strong>
                 <br />
-                Any number of vacant squares horizontally, vertically or
-                diagonally.
+                Any number of vacant squares horizontally, vertically or diagonally.
               </figcaption>
             </figure>
             <figure>
-              <p
-                class="sction-column h5 fig-subheading subheader-link"
-                id="rook"
-              >
+              <p class="sction-column h5 fig-subheading subheader-link" id="rook">
                 Rook
               </p>
-              <img
-                src="assets/img/rules/rook.svg"
-                alt="chess rook movements highlighted on a chess board"
-              />
+              <img src="assets/img/rules/rook.svg" alt="chess rook movements highlighted on a chess board" />
               <figcaption class="align-center">
                 <strong>Movement:</strong>
                 <br />
@@ -230,10 +170,7 @@
             </figure>
             <figure>
               <p class="h5 fig-subheading subheader-link" id="bishop">Bishop</p>
-              <img
-                src="assets/img/rules/bishop.svg"
-                alt="chess bishop movements highlighted on a chess board"
-              />
+              <img src="assets/img/rules/bishop.svg" alt="chess bishop movements highlighted on a chess board" />
               <figcaption class="align-center">
                 <strong>Movement:</strong>
                 <br />
@@ -242,15 +179,11 @@
             </figure>
             <figure>
               <p class="h5 fig-subheading subheader-link" id="knight">Knight</p>
-              <img
-                src="assets/img/rules/knight.svg"
-                alt="chess knight movements highlighted on a chess board"
-              />
+              <img src="assets/img/rules/knight.svg" alt="chess knight movements highlighted on a chess board" />
               <figcaption class="align-center">
                 <strong>Movement:</strong>
                 <br />
-                Any vacant square not on the same rank, file or diagonal. This
-                is easiest to remember as an L shape.
+                Any vacant square not on the same rank, file or diagonal. This is easiest to remember as an L shape.
                 <br />
                 <br />
                 <ul>
@@ -260,10 +193,7 @@
             </figure>
             <figure>
               <p class="h5 fig-subheading subheader-link" id="pawn">Pawn</p>
-              <img
-                src="assets/img/rules/pawn.svg"
-                alt="chess pawn movements highlighted on a chess board"
-              />
+              <img src="assets/img/rules/pawn.svg" alt="chess pawn movements highlighted on a chess board" />
               <figcaption class="align-center">
                 <strong>Movement:</strong>
                 <br />
@@ -274,14 +204,13 @@
                   <li>Cannot move backwards</li>
                   <li>Captures diagonnally</li>
                   <li>
-                    Has the option to move one or two squares on its first move
-                    if the squares are vacant.
+                    Has the option to move one or two squares on its first move if the squares are vacant.
                   </li>
-                  <br />
-                  <strong>Special Moves:</strong>
-                  <br />
-                  En Passant, Promotion
                 </ul>
+                <br />
+                <strong>Special Moves:</strong>
+                <br />
+                En Passant, Promotion
               </figcaption>
             </figure>
           </div>
@@ -289,10 +218,7 @@
           <h3 class="h5 subheader-link" id="castling">Castling</h3>
           <div class="fig-container">
             <figure>
-              <img
-                src="assets/img/rules/castling.svg"
-                alt="illustration of the castling rule in chess"
-              />
+              <img src="assets/img/rules/castling.svg" alt="illustration of the castling rule in chess" />
               <figcaption class="text-caption">
                 Here white has castled “kingside” and black “queenside”.
               </figcaption>
@@ -300,15 +226,8 @@
           </div>
           <p>Castling is a special move that involves the king and a rook.</p>
           <p>There are two directions to castle in:</p>
-          <p>
-            <strong>Kingside castling</strong> (castling short) consists of
-            moving the king from the e1 square to the g1 square, and the rook on
-            h1 to f1.
-          </p>
-          <p>
-            <strong>Queenside castling</strong> (castling long) consists of
-            moving the king from the e1 square to c1, and the rook on a1 to d1.
-          </p>
+          <p><strong>Kingside castling</strong> (castling short) consists of moving the king from the e1 square to the g1 square, and the rook on h1 to f1.</p>
+          <p><strong>Queenside castling</strong> (castling long) consists of moving the king from the e1 square to c1, and the rook on a1 to d1.</p>
           <p>There are several conditions for a player to be able to castle:</p>
           <ul class="indent">
             <li>
@@ -317,68 +236,44 @@
             <li>There are no pieces between your king and rook.</li>
             <li>The king is not in check.</li>
             <li>
-              The king doesn’t move through any squares that would put it in
-              check after castling nor move through a square attacked by an
-              enemy piece. The rook however can move through or end up in a
-              square being attacked.
+              The king doesn’t move through any squares that would put it in check after castling nor move through a square attacked by an enemy piece. The rook however can move through or end up in a square being attacked.
             </li>
           </ul>
           <div class="fig-container">
             <figure>
-              <img
-                src="assets/img/rules/castle-blocked.svg"
-                alt="bishop blocking the white pieces from castling"
-              />
+              <img src="assets/img/rules/castle-blocked.svg" alt="bishop blocking the white pieces from castling" />
               <figcaption class="text-caption">
-                The king cannot castle as the f1 square is attacked by the black
-                bishop.
+                The king cannot castle as the f1 square is attacked by the black bishop.
               </figcaption>
             </figure>
           </div>
           <h3 class="h5 subheader-link" id="en-passant">En Passant</h3>
           <p>
-            En Passant (in passing) is a special pawn capture that occurs when a
-            pawn has advanced two squares and ends up next to an enemy pawn.
-            When this occurs, the enemy pawn can capture the pawn that had
-            moved, capturing “in passing”.
+            En Passant (in passing) is a special pawn capture that occurs when a pawn has advanced two squares and ends up next to an enemy pawn. When this occurs, the enemy pawn can capture the pawn that had moved, capturing “in passing”.
           </p>
           <div class="fig-container">
             <figure>
-              <img
-                src="assets/img/rules/en-passant.svg"
-                alt="illustration of the en passant rule in chess"
-              />
-              <figcaption class="text-caption">
-                The white d pawn moving to d4 allows the enemy e4 pawn to
-                capture it through the <strong>en passant</strong> rule.
-              </figcaption>
+              <img src="assets/img/rules/en-passant.svg" alt="illustration of the en passant rule in chess" />
+              <figcaption class="text-caption">The white d pawn moving to d4 allows the enemy e4 pawn to capture it through the <strong>en passant</strong> rule.</figcaption>
             </figure>
           </div>
           <h3 class="h5 subheader-link" id="promotion">Promotion</h3>
           <p>
-            When a pawn reaches the eighth rank (or the 1st rank for black), it
-            is promoted to a queen, rook, knight or bishop at the players
-            choice. Keep in mind that the choice is not limited to previously
-            captured pieces, so if you promote another pawn, you could
-            theoretically have three queens on the board if you choose.
+            When a pawn reaches the eighth rank (or the 1st rank for black), it is promoted to a queen, rook, knight or bishop at the players choice. Keep in mind that the choice is not limited to previously captured pieces, so if you
+            promote another pawn, you could theoretically have three queens on the board if you choose.
           </p>
           <div class="fig-container">
             <figure>
-              <img
-                src="assets/img/rules/promotion.svg"
-                alt="a chess pawn promoting"
-              />
+              <img src="assets/img/rules/promotion.svg" alt="a chess pawn promoting" />
             </figure>
           </div>
           <h2 class="h4 subheader-link" id="conditions">Conditions</h2>
           <p>
-            In chess there are multiple ways that a game can end. Those ways
-            are:
+            In chess there are multiple ways that a game can end. Those ways are:
           </p>
           <h3 class="h5 subheader-link" id="checkmate">Checkmate</h3>
           <p>
-            Checkmate is a position on the board where an attacking player has a
-            defending player’s king in check and there are:
+            Checkmate is a position on the board where an attacking player has a defending player’s king in check and there are:
           </p>
           <ul class="indent">
             <li>no legal squares to move the defending king to</li>
@@ -386,38 +281,26 @@
             <li>no way to capture the attacking piece</li>
           </ul>
           <p>
-            If all of these conditions are met, then the defending king cannot
-            avoid capture and it is checkmate.
+            If all of these conditions are met, then the defending king cannot avoid capture and it is checkmate.
           </p>
           <div class="fig-container expandable">
             <figure class="full-width">
-              <img
-                src="assets/img/rules/checkmate.svg"
-                alt="example of checkmate"
-              />
+              <img src="assets/img/rules/checkmate.svg" alt="example of checkmate" />
               <figcaption class="text-caption align-center text-left">
-                This is checkmate for white. It's retreat squares are covered by
-                the black queen, and there isn’t a piece that is able to capture
-                or block the black queen and the king cannot capture as the
-                black queen is defended by the bishop on e5.
+                This is checkmate for white. It's retreat squares are covered by the black queen, and there isn’t a piece that is able to capture or block the black queen and the king cannot capture as the black queen is defended by the
+                bishop on e5.
               </figcaption>
             </figure>
           </div>
           <h3 class="h5 subheader-link" id="resignation">Resignation</h3>
           <p>
-            A player in a losing position may wish to resign and concede the
-            game if they decide they objectively cannot save the position.
+            A player in a losing position may wish to resign and concede the game if they decide they objectively cannot save the position.
           </p>
           <div class="fig-container expandable">
             <figure class="full-width">
-              <img
-                src="assets/img/rules/resignation.svg"
-                alt="example of resignation"
-              />
+              <img src="assets/img/rules/resignation.svg" alt="example of resignation" />
               <figcaption class="text-caption align-center text-left">
-                Black resigns in this position as after the white queen delivers
-                check on h8, the black king is forced to f7, and after another
-                check on h7, white skewers the king and black's queen is lost.
+                Black resigns in this position as after the white queen delivers check on h8, the black king is forced to f7, and after another check on h7, white skewers the king and black's queen is lost.
               </figcaption>
             </figure>
           </div>
@@ -426,40 +309,27 @@
             It’s also possible to lose by timeout if playing with time control.
           </p>
           <p>
-            It doesn’t matter how much of an advantage a player may have, if a
-            player has run out of time, and the opponent has the minumum amount
-            of material to force a checkmate - then they lose the game.
+            It doesn’t matter how much of an advantage a player may have, if a player has run out of time, and the opponent has the minumum amount of material to force a checkmate - then they lose the game.
           </p>
           <p>
-            If however, the opponent has insufficient material to force a
-            checkmate, then the game is drawn.
+            If however, the opponent has insufficient material to force a checkmate, then the game is drawn.
           </p>
           <p>
-            Timeout losses are more common in online chess where faster time
-            controls are more popular.
+            Timeout losses are more common in online chess where faster time controls are more popular.
           </p>
           <h2 class="h4 subheader-link" id="draws">Draws</h2>
           <p>
-            In chess there are also multiple ways to draw a game. The different
-            types of draws are as follows:
+            In chess there are also multiple ways to draw a game. The different types of draws are as follows:
           </p>
           <h3 class="h5 subheader-link" id="stalemate">Stalemate</h3>
           <p>
-            Stalemate is a position on the board in where it is a players turn
-            to move but has no legal moves available. This position is deemed as
-            a draw for both players.
+            Stalemate is a position on the board in where it is a players turn to move but has no legal moves available. This position is deemed as a draw for both players.
           </p>
           <div class="fig-container expandable">
             <figure class="full-width">
-              <img
-                src="assets/img/rules/stalemate.svg"
-                alt="example of stalemate"
-              />
+              <img src="assets/img/rules/stalemate.svg" alt="example of stalemate" />
               <figcaption class="text-caption align-center text-left">
-                White playing queen to c7 is stalemate for black as he cannot
-                move to any squares for they are covered by the white queen and
-                his pawn on h5 is blocked, therefore black has no legal moves to
-                play and the game is drawn.
+                White playing queen to c7 is stalemate for black as he cannot move to any squares for they are covered by the white queen and his pawn on h5 is blocked, therefore black has no legal moves to play and the game is drawn.
               </figcaption>
             </figure>
           </div>
@@ -467,18 +337,13 @@
             Insufficient Material
           </h3>
           <p>
-            A game can also be drawn if both sides have do not have the
-            sufficient material possible to checkmate.
+            A game can also be drawn if both sides have do not have the sufficient material possible to checkmate.
           </p>
           <div class="fig-container">
             <figure>
-              <img
-                src="assets/img/rules/no-material.svg"
-                alt="example of a draw by insufficient material with 2 kings and no material"
-              />
+              <img src="assets/img/rules/no-material.svg" alt="example of a draw by insufficient material with 2 kings and no material" />
               <figcaption class="text-caption align-center text-left">
-                This position is a draw as it is impossible for checkmate to
-                occur as neither side has any material.
+                This position is a draw as it is impossible for checkmate to occur as neither side has any material.
               </figcaption>
             </figure>
           </div>
@@ -486,20 +351,11 @@
           <p>Other dead positions incude:</p>
           <div class="fig-container expandable full-width">
             <figure>
-              <img
-                src="assets/img/rules/king-and-knight.svg"
-                alt="example of a draw by insufficient material with 2 kings and 2 knights"
-              />
-              <figcaption class="text-caption">
-                King & minor piece <strong>(either knight or bishop)</strong> vs
-                king
-              </figcaption>
+              <img src="assets/img/rules/king-and-knight.svg" alt="example of a draw by insufficient material with 2 kings and 2 knights" />
+              <figcaption class="text-caption">King & minor piece <strong>(either knight or bishop)</strong> vs king</figcaption>
             </figure>
             <figure>
-              <img
-                src="assets/img/rules/king-and-bishop.svg"
-                alt="example of a draw by insufficient material with 2 kings and 2 bishops"
-              />
+              <img src="assets/img/rules/king-and-bishop.svg" alt="example of a draw by insufficient material with 2 kings and 2 bishops" />
               <figcaption class="text-caption">
                 King & bishop vs king & bishop
                 <strong>(of the same color)</strong>
@@ -508,64 +364,34 @@
           </div>
           <h3 class="h5 subheader-link" id="repitition">Repitition</h3>
           <p>
-            The three-fold repitition rule states that if a position occurs
-            three times in the same game, either player may claim a draw. In
-            online chess the game is drawn automatically. The purpose of this
-            rule is that if the same position occurs three times, no real
-            progress is being made and the game could hypothetically continue
-            indefinitely.
+            The three-fold repitition rule states that if a position occurs three times in the same game, either player may claim a draw. In online chess the game is drawn automatically. The purpose of this rule is that if the same position
+            occurs three times, no real progress is being made and the game could hypothetically continue indefinitely.
           </p>
           <h3 class="h5 subheader-link" id="fifty-move-rule">
             Fifty-move Rule
           </h3>
           <p>
-            A player can claim a draw if no capture has been made and no pawn
-            has been moved in the last fifty moves. The purpose of this rule is
-            to prevent a player with no chance of winning from continuing the
-            game indefinitely or trying to win by tiring the opponent.
+            A player can claim a draw if no capture has been made and no pawn has been moved in the last fifty moves. The purpose of this rule is to prevent a player with no chance of winning from continuing the game indefinitely or trying
+            to win by tiring the opponent.
           </p>
           <!-- note: change this to custom block -->
           <p>
-            On July 1st 2014 FIDE introduced the five-fold repitition rule and
-            the seventy-five move rule, in where if these conditions are met the
-            game is automatically drawn as opposed to a draw being claimed by
-            either player.
+            On July 1st 2014 FIDE introduced the five-fold repitition rule and the seventy-five move rule, in where if these conditions are met the game is automatically drawn as opposed to a draw being claimed by either player.
           </p>
           <h3 class="h5 subheader-link" id="mutual-agreement">
             Mutual Agreement
           </h3>
           <p>
-            In chess, a player may offer a draw at any stage of a game. If the
-            opponent accepts, the outcome of the game is a draw by mutual
-            agreement.
+            In chess, a player may offer a draw at any stage of a game. If the opponent accepts, the outcome of the game is a draw by mutual agreement.
           </p>
           <div class="share-buttons">
             <!-- 3rd party code generated by https://sharingbuttons.io/ -->
             <!-- Sharingbutton Facebook -->
-            <a
-              class="resp-sharing-button__link"
-              href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Farlandfran.github.io%2Fthe-beginners-gambit%2Frules.html"
-              target="_blank"
-              rel="noopener"
-              aria-label=""
-            >
-              <div
-                class="
-                  resp-sharing-button
-                  resp-sharing-button--facebook
-                  resp-sharing-button--small
-                "
-              >
-                <div
-                  aria-hidden="true"
-                  class="
-                    resp-sharing-button__icon resp-sharing-button__icon--solid
-                  "
-                >
+            <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Farlandfran.github.io%2Fthe-beginners-gambit%2Frules.html" target="_blank" rel="noopener" aria-label="">
+              <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                      d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"
-                    />
+                    <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
                   </svg>
                 </div>
               </div>
@@ -579,19 +405,8 @@
               rel="noopener"
               aria-label=""
             >
-              <div
-                class="
-                  resp-sharing-button
-                  resp-sharing-button--twitter
-                  resp-sharing-button--small
-                "
-              >
-                <div
-                  aria-hidden="true"
-                  class="
-                    resp-sharing-button__icon resp-sharing-button__icon--solid
-                  "
-                >
+              <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path
                       d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"
@@ -609,23 +424,10 @@
               rel="noopener"
               aria-label=""
             >
-              <div
-                class="
-                  resp-sharing-button
-                  resp-sharing-button--linkedin
-                  resp-sharing-button--small
-                "
-              >
-                <div
-                  aria-hidden="true"
-                  class="
-                    resp-sharing-button__icon resp-sharing-button__icon--solid
-                  "
-                >
+              <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small">
+                <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                      d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z"
-                    />
+                    <path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z" />
                   </svg>
                 </div>
               </div>
@@ -639,19 +441,8 @@
               rel="noopener"
               aria-label=""
             >
-              <div
-                class="
-                  resp-sharing-button
-                  resp-sharing-button--reddit
-                  resp-sharing-button--small
-                "
-              >
-                <div
-                  aria-hidden="true"
-                  class="
-                    resp-sharing-button__icon resp-sharing-button__icon--solid
-                  "
-                >
+              <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small">
+                <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path
                       d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z"
@@ -668,16 +459,16 @@
         </article>
       </main>
       <footer>
-        <a
-          href="https://github.com/arlandfran/the-beginners-gambit"
-          target="_blank"
-          >Github
-          <span id="external-link"
-            ><svg id="box-arrow" xmlns="http://www.w3.org/2000/svg">
+        <a href="https://github.com/arlandfran/the-beginners-gambit" target="_blank">
+          Github
+          <span id="external-link">
+            <svg id="box-arrow" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13 10V9h-2v1h2zM6.5 5h1V3h-1v2zM13 3.5h1v-.9l-.89-.1-.11 1zM11 14H2v2h9v-2zm-9 0V5H0v9h2zm9-4v4h2v-4h-2zM2 5h4.5V3H2v2zm0 9H0c0 1.1.9 2 2 2v-2zm9 2a2 2 0 002-2h-2v2zM2 5V3a2 2 0 00-2 2h2zm3.95 6.04l7.71-6.79-1.32-1.5-7.7 6.8 1.31 1.5zM12 3.5V8h2V3.5h-2zm1.11-1L8.61 2l-.22 2 4.5.5.22-2z"
-              /></svg></span
-        ></a>
+              />
+            </svg>
+          </span>
+        </a>
       </footer>
     </div>
   </body>
