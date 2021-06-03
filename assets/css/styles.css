@@ -277,14 +277,10 @@ nav ul li {
   font-size: var(--h6);
 }
 
-.sidebar-subheader-group li {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-}
-
 .sidebar-subheader-link {
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
+  padding-left: 1rem;
   font-size: var(--base-font-size);
 }
 
