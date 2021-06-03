@@ -75,4 +75,21 @@ As a returning visitor to the website, I want to be able share these pages with 
 
 ## Manual Testing
 
+This section lists the steps taken to manually test site functionality and web elements.
+### Navigation
+
+#### Sidebar Responsiveness
+
+
+1. Navigate to the site home page from a desktop.
+2. Verify that the sidebar is present on the desktop viewport.
+3. Open the web inspector and enable device emulation to change the screen size from desktop to mobile.
+4. Verify the sidebar hides itself when reaching the mobile breakpoint.
+5. Verify the header logo successfully hides itself and the hamburger icon is shown.
+6. Change the screen size from mobile to tablet to verify the sidebar reveals itself when reaching the tablet breakpoint.
+
+#### Page Navigation
+
+
+
 ## Bug Fixes
