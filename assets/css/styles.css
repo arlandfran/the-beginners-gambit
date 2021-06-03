@@ -222,6 +222,10 @@ header {
   display: contents;
 }
 
+#logo-icon:hover svg {
+  fill: var(--primary-color)
+}
+
 #logo-glyph {
   width: 11px;
   height: 11px;
