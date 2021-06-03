@@ -118,7 +118,6 @@ A custom form is located on the About page and allows for users to send feedback
 ### Libraries / Frameworks
 
 - [Sharingbuttons.io](https://sharingbuttons.io) - Used for share buttons
-
 - [AutoPrefixer](https://autoprefixer.github.io/) - Parse CSS and add vendor prefixes
 
 ### Assets
@@ -128,6 +127,4 @@ A custom form is located on the About page and allows for users to send feedback
 
 ## Testing
 
-external links open in a new tab
-
-navbar and sidebar are responsive in mobile and above
+[Testing is documented here](TESTING.md)
