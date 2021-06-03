@@ -22,6 +22,8 @@ All HTML code was validated through the [W3C Markup Validator](https://validator
 - Mating Patterns - [Errors/Warnings](/assets/testing/tactics-html-validation) - Fixed
 - About - No errors
 
+All CSS code was validated through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and returned with no errors or warnings.
+
 ## User Story Testing
 
 ## Manual Testing
