@@ -40,7 +40,18 @@ As a new visitor to the site, I want to be able to get started quickly and be ab
 - Users are able to quickly navigate from section to section via the subheader links in the sidebar.
 - Users are led through a natural progression of chess rules and concepts via the page links at the end of each page.
 
+### User Story 2
 
+As a new visitor to the site, I want to be able to use the site on my phone/tablet to quickly refer to when playing a chess game.
+
+#### Tests done
+
+The site was tested on multiple device viewports using various 3rd party services, device emulation via web inspectors on Microsoft Edge And Mozilla Developer Edition and personal devices.
+
+3rd party sites used:
+
+- [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) - Passed
+- [Website Responsive Test](https://websiteresponsivetest.com/) - All devices tested
 
 
 
