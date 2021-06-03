@@ -49,7 +49,7 @@ The goals for the user are:
 
 The white and black are used for background and text. The indigo is utilised for accenting UI components and providing color to various element states like `:hover` and `:active`.
 
-> The colors used are compliant with WCAG guidelines for color contrast, with all colors (excluding white) achieving level AAA contrast against a white background.
+> The colors used are compliant with WCAG guidelines for color contrast, with all colors (_excluding white_) achieving level AAA contrast against a white background.
 
 #### Typography
 
@@ -105,26 +105,28 @@ A custom form is located on the About page and allows for users to send feedback
 
 ### Languages
 
-- HTML
-- CSS
+- [HTML](https://html.spec.whatwg.org/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 
 ### Software
 
-- Figma - High-fidelity Wireframing
-- Visual Studio Code - Code Editor
-- Git - Version Control System
-- Github - Code Hosting Platform
+- [Figma](https://www.figma.com/) - High-fidelity Wireframing
+- [Visual Studio Code](https://code.visualstudio.com/) - Code Editor
+- [Git](https://git-scm.com/) - Version Control System
+- [Github](https://github.com/) - Code Hosting Platform
 
 ### Libraries / Frameworks
 
 - [Sharingbuttons.io](https://sharingbuttons.io) - Used for share buttons
 
+- [AutoPrefixer](https://autoprefixer.github.io/) - Parse CSS and add vendor prefixes
+
 ### Assets
 
-- All icons and illustrations were custom made using Figma.
-- Google Fonts - Used to import the fonts used for this project: Poppins and PT Serif.
+- All icons (_exluding share button icons_) and illustrations were custom made using Figma.
+- [Google Fonts](https://fonts.google.com/) - Used to import the fonts used for this project: Poppins and PT Serif.
 
-## testing
+## Testing
 
 external links open in a new tab
 
