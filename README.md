@@ -119,10 +119,6 @@ A custom form is located on the About page and allows for users to send feedback
 
 - [Sharingbuttons.io](https://sharingbuttons.io) - Used for share buttons
 - [AutoPrefixer](https://autoprefixer.github.io/) - Parse CSS and add vendor prefixes
-
-### Assets
-
-- All icons (_exluding share button icons_) and illustrations were custom made using Figma.
 - [Google Fonts](https://fonts.google.com/) - Used to import the fonts used for this project: Poppins and PT Serif.
 
 ## Testing
@@ -145,3 +141,31 @@ This site was deployed using Github Pages and the deployment process was as foll
 
 Paste this command into your preferred terminal to clone this project.
 `git clone https://github.com/arlandfran/the-beginners-gambit.git`
+
+## Credits
+
+### Content
+
+The content for the site were adapted from the following sites:
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Chess) - The chess wikipedia page was referred to for the _Setup_ and _Rules_ page.
+- [ChessFox](https://chessfox.com/updates-list/), [Chess.com](https://www.chess.com/articles) - These sites were referred to for the _Concepts_, _Opening Principles_, _Tactics_ and _Mating Patterns_ pages.
+- [Lichess](https://lichess.org/training/themes) - This page was utilized for generating the tactical examples found in the _Tactics_ page.
+
+### Code
+
+The following articles were referenced when building the pure CSS accordion component.
+
+- [Pure CSS accordion without Javascript - Supfort](https://supfort.com/pure-css-accordion-without-javascript)
+- [Responsive Accordion using Pure CSS - Muhammad Asif](https://codeconvey.com/responsive-accordion-pure-css/)
+
+[Sharingbuttons.io](https://sharingbuttons.io) was used for generating HTML and CSS code for social media sharing buttons.
+
+### Assets
+
+All icons (_exluding share button icons_) and illustrations were custom made using Figma.
+
+### Acknowledgements
+
+- The Code Institute Slack community for being a great space for resources, tips and support.
+- My mentor [Precious Ijege](https://github.com/precious-ijege) for his support and feedback with the project.
