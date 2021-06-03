@@ -123,6 +123,10 @@ This section lists the steps taken to manually test site functionality and web e
 
 #### Accordion
 
-
+1. Navigate to the site concepts page from a desktop screen.
+2. Scroll down to the Phases of the game section and click on an accordion item.
+3. Verify that the accordion item opens, that the dropdown icon is animating correctly and the item header is highlighted.
+4. Open multiple accordion items and verify that all items are functioning correctly and able to open at the same time.
+5. Open the web inspector, enable device emulation and resize the screen from desktop to tablet to mobile, verifying the accordion is responsive.
 
 ## Bug Fixes
