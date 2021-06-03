@@ -146,7 +146,7 @@ Paste this command into your preferred terminal to clone this project and run lo
 
 ### Content
 
-The content for the site were adapted from the following sites:
+The content for this project were adapted from the following sites:
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Chess) - The chess wikipedia page was referred to for the _Setup_ and _Rules_ page.
 - [ChessFox](https://chessfox.com/updates-list/), [Chess.com](https://www.chess.com/articles) - These sites were referred to for the _Concepts_, _Opening Principles_, _Tactics_ and _Mating Patterns_ pages.
