@@ -57,9 +57,21 @@ As a new visitor to the site, I want to be able to use the site on my phone/tabl
 
 As a new visitor to the site and a chess beginner, I want to be able to see illustrations and examples as opposed to heavy verbose articles.
 
+#### Tests
+
 - All SVG illustrations load successfully and are displayed with the correct dimensions.
 - All images have alt text for accessbility and all figures that need captions have been correctly structured.
 - All figures and captions with `class="expandable"` are correctly positioned when given enough viewport space.
+
+### User Story 4
+
+As a returning visitor to the website, I want to be able share these pages with my friends so they can quickly learn the rules.
+
+#### Tests
+
+- All social media share buttons function correctly and open in a new tab when pressed.
+- The share buttons function correctly on desktop, tablet and mobile with tablet and mobile devices opening the social media app if installed on the device.
+- If the user is signed into the social media platform, they are brought straight to the sharing experience on that platform correctly. If they are not signed in, then they will be prompted to do so.
 
 ## Manual Testing
 
