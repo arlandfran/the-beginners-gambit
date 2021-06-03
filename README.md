@@ -47,7 +47,7 @@ The goals for the user are:
 
 ![Color Pallette](assets/img/colors.png)
 
-The white and black are used for background and text. The indigo is utilised for accenting UI components and providing color to various states such as `:hover` and `:active`.
+The white and black are used for background and text. The indigo is utilised for accenting UI components and providing color to various element states like `:hover` and `:active`.
 
 > The colors used are compliant with WCAG guidelines for color contrast, with all colors (excluding white) achieving level AAA contrast against a white background.
 
@@ -82,6 +82,12 @@ Smooth scrolling is enabled for internal sidebar page links, giving the site a m
 #### Quick Share
 
 Share buttons have been added to each page allowing the user to easily share the page content to Facebook, Twitter, LinkedIn and Reddit from any page.
+
+### Concepts Page
+
+#### Accordion
+
+A pure CSS implementation of an accordion houses content for the 'Phases of the Game' section and allows for multiple accordion items to be opened at any one time. The dropdown icons are also animated and the accordion item headers stay highlighted when opened.
 
 ## testing
 
