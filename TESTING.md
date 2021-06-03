@@ -14,13 +14,13 @@ All HTML code was validated through the [W3C Markup Validator](https://validator
 ***Validated 03/06/21***
 
 - [index.html](index.html) - No errors/warnings
-- [setup.html](setup.html) - [Errors/Warnings](assets/testing/setup-html-validation.png) - Fixed
-- [rules.html](rules.html) - [Errors/Warnings](assets/testing/rules-html-validation.png) - Fixed
-- [concepts.html](concepts.html) - [Errors/Warnings](assets/testing/concepts-html-validation.png) - Fixed
-- [opening-principles.html](opening-principles.html) - [Errors/Warnings](assets/testing/opening-principles-html-validation.png) - Fixed
-- [tactics.html](tactics.html) - [Errors/Warnings](assets/testing/tactics-html-validation.png) - Fixed
-- [mating-patterns.html](mating-patterns.html) - [Errors/Warnings](assets/testing/tactics-html-validation.png) - Fixed
-- [about.html](about.html) - [Errors/Warnings](assets/testing/about-html-validation.png)
+- [setup.html](setup.html) - [Errors/Warnings](assets/img/testing/setup-html-validation.png) - Fixed
+- [rules.html](rules.html) - [Errors/Warnings](assets/img/testing/rules-html-validation.png) - Fixed
+- [concepts.html](concepts.html) - [Errors/Warnings](assets/img/testing/concepts-html-validation.png) - Fixed
+- [opening-principles.html](opening-principles.html) - [Errors/Warnings](assets/img/testing/opening-principles-html-validation.png) - Fixed
+- [tactics.html](tactics.html) - [Errors/Warnings](assets/img/testing/tactics-html-validation.png) - Fixed
+- [mating-patterns.html](mating-patterns.html) - [Errors/Warnings](assets/img/testing/tactics-html-validation.png) - Fixed
+- [about.html](about.html) - [Errors/Warnings](assets/img/testing/about-html-validation.png)
 
 All CSS code was validated through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and returned with no errors or warnings.
 
