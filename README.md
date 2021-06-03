@@ -81,13 +81,13 @@ Smooth scrolling is enabled for internal sidebar page links, giving the site a m
 
 #### Quick Share
 
-Share buttons have been added to each page allowing the user to easily share the page content to Facebook, Twitter, LinkedIn and Reddit from any page.
+Share buttons have been added to each page allowing the user to easily share the page content to their social media from any page.
 
 ### Concepts Page
 
 #### Accordion
 
-A pure CSS implementation of an accordion houses content for the 'Phases of the Game' section and allows for multiple accordion items to be opened at any one time. The dropdown icons are also animated and the accordion item headers stay highlighted when opened.
+A pure CSS implementation of an accordion houses the content for the 'Phases of the Game' section and allows for multiple accordion items to be opened at any one time. The dropdown icons are also animated and the accordion item headers stay highlighted when opened.
 
 ### About Page
 
@@ -117,8 +117,8 @@ A custom form is located on the About page and allows for users to send feedback
 
 ### Libraries / Frameworks
 
-- [Sharingbuttons.io](https://sharingbuttons.io) - Used for share buttons
-- [AutoPrefixer](https://autoprefixer.github.io/) - Parse CSS and add vendor prefixes
+- [Sharingbuttons.io](https://sharingbuttons.io) - Used for social media share buttons.
+- [AutoPrefixer](https://autoprefixer.github.io/) - Used to parse CSS and add vendor prefixes.
 - [Google Fonts](https://fonts.google.com/) - Used to import the fonts used for this project: Poppins and PT Serif.
 
 ## Testing
@@ -139,7 +139,7 @@ This site was deployed using Github Pages and the deployment process was as foll
 
 ### Running The Beginner's Gambit locally
 
-Paste this command into your preferred terminal to clone this project.
+Paste this command into your preferred terminal to clone this project and run locally in your preferred IDE or code editor.
 `git clone https://github.com/arlandfran/the-beginners-gambit.git`
 
 ## Credits
@@ -154,7 +154,7 @@ The content for the site were adapted from the following sites:
 
 ### Code
 
-The following articles were referenced when building the pure CSS accordion component.
+The following articles were referenced when building the accordion component.
 
 - [Pure CSS accordion without Javascript - Supfort](https://supfort.com/pure-css-accordion-without-javascript)
 - [Responsive Accordion using Pure CSS - Muhammad Asif](https://codeconvey.com/responsive-accordion-pure-css/)
