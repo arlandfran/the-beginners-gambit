@@ -89,6 +89,12 @@ Share buttons have been added to each page allowing the user to easily share the
 
 A pure CSS implementation of an accordion houses content for the 'Phases of the Game' section and allows for multiple accordion items to be opened at any one time. The dropdown icons are also animated and the accordion item headers stay highlighted when opened.
 
+### About Page
+
+#### Feedback Form
+
+A custom form is located on the About page and allows for users to send feedback about the site and its contents. All required fields are validated and there is a file input for screenshots.
+
 ## testing
 
 external links open in a new tab
