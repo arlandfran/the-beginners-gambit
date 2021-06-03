@@ -129,4 +129,15 @@ This section lists the steps taken to manually test site functionality and web e
 4. Open multiple accordion items and verify that all items are functioning correctly and able to open at the same time.
 5. Open the web inspector, enable device emulation and resize the screen from desktop to tablet to mobile, verifying the accordion is responsive.
 
+#### Feedback Form
+
+1. Navigate to the site about page from a desktop screen.
+2. Scroll down to the feedback form.
+3. Verify the inputs are highlighted on selection.
+4. Type a non email address in the email input field.
+5. Click Send Feedback and verify the email input is validated.
+6. Clear the email input field and click Send Feedback with an empty message.
+7. Verify the text area field is validated.
+8. Click on the file input field and verify the file picker opens. 
+
 ## Bug Fixes
