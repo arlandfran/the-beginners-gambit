@@ -199,14 +199,13 @@ header {
   display: flex;
   position: fixed;
   width: 100%;
+  gap: 0.5rem;
   z-index: 2;
   background: white;
 }
 
 .navbar {
   padding: 1rem;
-  align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid var(--divider-color);
 }
 
@@ -217,6 +216,14 @@ header {
   font-family: var(--sans-serif);
   font-size: var(--h5);
   font-weight: 600;
+}
+
+#logo-icon {
+  display: contents;
+}
+
+#logo-icon:hover svg {
+  fill: var(--primary-color)
 }
 
 #logo-glyph {
@@ -563,6 +570,10 @@ input[type="checkbox"]:checked ~ .sidebar {
 
   .logo {
     display: flex;
+  }
+
+  #logo-icon {
+    display: none;
   }
 
   #hamburger {
