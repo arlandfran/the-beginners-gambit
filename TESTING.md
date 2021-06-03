@@ -140,4 +140,12 @@ This section lists the steps taken to manually test site functionality and web e
 7. Verify the text area field is validated.
 8. Click on the file input field and verify the file picker opens. 
 
+#### Prefers Reduced Motion
+*These are steps for Microsoft Edge, but can be replicated with your preferred web browser inspector*
+1. Navigate to any page with subheader links from a desktop screen.
+2. Click on a subheader link and verify the scroll behaviour is smooth.
+3. Open the web inspector and press `CTRL + SHIFT + P` to open the command menu.
+4. Search for the command `Emulate CSS prefers-reduced-motion: reduce` and press enter.
+5. Click on a subheader link and verify the scroll behaviour is auto.
+
 ## Bug Fixes
