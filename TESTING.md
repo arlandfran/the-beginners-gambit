@@ -113,4 +113,16 @@ This section lists the steps taken to manually test site functionality and web e
 3. Verify the page scrolls to the correct page headings and scrolls to an appropriate position. 
 4. Repeat these steps on the remaining pages with sidebar subheader links.
 
+##### External Links
+
+1. Navigate to the site about page from a desktop screen.
+2. Click on the Github link located in the header and verify that it successfully navigates to the Github repository and opens in a new tab.
+3. Navigate back to the site and repeat these steps for the rest of the external links on the page, making sure it successfully navigates to the correct URL and opens in a new tab.
+
+### Functionality
+
+#### Accordion
+
+
+
 ## Bug Fixes
