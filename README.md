@@ -101,6 +101,29 @@ A custom form is located on the About page and allows for users to send feedback
 - SVG animations - Some illustrations would benefit from animations and SVG's are relatively easy to animate using CSS animations.
 - SVG optimizations - SVG's can be further optimized by removing redundant SVG paths and serving SVG's with Gzip compression, improving page load times.
 
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+
+### Software
+
+- Figma - High-fidelity Wireframing
+- Visual Studio Code - Code Editor
+- Git - Version Control System
+- Github - Code Hosting Platform
+
+### Libraries / Frameworks
+
+- [Sharingbuttons.io](https://sharingbuttons.io) - Used for share buttons
+
+### Assets
+
+- All icons and illustrations were custom made using Figma.
+- Google Fonts - Used to import the fonts used for this project: Poppins and PT Serif.
+
 ## testing
 
 external links open in a new tab
