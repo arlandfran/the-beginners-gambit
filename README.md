@@ -114,6 +114,7 @@ A custom form is located on the About page and allows for users to send feedback
 - [Visual Studio Code](https://code.visualstudio.com/) - Code Editor
 - [Git](https://git-scm.com/) - Version Control System
 - [Github](https://github.com/) - Code Hosting Platform
+- [Web Formatter](https://webformatter.com/) - HTML / CSS Formatter
 
 ### Libraries / Frameworks
 

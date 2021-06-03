@@ -34,7 +34,7 @@ All CSS code was validated through the [W3C CSS Validator](https://jigsaw.w3.org
 
 As a new visitor to the site, I want to be able to get started quickly and be able to reference certain sections whenever I need to.
 
-#### Tests done
+#### Tests
 
 - Users are able to navigate via the sidebar to any page on the site from any page.
 - Users are able to quickly navigate from section to section via the subheader links in the sidebar.
@@ -44,16 +44,22 @@ As a new visitor to the site, I want to be able to get started quickly and be ab
 
 As a new visitor to the site, I want to be able to use the site on my phone/tablet to quickly refer to when playing a chess game.
 
-#### Tests done
+#### Tests
 
-The site was tested on multiple device viewports using various 3rd party services, device emulation via web inspectors on Microsoft Edge And Mozilla Developer Edition and personal devices.
+- The site was tested on multiple device viewports using 3rd party services, device emulation via the web inspector on Microsoft Edge And Mozilla Firefox Developer Edition and personal devices.
 
 3rd party sites used:
 
 - [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) - Passed
 - [Website Responsive Test](https://websiteresponsivetest.com/) - All devices tested
 
+### User Story 3
 
+As a new visitor to the site and a chess beginner, I want to be able to see illustrations and examples as opposed to heavy verbose articles.
+
+- All SVG illustrations load successfully and are displayed with the correct dimensions.
+- All images have alt text for accessbility and all figures that need captions have been correctly structured.
+- All figures and captions with `class="expandable"` are correctly positioned when given enough viewport space.
 
 ## Manual Testing
 
