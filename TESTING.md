@@ -100,6 +100,17 @@ This section lists the steps taken to manually test site functionality and web e
 
 ##### Page Links
 
-1. 
+1. Navigate to the site home page from a desktop screen.
+2. Scroll to the bottom of the page and click the page link.
+3. Verify the link is highlighted on hover and the browser successfully navigates to the next page.
+4. On the next page, scroll to the bottom and click on both page links to verify the browser successfully navigates to the previous page and next page.
+5. Repeat these steps for the remaining pages.
+
+##### Sidebar Subheader Links
+
+1. Navigate to the site setup page from a desktop screen.
+2. Verify the sidebar is visible on the desktop breakpoint and select the each subheader link from top to bottom.
+3. Verify the page scrolls to the correct page headings and scrolls to an appropriate position. 
+4. Repeat these steps on the remaining pages with sidebar subheader links.
 
 ## Bug Fixes
