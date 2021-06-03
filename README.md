@@ -95,6 +95,12 @@ A pure CSS implementation of an accordion houses content for the 'Phases of the 
 
 A custom form is located on the About page and allows for users to send feedback about the site and its contents. All required fields are validated and there is a file input for screenshots.
 
+### Feature Backlog
+
+- Dark mode - Currently no reliable CSS-only methods, need Javascript to implement.
+- SVG animations - Some illustrations would benefit from animations and SVG's are relatively easy to animate using CSS animations.
+- SVG optimizations - SVG's can be further optimized by removing redundant SVG paths and serving SVG's with Gzip compression, improving page load times.
+
 ## testing
 
 external links open in a new tab
