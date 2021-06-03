@@ -13,16 +13,21 @@ All HTML code was validated through the [W3C Markup Validator](https://validator
 
 ***Validated 03/06/21***
 
-- Home - No errors 
-- Setup - [Errors/Warnings](/assets/testing/setup-html-validation) - Fixed
-- Rules - [Errors/Warnings](/assets/testing/rules-html-validation) - Fixed
-- Concepts - [Errors/Warnings](/assets/testing/concepts-html-validation) - Fixed
-- Opening Principles - [Errors/Warnings](/assets/testing/opening-principles-html-validation) - Fixed
-- Tactics - [Errors/Warnings](/assets/testing/tactics-html-validation) - Fixed
-- Mating Patterns - [Errors/Warnings](/assets/testing/tactics-html-validation) - Fixed
-- About - No errors
+- [index.html](index.html) - No errors/warnings
+- [setup.html](setup.html) - [Errors/Warnings](/assets/testing/setup-html-validation) - Fixed
+- [rules.html](rules.html) - [Errors/Warnings](/assets/testing/rules-html-validation) - Fixed
+- [concepts.html](concepts.html) - [Errors/Warnings](/assets/testing/concepts-html-validation) - Fixed
+- [opening-principles.html](opening-principles.html) - [Errors/Warnings](/assets/testing/opening-principles-html-validation) - Fixed
+- [tactics.html](tactics.html) - [Errors/Warnings](/assets/testing/tactics-html-validation) - Fixed
+- [mating-patterns.html](mating-patterns.html) - [Errors/Warnings](/assets/testing/tactics-html-validation) - Fixed
+- [about.html](about.html) - No errors/warnings
 
 All CSS code was validated through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and returned with no errors or warnings.
+
+***Validated 03/06/21***
+
+- [styles.css](assets/css/styles.css) - No errors/warnings
+
 
 ## User Story Testing
 
