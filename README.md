@@ -128,3 +128,20 @@ A custom form is located on the About page and allows for users to send feedback
 ## Testing
 
 [Testing is documented here](TESTING.md)
+
+## Deployment
+
+The Beginner's Gambit was developed using VSCode, Git and Github.
+
+This site was deployed using Github Pages and the deployment process was as follows:
+
+1. In the Github repository, navigate to **_Settings_** tab.
+2. Locate the **_Pages_** tab in the sidebar.
+3. Under **_Source_** select the dropdown arrow and choose the source branch for Github Pages.
+4. Select **_Save_** for the changes to be applied.
+5. Once the page has refreshed, the deployed site link is provided at the top of the page.
+
+### Running The Beginner's Gambit locally
+
+Paste this command into your preferred terminal to clone this project.
+`git clone https://github.com/arlandfran/the-beginners-gambit.git`
