@@ -79,7 +79,9 @@ Smooth scrolling is enabled for internal sidebar page links, giving the site a m
 
 > For users that prefer reduced motion, a media query has been implemented to check for this, and if true, reverts the scrolling behaviour back to auto.
 
-####
+#### Share Buttons
+
+Share buttons have been added to each page allowing the user to easily share the page content to Facebook, Twitter and WhatsApp.
 
 ## testing
 
