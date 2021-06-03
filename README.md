@@ -69,6 +69,16 @@ The font used for captions was **_PT Serif_** by ParaType. This typeface was cho
 
 Every page features a header component with a responsive hamburger icon and logo brand that doubles as a home page link. Navigation is housed in a sidebar that houses all page links. On mobile viewports it's hidden off-canvas and toggled by the hamburger icon. On tablet viewports and above, it's housed on the left side of the page. Internal page links are also grouped and allow for quick and easy navigation within the same page.
 
+#### Responsive Layout
+
+Every page is contained in a flexbox container that houses all content in a single column. When the viewport expands, elements with `class="expandable"` slot into a 2 column layout while the rest span the whole column width.
+
+#### Smooth Scrolling
+
+Smooth scrolling is enabled for internal sidebar page links, giving the site a modern and pleasant navigation experience.
+
+> For users that prefer reduced motion, a media query has been implemented to check for this, and if true, reverts the scrolling behaviour back to auto.
+
 ####
 
 ## testing
