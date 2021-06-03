@@ -81,15 +81,25 @@ This section lists the steps taken to manually test site functionality and web e
 #### Sidebar Responsiveness
 
 
-1. Navigate to the site home page from a desktop.
+1. Navigate to the site home page from a desktop screen.
 2. Verify that the sidebar is present on the desktop viewport.
 3. Open the web inspector and enable device emulation to change the screen size from desktop to mobile.
 4. Verify the sidebar hides itself when reaching the mobile breakpoint.
-5. Verify the header logo successfully hides itself and the hamburger icon is shown.
+5. Verify the header logo successfully hides itself and the hamburger and logo icons are shown.
 6. Change the screen size from mobile to tablet to verify the sidebar reveals itself when reaching the tablet breakpoint.
 
 #### Page Navigation
 
+##### Home Button
 
+1. Navigate to the site setup page from a desktop screen.
+2. Open the web inspector and enable device emulation to change the screen size from desktop to mobile.
+3. Verify the logo icon is hidden on the tablet breakpoint and above.
+4. Verify the logo icon is visible on the mobile breakpoint.
+5. Click on the logo icon and verify that on hover the icon is highlighted and the browser navigates to the site home page.
+
+##### Page Links
+
+1. 
 
 ## Bug Fixes
