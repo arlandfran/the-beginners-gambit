@@ -165,9 +165,17 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
 
 - [Spacing issue for figures on the Rules page](https://github.com/arlandfran/the-beginners-gambit/issues/21) - After adding the rules content, there was a spacing issue with 2 figures side-by-side overlapping each other. This was fixed by simply adding a `class="expandable"` to the figure container.
 
+- Bottom Sidebar links not reachable when on pages with large subheader groups*
+
+![Sidebar Height Bug](assets/img/testing/sidebar-height-bug.png)
+
+The screenshot shows the rules page on a mobile viewport with the sidebar scrolled all the way down to the bottom. This isn't an issue for pages with less subheader links but you can see here that the ***About*** page link is not visible due to the large subheader groups for the rules page. 
+
+This was caused by not taking into account that the sidebar was positioned with `position: fixed` and `top: 4rem` and the sidebar had a height of 100vh and so the sidebar would overflow below the viewport causing links at the bottom to be inaccessible. This was fixed by adjusting the sidebar height to 90vh.
+
 ## Unintended Behaviour
 
-- Toggling the sidebar quickly results in sidebar links being selected* - When toggling the sidebar rapidly, the first sidebar link would be highlighted as a selection. This was seemingly fixed by adding `user-select: none` to the sidebar links, but it then results in the Github link being highlighted as a selection. This seems to a side effect of using a checkbox for the toggling of the sidebar and utilising a label as the button wrapper.
+- Toggling the sidebar quickly results in sidebar links being selected - When toggling the sidebar rapidly, the first sidebar link would be highlighted as a selection. This was seemingly fixed by adding `user-select: none` to the sidebar links, but it then results in the Github link being highlighted as a selection. This seems to a side effect of using a checkbox for the toggling of the sidebar and utilising a label as the button wrapper.
 
 *\*not documented as an issue on the Github Repository Issue tab.*
 
