@@ -38,7 +38,7 @@ All media queries are located at the bottom alongisde 3rd party CSS code.
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* | | General styles */
@@ -145,8 +145,8 @@ figcaption {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .align-center {
@@ -213,8 +213,8 @@ figcaption {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -237,8 +237,8 @@ header {
 .logo {
   display: none;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   font-family: var(--sans-serif);
   font-size: var(--h5);
   font-weight: 600;
@@ -310,7 +310,7 @@ nav ul li {
   -webkit-user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 .sidebar-subheader-group {
@@ -333,8 +333,8 @@ main {
   display: flex;
   margin-top: 4rem;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: white;
 }
 
@@ -383,8 +383,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .share-buttons {
@@ -392,8 +392,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 /* | | Home page styles */
@@ -412,14 +412,14 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /* This class allows elements to slot into a 2 column layout when enough space is available.*/
 .expandable {
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
+  flex-wrap: wrap; 
 }
 
 figure {
@@ -428,7 +428,7 @@ figure {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
@@ -436,8 +436,8 @@ figure {
   height: -moz-min-content;
   height: min-content;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .fig-subheading {
@@ -452,11 +452,11 @@ figure {
   width: 100vw;
   height: 100vh;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .error-message {
@@ -465,16 +465,16 @@ figure {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 75%;
   height: 50%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 4px solid black;
 }
 
@@ -511,8 +511,8 @@ figure {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 1rem;
   font-size: var(--h5);
   font-weight: 700;
@@ -546,8 +546,8 @@ input:checked ~ .accordion-title {
 /* The below pseudo-class styles are what allows the accordion to function  */
 input:checked ~ .accordion-title::after {
   -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 input:checked ~ .accordion-content {
@@ -561,8 +561,8 @@ input:checked ~ .accordion-content {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
   margin: 1rem 0;
   padding: 1rem;
@@ -636,8 +636,8 @@ input:checked ~ .accordion-content {
 @media screen and (max-width: 767px) {
   .sidebar {
     -webkit-transform: translateX(-16rem);
-        -ms-transform: translateX(-16rem);
-            transform: translateX(-16rem);
+    -ms-transform: translateX(-16rem);
+    transform: translateX(-16rem);
   }
 }
 
@@ -645,8 +645,8 @@ input:checked ~ .accordion-content {
 /* Must be after media query to override sidebar hiding under 768px */
 input[type="checkbox"]:checked ~ .sidebar { 
   -webkit-transform: translateX(0%); 
-      -ms-transform: translateX(0%); 
-          transform: translateX(0%);
+  -ms-transform: translateX(0%); 
+  transform: translateX(0%);
 }
 
 @media screen and (min-width: 768px) {
