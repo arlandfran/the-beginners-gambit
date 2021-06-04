@@ -141,11 +141,18 @@ This section lists the steps taken to manually test site functionality and web e
 8. Click on the file input field and verify the file picker opens. 
 
 #### Prefers Reduced Motion
-*These are steps for Microsoft Edge, but can be replicated with your preferred web browser inspector*
+*These are steps for Microsoft Edge. Can be replicated with your preferred web browser inspector but steps may vary.*
 1. Navigate to any page with subheader links from a desktop screen.
 2. Click on a subheader link and verify the scroll behaviour is smooth.
 3. Open the web inspector and press `CTRL + SHIFT + P` to open the command menu.
 4. Search for the command `Emulate CSS prefers-reduced-motion: reduce` and press enter.
 5. Click on a subheader link and verify the scroll behaviour is auto.
+
+#### Share Buttons
+
+1. Navigate to any page with the social media share buttons from a desktop screen.
+2. Scroll to the bottom of the page and locate the share buttons.
+3. Hover over each button and verify that they are highlighted correctly.
+4. Click on each button and verify the browser opens a new tab and that the share function works correctly with the correct page URL displayed and text pre-populated if applicable.
 
 ## Bug Fixes
