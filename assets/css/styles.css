@@ -261,7 +261,6 @@ nav ul li {
   z-index: 1;
   overflow-x: hidden;
   transition: transform 0.2s ease;
-  border-top: 1px solid var(--divider-color);
   border-right: 1px solid var(--divider-color);
   background-color: white;
 }
@@ -284,7 +283,7 @@ nav ul li {
 }
 
 .sidebar-subheader-group {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   font-size: var(--h6);
 }
 
