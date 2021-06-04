@@ -165,3 +165,9 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
 
 - [Spacing issue for figures on the Rules page](https://github.com/arlandfran/the-beginners-gambit/issues/21) - After adding the rules content, there was a spacing issue with 2 figures side-by-side overlapping each other. This was fixed by simply adding a `class="expandable"` to the figure container.
 
+## Unintended Behaviour
+
+- Toggling the sidebar quickly results in sidebar links being selected* - When toggling the sidebar rapidly, the first sidebar link would be highlighted as a selection. This was seemingly fixed by adding `user-select: none` to the sidebar links, but it then results in the Github link being highlighted as a selection. This seems to a side effect of using a checkbox for the toggling of the sidebar and utilising a label as the button wrapper.
+
+*\*not documented as an issue on the Github Repository Issue tab.*
+
