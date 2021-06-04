@@ -388,10 +388,6 @@ main {
   list-style-position: inside;
 }
 
-.subheader-link {
-  scroll-margin-top: 5rem;
-}
-
 .fig-container {
   margin: 1rem 0;
   display: -webkit-box;
@@ -666,15 +662,22 @@ input[type="checkbox"]:checked ~ .sidebar {
   }
 }
 
-/* Checks if smooth scrolling is supported and reverts behaviour to auto for accessibility */
-@supports (scroll-behavior: smooth) {
-  html {
-    scroll-behavior: smooth;
+/* This code only enables smooths scrolling if scroll-margin-top is supported */
+@supports (scroll-margin-top: 5rem) {
+  /* When smooth scrolling is enabled, this makes sure the page scroll accommodates for the header height */
+  .subheader-link {
+    scroll-margin-top: 5rem;
   }
 
-  @media screen and (prefers-reduced-motion: reduce) {
+  @supports (scroll-behavior: smooth) {
     html {
-      scroll-behavior: auto;
+      scroll-behavior: smooth;
+    }
+    /* Accessibility check */
+    @media screen and (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
     }
   }
 }
