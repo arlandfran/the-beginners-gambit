@@ -100,6 +100,7 @@ A custom form is located on the About page and allows for users to send feedback
 - Dark mode - Currently no reliable CSS-only methods, need Javascript to implement.
 - SVG animations - Some illustrations would benefit from animations and SVG's are relatively easy to animate using CSS animations.
 - SVG optimizations - SVG's can be further optimized by removing redundant SVG paths and serving SVG's with Gzip compression, improving page load times.
+- Drop-down Sidebar - Refactor sidebar links so that subheader links are collapsible.
 
 ## Technologies Used
 
