@@ -315,25 +315,16 @@ main {
   max-width: 42rem;
 }
 
-footer {
-  display: flex;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 1rem;
+.external-link {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
   font-family: var(--sans-serif);
   font-weight: 600;
   font-size: var(--base-font-size);
-  justify-content: flex-end;
-  border-top: 1px solid var(--divider-color);
-  background-color: white;
 }
 
-footer a {
-  display: flex;
-}
-
-#external-link {
+#external-link-icon {
   margin-left: 0.2rem;
 }
 
