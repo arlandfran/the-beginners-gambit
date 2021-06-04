@@ -192,6 +192,20 @@ figcaption {
   display: none;
 }
 
+/* Code snippet taken from https://css-tricks.com/a-complete-guide-to-links-and-buttons/ */
+/* This utility is for visually hiding link text but having it still available for screen readers and the text can be translated by browsers*/
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* | | Sitewide Styles*/
 #app {
   display: -webkit-box;
