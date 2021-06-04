@@ -152,8 +152,8 @@ figcaption {
 .align-center {
   max-width: 16rem;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .px-1 {
@@ -522,8 +522,8 @@ figure {
 .accordion-title::after {
   content: "\02C5";
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   -webkit-transition: ease 0.35s;
   -o-transition: ease 0.35s;
   transition: ease 0.35s;
