@@ -156,3 +156,12 @@ This section lists the steps taken to manually test site functionality and web e
 4. Click on each button and verify the browser opens a new tab and that the share function works correctly with the correct page URL displayed and text pre-populated if applicable.
 
 ## Bug Fixes
+
+Bugs encountered were mainly to do with spacing and broken links, but some bugs were documented in the [Github Repository Issues tab](https://github.com/arlandfran/the-beginners-gambit/issues?q=is%3Aissue+label%3Abug+is%3Aclosed).
+
+- [Sidebar doesn't open on mobile](https://github.com/arlandfran/the-beginners-gambit/issues/12) - The sidebar was initally implemented with Javascript and there was an issue getting it to work on mobile. The problem was caused by a faulty script tag not correctly linking to the main.js file and was fixed by removing a / in the href link. This fix was made redundant when the implemntation was migrated to pure CSS and all Javascript code was removed from the project.
+
+- [Arrow Emoji Compatibility](https://github.com/arlandfran/the-beginners-gambit/issues/16) - The page links were initially designed to have arrow emojis to visually convey back and next buttons to navigate through the pages. The emojis first used were rendering on desktop devices but not on android (iOS was not tested). The emojis were changed to a more universal arrow emoji but did not render consistently on different devices, and the choice was made to get rid of the arrows completely and instead use an underline to convey to the user that these were links.
+
+- [Spacing issue for figures on the Rules page](https://github.com/arlandfran/the-beginners-gambit/issues/21) - After adding the rules content, there was a spacing issue with 2 figures side-by-side overlapping each other. This was fixed by simply adding a `class="expandable"` to the figure container.
+
