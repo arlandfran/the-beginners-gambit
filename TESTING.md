@@ -185,7 +185,7 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
 
 - Toggling the sidebar quickly results in sidebar links being selected - When toggling the sidebar rapidly, the first sidebar link would be highlighted as a selection. This was seemingly fixed by adding `user-select: none` to the sidebar links, but it then results in the Github link being highlighted as a selection. This seems to a side effect of using a checkbox for the toggling of the sidebar and utilising a label as the button wrapper.
 
-- On desktop, clicking on a subheader link that navigates to a figure and then clicking on a subheader link that is next to the figure, while working correctly, does not give any indication to the user that the link is working and can be a poor user experience. Consider adding a visual indication when scrolling to the subheader link such as a highlight or chainlink icon to alert the user that the page has indeed navigated to the correct section, even if the subheader is in the same scroll location.
+- On desktop clicking on a subheader link that navigates to a figure and then clicking on a subheader link that navigates to a figure adjacent to the original figure, while working correctly, does not give any indication to the user that the link is working and can be a poor user experience. Consider adding a visual indication when scrolling to the subheader link such as a highlight or chainlink icon to alert the user that the page has indeed navigated to the correct section, even if the subheader is in the same scroll location.
   
   Steps to recreate:
 
