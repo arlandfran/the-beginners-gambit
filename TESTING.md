@@ -31,48 +31,56 @@ All CSS code was validated through the [W3C CSS Validator](https://jigsaw.w3.org
 
 ## User Story Testing
 
-### User Story 1
+1. As a new visitor to the site, I want to be able to navigate the site easily and find the information that I need.
 
-As a new visitor to the site, I want to be able to get started quickly and be able to reference certain sections whenever I need to.
+  1. Users are able to navigate via the sidebar to any page on the site from any page.
+  2. Users are able to quickly navigate from section to section via the subheader links in the sidebar.
+  3. Users are led through a logical progression of chess rules and information via the page links at the end of each page.
 
-#### Tests
+2. As a new visitor to the site, I want to be able to use the site and learn about chess on the go or at home.
 
-- Users are able to navigate via the sidebar to any page on the site from any page.
-- Users are able to quickly navigate from section to section via the subheader links in the sidebar.
-- Users are led through a natural progression of chess rules and concepts via the page links at the end of each page.
+  1. The site was tested on multiple device viewports using 3rd party services, device emulation via the web inspector on Microsoft Edge And Mozilla Firefox Developer Edition and personal devices.
 
-### User Story 2
+  3rd party sites used:
 
-As a new visitor to the site, I want to be able to use the site on my phone/tablet to quickly refer to when playing a chess game.
+  1. [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) - Passed
+  2. [Website Responsive Test](https://websiteresponsivetest.com/) - All devices tested
 
-#### Tests
+3. As a chess beginner, I want to be able to learn how to setup a chess game.
 
-- The site was tested on multiple device viewports using 3rd party services, device emulation via the web inspector on Microsoft Edge And Mozilla Firefox Developer Edition and personal devices.
+  1. Users are able to navigate to the Setup page from the sidebar or page link.
+  2. All setups steps are listed in sequential order and have accompanying illustrations.
 
-3rd party sites used:
+4. As a chess beginner, I want to learn the rules of chess.
 
-- [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) - Passed
-- [Website Responsive Test](https://websiteresponsivetest.com/) - All devices tested
+  1. Users are able to navigate to the Rules page from the sidebar or page link.
+  2. All rules are grouped and listed in logical order and have accompanying illustrations and examples.
 
-### User Story 3
+5. As a chess novice, I want to learn more about chess concepts and ideas.
 
-As a new visitor to the site and a chess beginner, I want to be able to see illustrations and examples as opposed to heavy verbose articles.
+  1. Users are able to navigate to the Concepts page from the sidebar or page link.
+  2. All concepts are grouped and listed in no order of importance and have accompanying illustrations and examples.
 
-#### Tests
+6. As a chess novice, I want to learn how to improve my opening play.
 
-- All SVG illustrations load successfully and are displayed with the correct dimensions.
-- All images have alt text for accessbility and all figures that need captions have been correctly structured.
-- All figures and captions with `class="expandable"` are correctly positioned when given enough viewport space.
+  1. Users are able to navigate to the Opening Principles page from the sidebar or page link. 
+  2. All principles are listed in logical order and have accompanying illustrations and examples.
 
-### User Story 4
+7. As a chess novice, I want to learn more about tactics and strategies.
 
-As a returning visitor to the website, I want to be able share these pages with my friends so they can quickly learn the rules.
+  1. Users are able to navigate to the Tactics page from the sidebar or page link. 
+  2. All tactics are listed in no order of importance and have accompanying illustrations and examples.
 
-#### Tests
+8. As a chess novice, I want to learn the different ways I can checkmate my oppponent.
 
-- All social media share buttons function correctly and open in a new tab when pressed.
-- The share buttons function correctly on desktop, tablet and mobile with tablet and mobile devices opening the social media app if installed on the device.
-- If the user is signed into the social media platform, they are brought straight to the sharing experience on that platform correctly. If they are not signed in, then they will be prompted to do so.
+  1. Users are able to navigate to the Mating Patterns page from the sidebar or page link.
+  2. All mating patterns are listed in no order of importance and have accompanying illustrations and examples.
+
+9. As a returning visitor to the website, I want to be able share these pages on social media.
+
+  1. All social media share buttons function correctly and open in a new tab when pressed.
+  2. The share buttons function correctly on desktop, tablet and mobile with tablet and mobile devices opening the social media app if installed on the device.
+  3. If the user is signed into the social media platform, they are brought straight to the sharing experience on that platform correctly. If they are not signed in, then they will be prompted to do so.
 
 ## Manual Testing
 

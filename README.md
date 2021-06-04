@@ -38,7 +38,7 @@ The goals for the user are:
 
 8. As a chess novice, I want to learn the different ways I can checkmate my oppponent.
 
-9. As a returning visitor to the website, I want to be able share these pages with my friends on social media.
+9. As a returning visitor to the website, I want to be able share these pages on social media.
 
 ### Design
 
