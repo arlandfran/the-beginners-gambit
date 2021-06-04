@@ -5,7 +5,6 @@
   --divider-color: rgba(0, 0, 0, 0.1);
   --focus: #8540f5;
   /* Type Scale */
-  --h1: 3.052rem; /*h2 x1.25*/
   --h2: 2.441rem; /*h3 x1.25*/
   --h3: 1.953rem; /*h4 x1.25*/
   --h4: 1.563rem; /*h5 x1.25*/
@@ -61,15 +60,6 @@ td {
 }
 
 /* Typography */
-.h1 {
-  margin: 1rem 0;
-  font-size: var(--h1);
-  line-height: 110%;
-  letter-spacing: 0.03rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .h2 {
   margin: 1rem 0;
   font-size: var(--h2);
