@@ -167,15 +167,28 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
 
 - Bottom Sidebar links not reachable when on pages with large subheader groups*
 
-![Sidebar Height Bug](assets/img/testing/sidebar-height-bug.png)
+  ![Sidebar Height Bug](assets/img/testing/sidebar-height-bug.png)
 
-The screenshot shows the rules page on a mobile viewport with the sidebar scrolled all the way down to the bottom. This isn't an issue for pages with less subheader links but you can see here that the ***About*** page link is not visible due to the large subheader groups for the rules page. 
+  The screenshot shows the rules page on a mobile viewport with the sidebar scrolled all the way down to the bottom. This isn't an issue for pages with less subheader links but you can see here that the ***About*** page link is not visible due to the large subheader groups for the rules page. 
 
-This was caused by not taking into account that the sidebar was positioned with `position: fixed` and `top: 4rem` and the sidebar had a height of 100vh and so the sidebar would overflow below the viewport causing links at the bottom to be inaccessible. This was fixed by adjusting the sidebar height to 90vh.
-
-## Unintended Behaviour
-
-- Toggling the sidebar quickly results in sidebar links being selected - When toggling the sidebar rapidly, the first sidebar link would be highlighted as a selection. This was seemingly fixed by adding `user-select: none` to the sidebar links, but it then results in the Github link being highlighted as a selection. This seems to a side effect of using a checkbox for the toggling of the sidebar and utilising a label as the button wrapper.
+  This was caused by not taking into account that the sidebar was positioned with:
+  ```
+  position: fixed;
+  top: 4rem;
+  height: 100vh;
+  ```
+  And so the sidebar would overflow below the viewport causing links at the bottom to be inaccessible. This was fixed by adjusting the sidebar height to 90vh.
 
 *\*not documented as an issue on the Github Repository Issue tab.*
 
+## Unintended Behaviour / Considerations
+
+- Toggling the sidebar quickly results in sidebar links being selected - When toggling the sidebar rapidly, the first sidebar link would be highlighted as a selection. This was seemingly fixed by adding `user-select: none` to the sidebar links, but it then results in the Github link being highlighted as a selection. This seems to a side effect of using a checkbox for the toggling of the sidebar and utilising a label as the button wrapper.
+
+- On desktop, clicking on a subheader link that navigates to a figure and then clicking on a subheader link that is next to the figure, while working correctly, does not give any indication to the user that the link is working and can be a poor user experience. Consider adding a visual indication when scrolling to the subheader link such as a highlight or chainlink icon to alert the user that the page has indeed navigated to the correct section, even if the subheader is in the same scroll location.
+  
+  Steps to recreate:
+
+  1. Navigate to the site rules page from a desktop screen.
+  2. On the sidebar select the King subheader link.
+  3. Once the page has scrolled to the linked section, select the Queen subheader link.
