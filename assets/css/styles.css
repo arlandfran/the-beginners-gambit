@@ -66,10 +66,11 @@ td {
   font-weight: 700;
 }
 
-/* img {
+/* All img tags are for illustrations so we can explicitly state the dimensions to improve performance */
+img {
   width: 320px;
   height: 288px;
-} */
+}
 
 /* | | Typography */
 .h2 {
