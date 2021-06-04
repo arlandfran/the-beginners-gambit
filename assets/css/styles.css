@@ -484,7 +484,7 @@ figure {
 .custom-block {
   padding: 1rem;
   font-style: italic;
-  background: var(--divider-color);
+  background: #f3f5f7;
   border-left: 8px var(--primary-color) solid;
 }
 
