@@ -22,13 +22,23 @@ The goals for the user are:
 
 ### User Stories
 
-1. As a new visitor to the site, I want to be able to get started quickly and be able to reference certain sections whenever I need to.
+1. As a new visitor to the site, I want to be able to navigate the site easily and find the information that I need.
 
-2. As a new visitor to the site, I want to be able to use the site on my phone/tablet to quickly refer to when playing a chess game.
+2. As a new visitor to the site, I want to the site to be responsive so I can view it on the go or at home.
 
-3. As a new visitor to the site and a chess beginner, I want to be able to see illustrations and examples as opposed to heavy verbose articles.
+3. As a chess beginner, I want to be able to learn how to setup a chess game.
 
-4. As a returning visitor to the website, I want to be able share these pages with my friends so they can quickly learn the rules.
+4. As a chess beginner, I want to learn the rules of chess.
+
+5. As a chess novice, I want to learn more about chess concepts and ideas.
+
+6. As a chess novice, I want to learn how to improve my opening play.
+
+7. As a chess novice, I want to learn more about tactics and strategies.
+
+8. As a chess novice, I want to learn the different ways I can checkmate my oppponent.
+
+9. As a returning visitor to the website, I want to be able share these pages with my friends on social media.
 
 ### Design
 
