@@ -413,6 +413,14 @@ figure {
 
 /* Components */
 
+/* Custom Block */
+.custom-block {
+  padding: 1rem;
+  font-style: italic;
+  background: var(--divider-color);
+  border-left: 8px var(--primary-color) solid;
+}
+
 /* Accordion*/
 .accordion {
   overflow: hidden;
