@@ -208,7 +208,7 @@ header {
   fill: var(--primary-color);
 }
 
-#hamburger {
+#hamburger-icon {
   width: 32px;
   height: 32px;
   fill: black;
