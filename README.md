@@ -170,6 +170,10 @@ The following article was used as guidance when implementing a favicon.
 
 - [Are you using SVG favicons yet? A guide to modern browsers](https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df)
 
+The fix for the link text accessibility error was taken from this article.
+
+- [A complete guide to links and buttons - CSS Tricks](https://css-tricks.com/a-complete-guide-to-links-and-buttons/)
+
 ### Assets
 
 All icons (_exluding share button icons_) and illustrations were custom made using Figma.

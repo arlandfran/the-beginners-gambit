@@ -180,6 +180,14 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
   ```
   And so the sidebar would overflow below the viewport causing links at the bottom to be inaccessible. This was fixed by adjusting the sidebar height to 90vh.
 
+- Accessibility: Social Media Share Buttons not having link text*
+
+  ![Link text error](assets/img/testing/link-text-error.png)
+
+  This was fixed by adding the appopriate link text wrapped in a span with `class="visually-hidden"`. This class visually hides the text but doesn't remove it from the document flow. The benefit of using this class as opposed to `display: none`, is that assistive technologies can still see the link text and the text can be translated by browsers.
+
+  The idea and code snippet for `class="visually-hidden` was taken from this [article](https://css-tricks.com/a-complete-guide-to-links-and-buttons/).
+
 *\*not documented as an issue on the Github Repository Issue tab.*
 
 ## Unintended Behaviour / Considerations
