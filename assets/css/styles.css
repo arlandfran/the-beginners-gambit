@@ -347,6 +347,10 @@ main {
   fill: black;
 }
 
+.subheader-link {
+  scroll-snap-margin-top: 5rem;
+}
+
 .page-nav-link {
   margin: 1rem 0;
   text-align: right;
@@ -662,23 +666,21 @@ input[type="checkbox"]:checked ~ .sidebar {
   }
 }
 
-/* This code only enables smooths scrolling if scroll-margin-top is supported */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+  /* Accessibility check */
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
 @supports (scroll-margin-top: 5rem) {
-  /* When smooth scrolling is enabled, this makes sure the page scroll accommodates for the header height */
   .subheader-link {
     scroll-margin-top: 5rem;
-  }
-
-  @supports (scroll-behavior: smooth) {
-    html {
-      scroll-behavior: smooth;
-    }
-    /* Accessibility check */
-    @media screen and (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-    }
   }
 }
 
