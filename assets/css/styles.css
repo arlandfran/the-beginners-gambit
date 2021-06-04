@@ -348,7 +348,7 @@ main {
 }
 
 .subheader-link {
-  scroll-snap-margin-top: 5rem;
+  scroll-margin-top: 5rem;
 }
 
 .page-nav-link {
@@ -675,12 +675,6 @@ input[type="checkbox"]:checked ~ .sidebar {
     html {
       scroll-behavior: auto;
     }
-  }
-}
-
-@supports (scroll-margin-top: 5rem) {
-  .subheader-link {
-    scroll-margin-top: 5rem;
   }
 }
 

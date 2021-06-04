@@ -179,31 +179,6 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
   ```
   And so the sidebar would overflow below the viewport causing links at the bottom to be inaccessible. This was fixed by adjusting the sidebar height to 90vh.
 
-- Scroll-margin-top not supported for Safari & iOS Safari*
-
-  ![scroll-margin-top error](assets/img/testing/scroll-error.png)
-
-  The web inspector recommends adding `scroll-snap-margin-top` to fix the issue but this method does not account for the header height and when the page scrolls the subheaders are hidden. To fix the issue I instead added a query so that smooth scrolling is only enabled if `scroll-margin-top` is supported. This means that Safari & iOS Safari users won't have smooth scrolling.
-  ```
-  @supports (scroll-margin-top: 5rem) {
-    .subheader-link {
-      scroll-margin-top: 5rem; // header height
-    }
-
-    @supports (scroll-behavior: smooth) {
-      html {
-        scroll-behavior: smooth;
-      }
-      
-      @media screen and (prefers-reduced-motion: reduce) {
-        html {
-          scroll-behavior: auto;
-        }
-      }
-    }
-  }
-  ```
-
 *\*not documented as an issue on the Github Repository Issue tab.*
 
 ## Unintended Behaviour / Considerations
@@ -217,3 +192,5 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
   1. Navigate to the site rules page from a desktop screen.
   2. On the sidebar select the King subheader link.
   3. Once the page has scrolled to the linked section, select the Queen subheader link.
+
+- `scroll-margin-top` not supported for Safari & iOS Safari - The web inspector recommends using `scroll-snap-margin-top` but this does't fix the issue as it only works with scroll snap containers and breaks the header element. For now the current behaviour on Safari & iOS Safari is that the page will scroll but it won't take the header height into account and the subheader is hidden under the header.
