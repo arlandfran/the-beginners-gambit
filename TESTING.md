@@ -184,16 +184,18 @@ This section lists the steps taken to manually test site functionality and web e
 4. Select the Mobile S - 320px breakpoint and verify the site is responsive on that screen size.
 5. Repeat these steps for all the breakpoints going up to 4K - 2560px and verify the site is responsive on all those screen sizes.
 
-Additional tests for site responsiveness were also documented when testing [user story 2](#user-story-2)
+Additional tests for site responsiveness were also documented for [User Story 2](#user-story-testing)
 
 ### Browser Compatibility
 
 1. Open Microsoft Edge and navigate to the site.
-2. Verify everything looks and works as intended.
-3. Repeat these steps for Mozilla Firefox, Google Chrome, Opera and Samsung Internet
-*Note: Unable to test Safari and iOS Safari as I do not have access to those browsers, and I have also intentionally left out Internet Explorer as it will retire on June 15th, 2022.
+2. Navigate through the site via the sidebar and verify everything is rendering correctly.
+3. Verify no functionality is broken by testing the accordion, sidebar, share buttons and feedback form.
+4. Repeat these steps for Mozilla Firefox, Google Chrome, Opera and Samsung Internet.
 
-[Browser test screenshots][assets/img/testing/browser-screenshots]
+*\*Note: Unable to test Safari and iOS Safari as I do not have access to those browsers, and I have also intentionally left out Internet Explorer as it will retire on June 15th, 2022.*
+
+[Browser test screenshots](assets/img/testing/browser-screenshots)
 
 ## Accessibility Testing
 
