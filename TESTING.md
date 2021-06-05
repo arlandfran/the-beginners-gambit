@@ -289,6 +289,24 @@ Fixed by updating the second link to the correct page fragment.
 
 - Redundant link - Ignored / Reference Home accessibility alert for reason.
 
+### About
+
+#### 1 Error
+
+- Empty button
+
+```
+<label for="submit" class="form-button">
+  Send Feedback
+</label>
+<input type="submit" name="submit" id="submit" class="hide">
+```
+Fixed by removing the redundant label and adding a value attribute to the button instead.
+
+#### 1 Alert
+
+- Redundant link - Ignored / Reference Home accessibility alert for reason.
+
 ## Bug Fixes
 
 Bugs encountered were mainly to do with spacing and broken links, but some bugs were documented in the [Github Repository Issues tab](https://github.com/arlandfran/the-beginners-gambit/issues?q=is%3Aissue+label%3Abug+is%3Aclosed).

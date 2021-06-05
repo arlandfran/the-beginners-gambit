@@ -604,6 +604,11 @@ input:checked ~ .accordion-content {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+  background: white;
+}
+
+.form-button:active {
+  border: 4px solid var(--primary-color);
 }
 
 /* | | Media queries */
