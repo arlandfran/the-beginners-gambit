@@ -153,7 +153,7 @@ This site was deployed using Github Pages and the deployment process was as foll
 
 To run this project locally on your machine, you will need a [Github account](https://github.com/join) to clone the project repository. Once you have made an account follow these steps:
 
-1. Navigate to the project repository (in this case [The Beginner's Gambit](https://github.com/arlandfran/the-beginners-gambit).
+1. Navigate to the project repository, in this case [The Beginner's Gambit](https://github.com/arlandfran/the-beginners-gambit).
 2. Underneath the project name and tab menus, select the green button that says Code.
 3. Verify that HTTPS is currently selected and copy the URL.
 4. Open your preferred terminal and paste the URL after typing this command `git clone` to create a local copy of the project on your machine.
