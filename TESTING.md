@@ -189,8 +189,9 @@ Additional tests for site responsiveness were also documented for [User Story 2]
 ### Browser Compatibility
 
 1. Open Microsoft Edge and navigate to the site.
-2. Verify everything looks and works as intended.
-3. Repeat these steps for Mozilla Firefox, Google Chrome, Opera and Samsung Internet
+2. Navigate through the site via the sidebar and verify everything is rendering correctly.
+3. Verify no functionality is broken by testing the accordion, sidebar, share buttons and feedback form.
+4. Repeat these steps for Mozilla Firefox, Google Chrome, Opera and Samsung Internet.
 
 *\*Note: Unable to test Safari and iOS Safari as I do not have access to those browsers, and I have also intentionally left out Internet Explorer as it will retire on June 15th, 2022.*
 
