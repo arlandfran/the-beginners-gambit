@@ -176,6 +176,25 @@ This section lists the steps taken to manually test site functionality and web e
 3. Hover over each button and verify that they are highlighted correctly.
 4. Click on each button and verify the browser opens a new tab and that the share function works correctly with the correct page URL displayed and text pre-populated if applicable.
 
+### Page Responsivenesss
+
+1. Navigate to the site home page from a desktop screen using Microsoft Edge.
+2. Open the web inspector and enable device emulation.
+3. Toggle the emulation mode to 'Responsive'.
+4. Select the Mobile S - 320px breakpoint and verify the site is responsive on that screen size.
+5. Repeat these steps for all the breakpoints going up to 4K - 2560px and verify the site is responsive on all those screen sizes.
+
+Additional tests for site responsiveness were also documented when testing [user story 2](#user-story-2)
+
+### Browser Compatibility
+
+1. Open Microsoft Edge and navigate to the site.
+2. Verify everything looks and works as intended.
+3. Repeat these steps for Mozilla Firefox, Google Chrome, Opera and Samsung Internet
+*Note: Unable to test Safari and iOS Safari as I do not have access to those browsers, and I have also intentionally left out Internet Explorer as it will retire on June 15th, 2022.
+
+[Browser test screenshots][assets/img/testing/browser-screenshots]
+
 ## Accessibility Testing
 
 All pages were tested for accessibility through the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) and all errors and fixes are documented here.
