@@ -178,7 +178,7 @@ This section lists the steps taken to manually test site functionality and web e
 
 ## Accessibility Testing
 
-All sites were tested for accessibility through the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) and all errors and fixes are documented here.
+All pages were tested for accessibility through the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) and all errors and fixes are documented here.
 
 ### Home
 
@@ -228,6 +228,12 @@ Share to Reddit
 </span>`
 
 Fixed by removing the span text and adding `aria-label`'s to each social media share button instead.
+
+#### 3 Alerts
+
+- 2x Possible heading - fixed by refactoring `<p>` tags to `h3` tags.
+
+- Redundant link - Ignore
 
 ## Bug Fixes
 
