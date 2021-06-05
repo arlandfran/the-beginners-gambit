@@ -10,25 +10,34 @@
 
 ## Code Validation
 
-All HTML code was validated through the [W3C Markup Validator](https://validator.w3.org/) with all errors and warnings resolved.
+All HTML code was validated through the [W3C Markup Validator](https://validator.w3.org/) via URL address and all errors and warnings resolved.
 
-***Validated 03/06/21***
+- [index.html](index.html) - [Success](assets/img/testing/index-html-validation.png)
+- [setup.html](setup.html) - [Success](assets/img/testing/setup-html-validation.png)
+- [rules.html](rules.html) - [Success](assets/img/testing/rules-html-validation.png)
+- [concepts.html](concepts.html) - [Success](assets/img/testing/concepts-html-validation.png)
+- [opening-principles.html](opening-principles.html) - [Success](assets/img/testing/opening-principles-html-validation.png)
+- [tactics.html](tactics.html) - [Success](assets/img/testing/tactics-html-validation.png)
+- [mating-patterns.html](mating-patterns.html) - [Success](assets/img/testing/mating-patterns-html-validation.png)
+- [about.html](about.html) - [Success](assets/img/testing/about-html-validation.png)
 
-- [index.html](index.html) - No errors/warnings
-- [setup.html](setup.html) - [Errors/Warnings](assets/img/testing/setup-html-validation.png) - Fixed
-- [rules.html](rules.html) - [Errors/Warnings](assets/img/testing/rules-html-validation.png) - Fixed
-- [concepts.html](concepts.html) - [Errors/Warnings](assets/img/testing/concepts-html-validation.png) - Fixed
-- [opening-principles.html](opening-principles.html) - [Errors/Warnings](assets/img/testing/opening-principles-html-validation.png) - Fixed
-- [tactics.html](tactics.html) - [Errors/Warnings](assets/img/testing/tactics-html-validation.png) - Fixed
-- [mating-patterns.html](mating-patterns.html) - [Errors/Warnings](assets/img/testing/tactics-html-validation.png) - Fixed
-- [about.html](about.html) - [Errors/Warnings](assets/img/testing/about-html-validation.png) - Fixed
+Most errors were easy fixes and these included:
 
-All CSS code was validated through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and returned with no errors or warnings.
+- Unclosed element`div`
+- Stray end tag `section`
+- End tag `li` seen, but there were open elements.
+- `Section` / `Article` lacks heading.
+- and variations of these errors.
 
-***Validated 03/06/21***
+The most time consuming fixes however were to do with errors regarding the structure of lists and list items.
 
-- [styles.css](assets/css/styles.css) - No errors/warnings
+![Sidebar structure error](assets/img/testing/sidebar-structure-error.png)
 
+Correctly nesting the offending lists and list items were relatively simple, but restructuring the sidebar took quite some time as some pages had large subheader groups and css styling had to be adjusted for the new list structure.
+
+All CSS code was validated through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) via text input and returned with no errors or warnings.
+
+- [styles.css](assets/css/styles.css) - [Success](assets/img/testing/css-validation.png)
 ## User Story Testing
 
 1. As a new visitor to the site, I want to be able to navigate the site easily and find the information that I need.
