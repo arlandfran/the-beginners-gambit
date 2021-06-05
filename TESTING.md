@@ -246,6 +246,12 @@ I chose to keep them as `<p>` tags as due to the structure of the setup list, ad
 
 - Redundant link - Ignored / Reference Home accessibility alert for reason.
 
+### Concepts
+
+#### 1 Alert
+
+- Redundant link - Ignored / Reference Home accessibility alert for reason.
+
 ## Bug Fixes
 
 Bugs encountered were mainly to do with spacing and broken links, but some bugs were documented in the [Github Repository Issues tab](https://github.com/arlandfran/the-beginners-gambit/issues?q=is%3Aissue+label%3Abug+is%3Aclosed).
