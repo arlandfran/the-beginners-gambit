@@ -221,4 +221,4 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
   2. On the sidebar select the King subheader link.
   3. Once the page has scrolled to the linked section, select the Queen subheader link.
 
-- `scroll-margin-top` not supported for Safari & iOS Safari - The web inspector recommends using `scroll-snap-margin-top` but this does't fix the issue as it only works with scroll snap containers and breaks the header element. For now the current behaviour on Safari & iOS Safari is that the page will scroll but it won't take the header height into account and the subheader is hidden under the header element.
+- `scroll-margin-top` not supported for Safari & iOS Safari - The web inspector recommends using `scroll-snap-margin-top` but this doesn't fix the issue as it only works with scroll snap containers and breaks the header element. For now the current behaviour on Safari & iOS Safari is that the page will scroll but it won't take the header height into account and the subheader is hidden under the header element.
