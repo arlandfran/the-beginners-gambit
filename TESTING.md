@@ -191,13 +191,15 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
 
   The screenshot shows the rules page on a mobile viewport with the sidebar scrolled all the way down to the bottom. This isn't an issue for pages with less subheader links but you can see here that the ***About*** page link is not visible due to the large subheader groups for the rules page. 
 
-  This was caused by not taking into account that the sidebar was positioned with:
+  This was caused by not taking into account that the sidebar had these properties applied:
   ```
+  ...
   position: fixed;
   top: 4rem;
   height: 100vh;
+  ...
   ```
-  And so the sidebar would overflow below the viewport causing links at the bottom to be inaccessible. This was fixed by adjusting the sidebar height to 90vh.
+  Having the height set to 100vh is what lets the sidebar to overflow below the viewport causing links at the bottom to be inaccessible. This was fixed by adjusting the sidebar height to 90vh.
 
 - Accessibility: Social Media Share Buttons not having link text*
 
