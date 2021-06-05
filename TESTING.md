@@ -7,6 +7,7 @@
 - [Code Validation](#code-validation)
 - [User Story Testing](#user-story-testing)
 - [Manual Testing](#manual-testing)
+- [Accessibility Testing](#accessibility-testing)
 - [Bug Fixes](#bug-fixes)
 - [Unintended Behaviour / Considerations](#unintended-behaviour--considerations)
 
@@ -174,6 +175,35 @@ This section lists the steps taken to manually test site functionality and web e
 2. Scroll to the bottom of the page and locate the share buttons.
 3. Hover over each button and verify that they are highlighted correctly.
 4. Click on each button and verify the browser opens a new tab and that the share function works correctly with the correct page URL displayed and text pre-populated if applicable.
+
+## Accessibility Testing
+
+All sites were tested for accessibility through the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) and all errors and fixes are documented here.
+
+### Home
+
+#### 2 Errors
+
+- Empty form label
+
+```
+<label for="sidebarToggle" class="hamburger">
+...
+</label>
+```
+
+- Empty link
+
+```
+<a href="index.html" id="logo-icon">
+...
+</a>
+```
+
+#### 1 Alert
+
+- Redundant link
+  
 
 ## Bug Fixes
 
