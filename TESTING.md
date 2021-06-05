@@ -212,7 +212,22 @@ Both fixes were applied to every page applicable.
   
 ### Setup
 
+#### 4 Contrast Errors
 
+- Very low contrast `<span class="visually-hidden">
+Share to Facebook
+</span>`
+- Very low contrast `<span class="visually-hidden">
+Share to Twitter
+</span>`
+- Very low contrast `<span class="visually-hidden">
+Share to LinkedIn
+</span>`
+- Very low contrast `<span class="visually-hidden">
+Share to Reddit
+</span>`
+
+Fixed by removing the span text and adding `aria-label`'s to each social media share button instead.
 
 ## Bug Fixes
 
