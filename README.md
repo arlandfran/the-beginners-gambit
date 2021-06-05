@@ -44,14 +44,11 @@ The goals for the user are:
 
 #### Wireframes
 
-- [Home](assets/img/wireframes/home.jpg)
-- [Setup](assets/img/wireframes/setup.jpg)
-- [Rules](assets/img/wireframes/rules.jpg)
-- [Concepts](assets/img/wireframes/concepts.jpg)
-- [Opening Principles](assets/img/wireframes/opening-principles)
-- [Tactics](assets/img/wireframes/tactics.jpg)
-- [Mating Patterns](assets/img/wireframes/mating-patterns.jpg)
-- [About](assets/img/wireframes/about.jpg)
+- [Mobile](assets/img/wireframes/mobile)
+- [Tablet](assets/img/wireframes/setup)
+- [Desktop](assets/img/wireframes/desktop)
+
+*\*Note: There are are only 3 wireframes each for both the tablet and desktop breakpoints due to time constraints. However the design principles and layout structure are consistent throughout the entire site so the layout and positiong of elements is very similar, if not the same*
 
 #### Colors
 
