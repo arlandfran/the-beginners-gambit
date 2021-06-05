@@ -8,7 +8,7 @@
 - [User Story Testing](#user-story-testing)
 - [Manual Testing](#manual-testing)
 - [Bug Fixes](#bug-fixes)
-- [Unintended Behaviour / Considerations](#unintended-behaviour-considerations)
+- [Unintended Behaviour / Considerations](#unintended-behaviour--considerations)
 
 ## Code Validation
 
