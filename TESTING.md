@@ -25,8 +25,8 @@ All HTML code was validated through the [W3C Markup Validator](https://validator
 
 Most errors were easy fixes and these included:
 
-- Unclosed element `div`
-- Stray end tag `section`
+- Unclosed element `div`.
+- Stray end tag `section`.
 - End tag `li` seen, but there were open elements.
 - `Section` / `Article` lacks heading.
 - and variations of these errors.
