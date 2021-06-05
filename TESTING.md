@@ -231,7 +231,10 @@ Fixed by removing the span text and adding `aria-label`'s to each social media s
 
 #### 3 Alerts
 
-- 2x Possible heading - fixed by refactoring `<p>` tags to `h3` tags.
+- Possible heading `<p class="h5 fig-subheading">Ranks</p>`
+- Possible heading `<p class="h5 fig-subheading">Files</p>`
+
+I chose to keep them as `<p>` tags as due to the structure of the setup list, adding a `<h2>` would be semantically incorrect.
 
 - Redundant link - Ignore
 
