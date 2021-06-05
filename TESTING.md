@@ -191,7 +191,8 @@ Additional tests for site responsiveness were also documented for [User Story 2]
 1. Open Microsoft Edge and navigate to the site.
 2. Verify everything looks and works as intended.
 3. Repeat these steps for Mozilla Firefox, Google Chrome, Opera and Samsung Internet
-*Note: Unable to test Safari and iOS Safari as I do not have access to those browsers, and I have also intentionally left out Internet Explorer as it will retire on June 15th, 2022.
+
+*\*Note: Unable to test Safari and iOS Safari as I do not have access to those browsers, and I have also intentionally left out Internet Explorer as it will retire on June 15th, 2022.*
 
 [Browser test screenshots](assets/img/testing/browser-screenshots)
 
