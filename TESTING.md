@@ -255,7 +255,7 @@ Bugs encountered were mainly to do with spacing and broken links, but some bugs 
   ```
   Having the height set to 100vh is what lets the sidebar to overflow below the viewport causing links at the bottom to be inaccessible. This was fixed by adjusting the sidebar height to 90vh.
 
-- Accessibility: Social Media Share Buttons not having link text*
+- Accessibility: Social Media Share Buttons not having link text* EDIT: bug fix made redundant by accessibility fix [here](#4-contrast-errors)
 
   ![Link text error](assets/img/testing/link-text-error.png)
 
