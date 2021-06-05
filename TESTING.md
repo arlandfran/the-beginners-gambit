@@ -192,6 +192,8 @@ All sites were tested for accessibility through the [WAVE Web Accessibility Eval
 </label>
 ```
 
+Fixed by adding appropriate label text wrapped in a span tag with `class="visually-hidden"`. Aria-labels and roles were also added to convey to assistive technologies that this label is used to toggle the sidebar.
+
 - Empty link
 
 ```
@@ -200,9 +202,11 @@ All sites were tested for accessibility through the [WAVE Web Accessibility Eval
 </a>
 ```
 
+Fixed by adding `aria-label="Home"` and `role="button"` to convey to assistive technologies that this anchor tag is used as a *back to home page* button.
+
 #### 1 Alert
 
-- Redundant link
+- Redundant link - This alert was ignored as while two links redirect to the home page, only one will be accessible at any one time depending on what device you are viewing the website from.
   
 
 ## Bug Fixes
