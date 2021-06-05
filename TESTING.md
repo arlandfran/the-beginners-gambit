@@ -236,7 +236,15 @@ Fixed by removing the span text and adding `aria-label`'s to each social media s
 
 I chose to keep them as `<p>` tags as due to the structure of the setup list, adding a `<h2>` would be semantically incorrect.
 
-- Redundant link - Ignore
+- Redundant link - Ignored / Reference Home accessibility alert for reason.
+
+### Rules
+
+#### 7 Alerts
+
+- 6x Possible heading - Fixed by refactoring `<p>` tags to `<h3>` tags.
+
+- Redundant link - Ignored / Reference Home accessibility alert for reason.
 
 ## Bug Fixes
 
