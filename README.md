@@ -4,7 +4,7 @@
 
 A minimal, documentation-style site for the rules of Chess. The site features fully responsive design, eight pages of content and pure CSS implementations of traditional Javascript enabled features such as off-canvas sidebars and accordions.
 
-After the premiere of the popular Netflix show The Queens Gambit, there was a huge influx of players wanting to learn how to play the game. This site is designed for those players who are curious about chess whilst also being modern, relatable and easy to digest.
+After the premiere of the popular Netflix show The Queens Gambit, there was a huge influx of players wanting to learn how to play the game. This site is designed for those players who are curious about chess whilst also being designed to be modern, relatable and easy to digest.
 
 The goals for this site are:
 
@@ -15,7 +15,7 @@ The goals for this site are:
 The goals for the user are:
 
 - Learn how to play chess.
-- Be able to reference the rules on a variety of devices.
+- Be able to reference the rules and additional information on a variety of devices.
 - Navigate the site easily.
 
 ## UX
@@ -110,7 +110,7 @@ A custom form is located on the About page and allows for users to send feedback
 - Dark mode - Currently no reliable CSS-only methods, need Javascript to implement.
 - SVG animations - Some illustrations would benefit from animations and SVG's are relatively easy to animate using CSS animations.
 - SVG optimizations - SVG's can be further optimized by removing redundant SVG paths and serving SVG's with Gzip compression, improving page load times.
-- Drop-down Sidebar - Refactor sidebar links so that subheader links are collapsible.
+- Drop-down sidebar - Refactor sidebar so that subheader links are collapsible.
 
 ## Technologies Used
 
