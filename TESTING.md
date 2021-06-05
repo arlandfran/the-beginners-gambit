@@ -242,7 +242,7 @@ I chose to keep them as `<p>` tags as due to the structure of the setup list, ad
 
 #### 7 Alerts
 
-- 6x Possible heading - Fixed by refactoring `<p>` tags to `<h3>` tags.
+- 6x Possible heading - Fixed by changing the offending `<p>` tags to `<h3>` tags.
 
 - Redundant link - Ignored / Reference Home accessibility alert for reason.
 
@@ -272,6 +272,20 @@ I chose to keep them as `<p>` tags as due to the structure of the setup list, ad
 ```
 
 Fixed by updating the second link to the correct page fragment.
+
+- Redundant link - Ignored / Reference Home accessibility alert for reason.
+
+### Tactics
+
+#### 1 Alert
+
+- Redundant link - Ignored / Reference Home accessibility alert for reason.
+
+### Mating Patterns
+
+#### 9 Alerts
+
+- 8x Possible heading - Fixed by changing the offending `<p>` tags into the appropriate header tags.
 
 - Redundant link - Ignored / Reference Home accessibility alert for reason.
 
