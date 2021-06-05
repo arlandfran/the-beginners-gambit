@@ -252,6 +252,29 @@ I chose to keep them as `<p>` tags as due to the structure of the setup list, ad
 
 - Redundant link - Ignored / Reference Home accessibility alert for reason.
 
+### Opening Principles
+
+#### 2 Alerts
+
+- Redundant link
+
+```
+<li>
+  <a href="opening-principles.html#control-the-center">
+    Control The Center
+  </a>
+</li>
+<li>
+  <a href="opening-principles.html#control-the-center">
+    Avoid Moving The Same Piece Twice
+  </a>
+</li>
+```
+
+Fixed by updating the second link to the correct page fragment.
+
+- Redundant link - Ignored / Reference Home accessibility alert for reason.
+
 ## Bug Fixes
 
 Bugs encountered were mainly to do with spacing and broken links, but some bugs were documented in the [Github Repository Issues tab](https://github.com/arlandfran/the-beginners-gambit/issues?q=is%3Aissue+label%3Abug+is%3Aclosed).
