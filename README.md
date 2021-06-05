@@ -162,7 +162,7 @@ To run this project locally on your machine, you will need a [Github account](ht
 
 ### Content
 
-The content for this project were adapted from the following sites:
+The content for this project was adapted from the following sites:
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Chess) - The chess wikipedia page was referred to for the _Setup_ and _Rules_ page.
 - [ChessFox](https://chessfox.com/updates-list/), [Chess.com](https://www.chess.com/articles) - These sites were referred to for the _Concepts_, _Opening Principles_, _Tactics_ and _Mating Patterns_ pages.
@@ -170,11 +170,11 @@ The content for this project were adapted from the following sites:
 
 ### Code
 
-The following CodePen was referenced when building the off-canvas sidebar component.
+The following CodePen was referenced when building the off-canvas sidebar component. No code was copied but the implementation details were adapted.
 
 - [Pure CSS Sidebar Toggle Menu - Jelena Jovanovic](https://codepen.io/plavookac/pen/qomrMw)
 
-The following articles were referenced when building the accordion component.
+The following articles were referenced when building the accordion component. No code was copied but the implementation details were adapted.
 
 - [Pure CSS accordion without Javascript - Supfort](https://supfort.com/pure-css-accordion-without-javascript)
 - [Responsive Accordion using Pure CSS - Muhammad Asif](https://codeconvey.com/responsive-accordion-pure-css/)
